@@ -40,8 +40,9 @@ hr:after {
     font-family: "shrikhand", cursive;
     margin-top: 3%;
     font-weight: 300;
-    margin-bottom: 10%;
+    margin-bottom: 4%;
     font-size: 300%;
+
 
 }
 
@@ -66,6 +67,7 @@ hr:after {
 }
 
 .blocblur1{
+
     backdrop-filter: blur(10px);
     background-color: #FFFFFF20;
     color:#FFFFFF;
@@ -73,7 +75,7 @@ hr:after {
     padding:1%;
     width: 40%;
     border-radius:21px;
-    height:830px;
+    height:600px;
 }
 .blocblur2{
     backdrop-filter: blur(10px);
@@ -84,14 +86,12 @@ hr:after {
     padding:1%;
     width: 40%;
     border-radius:21px;
-    height:830px;
+    height:600px;
 }
 
 .bloc6{
+    background-size: contain;
+    backdrop-filter: blur(30px);
     background-image: url("/Images/Salledesport.png") ;
-    min-height:830px;
-}
-
-.option1{
-    display:flex;
+    min-height:10000%;
 }
