@@ -14,6 +14,48 @@ img{
     height:50%;
 }
 
+.blocCoach{
+
+    font-family: "shrikhand", cursive;
+    line-height: 230%;
+    background-color:#443F3F;
+    color: white;
+    margin: 1%;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 1%;
+    padding-left: 1%;
+    width: 55%;
+    border-radius: 21px;
+}
+
+.natation {
+    font-size: 400%;
+    text-align: center;
+}
+
+.photoMouhali {
+    width : 40%;
+    margin-right : 5%;
+}
+
+.blocProfil{
+    margin-left : 5%;
+    display : flex;
+    font-family: "dosis", sans-serif;
+    line-height: 230%;
+    background-color:#443F3F;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 1%;
+    padding-left: 1%;
+    width: 55%;
+    border-radius: 21px;
+
+
+}
+
 .barrerecherche{
     background-color:#443F3F;
     margin-top: 11%;
@@ -47,21 +89,6 @@ img{
 .profildata{
     text-align:left;
     margin-left: 2%;
-}
-
-.blocprofil{
-    display:flex;
-}
-
-.prendrerdv{
-    margin-top: 5%;
-    margin-left: 10%;
-}
-
-.voirlecv{
-    margin-top: 5%;
-    margin-left: 15%;
-
 }
 
 .option1{
