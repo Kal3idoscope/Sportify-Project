@@ -7,22 +7,31 @@ img{
 .header{
     background-color:#443F3F;
     color: white;
-    margin-top: 7%;
-    margin-bottom: 1%;
+    margin-top: 10%;
     padding: 1%;
-    width: 875%;
+    width: 600%;
     border-radius: 21px;
-    height:83%;
+    height:50%;
 }
 
 .barrerecherche{
     background-color:#443F3F;
-    margin-top: 25%;
+    margin-top: 18%;
     color: white;
     padding: 1%;
-    width: 875%;
+    width: 600%;
     border-radius: 21px;
-    height:10%;
+    height:15%;
+}
+
+.calendrier{
+    background-color:#443F3F;
+    margin-top: 12%;
+    color: white;
+    padding: 1%;
+    width: 600%;
+    border-radius: 21px;
+    height:22%;
 }
 
 .profildata{
@@ -42,7 +51,7 @@ img{
 .voirlecv{
     margin-top: 5%;
     margin-left: 15%;
-    padding:2.7%;
+
 }
 
 .option1{
