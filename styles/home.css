@@ -16,7 +16,6 @@
     text-align:end;
 }
 
-
 .bloc1{
     font-family: "shrikhand", cursive;
     line-height: 270%;
@@ -36,10 +35,8 @@
     background-color: #FFFFFF20;
     color:#FFFFFF;
     margin-left:5%;
-    margin-bottom: 5% ;
-    margin-top: 5%;
     padding:1%;
-    width: 30%;
+    width: 40%;
     border-radius:21px;
     height:830px;
 }
@@ -47,11 +44,10 @@
     backdrop-filter: blur(10px);
     background-color: #FFFFFF20;
     color:#FFFFFF;
-    margin-bottom: 5% ;
-    margin-top: 5%;
-    margin-right:5%;
+    margin-left:10%;
+    margin-right: 5%;
     padding:1%;
-    width: 30%;
+    width: 40%;
     border-radius:21px;
     height:830px;
 }
@@ -61,3 +57,8 @@
     min-height:830px;
 }
 
+
+
+.option1{
+    display:flex;
+}

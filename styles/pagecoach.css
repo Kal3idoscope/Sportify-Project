@@ -1,18 +1,28 @@
-
-
 img{
     border-radius: 50%;
     width:30%;
     margin-left: 2%;
 }
 
-.bloc2{
+.header{
     background-color:#443F3F;
     color: white;
-    margin: 1%;
+    margin-top: 7%;
+    margin-bottom: 1%;
     padding: 1%;
-    width: 45%;
+    width: 875%;
     border-radius: 21px;
+    height:83%;
+}
+
+.barrerecherche{
+    background-color:#443F3F;
+    margin-top: 25%;
+    color: white;
+    padding: 1%;
+    width: 875%;
+    border-radius: 21px;
+    height:10%;
 }
 
 .profildata{
@@ -22,4 +32,23 @@ img{
 
 .blocprofil{
     display:flex;
+}
+
+.prendrerdv{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.voirlecv{
+    margin-top: 5%;
+    margin-left: 15%;
+    padding:2.7%;
+}
+
+.option1{
+    display:flex;
+}
+
+.option2{
+    display:block;
 }
