@@ -1,3 +1,5 @@
+
+
 .image1
 {
     height: 20%;
@@ -6,10 +8,13 @@
 
 .bouton
 {
+
     text-align:end;
 }
 
+
 .bloc1{
+    font-family: "shrikhand", cursive;
     background-color:#443F3F;
     color: white;
     margin: 1%;

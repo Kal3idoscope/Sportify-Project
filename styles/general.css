@@ -1,3 +1,7 @@
+h1{
+
+}
+
 body{
     background-color:#1E1E1C;
     top: 0;
@@ -7,7 +11,10 @@ body{
 }
 
 button{
-    font-size: 150%;
+
+    font-family: "dosis", sans-serif;
+    font-weight: 300;
+    font-size: 100%;
     background-color: #FFFFFF00;
     border-radius: 20px;
     border: solid #BBAE90;
