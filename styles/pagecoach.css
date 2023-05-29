@@ -1,4 +1,4 @@
-img{
+.photodeprofil{
     border-radius: 50%;
     width:30%;
     margin-left: 2%;
@@ -52,8 +52,6 @@ img{
     padding-left: 1%;
     width: 55%;
     border-radius: 21px;
-
-
 }
 
 .barrerecherche{
@@ -91,10 +89,3 @@ img{
     margin-left: 2%;
 }
 
-.option1{
-    display:flex;
-}
-
-.option2{
-    display:block;
-}

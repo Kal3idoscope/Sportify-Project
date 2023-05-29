@@ -47,3 +47,11 @@ button{
     font-size: 180%;
 
 }
+
+.option1{
+    display:flex;
+}
+
+.option2{
+    display:block;
+}
