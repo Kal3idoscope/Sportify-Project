@@ -9,29 +9,39 @@ img{
     color: white;
     margin-top: 10%;
     padding: 1%;
-    width: 600%;
+    width: 420%;
     border-radius: 21px;
     height:50%;
 }
 
 .barrerecherche{
     background-color:#443F3F;
-    margin-top: 18%;
+    margin-top: 11%;
     color: white;
     padding: 1%;
-    width: 600%;
+    width: 420%;
     border-radius: 21px;
     height:15%;
 }
 
 .calendrier{
     background-color:#443F3F;
-    margin-top: 12%;
+    margin-top: 10%;
     color: white;
     padding: 1%;
-    width: 600%;
+    width: 420%;
     border-radius: 21px;
     height:22%;
+}
+
+.dates{
+    background-color:#443F3F;
+    color: white;
+    padding: 1%;
+    border-radius: 21px;
+    margin-left: 1%;
+    margin-right: 1%;
+    height:130px;
 }
 
 .profildata{
