@@ -15,10 +15,11 @@
 
 .bloc1{
     font-family: "shrikhand", cursive;
+    line-height: 270%;
     background-color:#443F3F;
     color: white;
     margin: 1%;
-    padding: 1%;
+    padding: 2%;
     width: 55%;
     border-radius: 21px;
 }

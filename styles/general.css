@@ -14,15 +14,15 @@ button{
 
     font-family: "dosis", sans-serif;
     font-weight: 300;
-    font-size: 100%;
+    font-size: 120%;
     background-color: #FFFFFF00;
-    border-radius: 20px;
+    border-radius: 30px;
     border: solid #BBAE90;
-    padding: 1%;
+    padding: 2%;
     margin: 1%;
     color: white;
-    height: 30%;
-    width: 30%;
+    height: 50%;
+    width: 40%;
 }
 
 .options{
