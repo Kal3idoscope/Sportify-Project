@@ -31,6 +31,18 @@ button{
     width: 40%;
 }
 
+.options{
+    display:flex;
+}
 
 
 
+.centré{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family:"dosis",sans-serif;
+    font-weight: 300;
+    font-size: 200%;
+}
