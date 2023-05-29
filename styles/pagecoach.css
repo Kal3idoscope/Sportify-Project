@@ -14,3 +14,18 @@ img{
 .blocprofil{
     display:flex;
 }
+
+.prendrerdv{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.voirlecv{
+    margin-top: 5%;
+    margin-left: 15%;
+    padding:2.7%;
+}
+
+.options{
+    display:flex;
+}
