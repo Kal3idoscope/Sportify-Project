@@ -7,6 +7,20 @@ body{
 
 }
 
+.image1
+{
+    height: 20%;
+    width: 100%;
+}
+
+button
+{
+    text-decoration: none;
+    border-radius: 41px;
+    background-color: #00000000;
+}
+
+
 .bloc1{
     background-color:#443F3F;
     color: white;
@@ -45,3 +59,4 @@ body{
     background-image: url("/Images/Salledesport.png") ;
     min-height:830px;
 }
+
