@@ -1,9 +1,16 @@
-
-
 img{
     border-radius: 50%;
     width:30%;
     margin-left: 2%;
+}
+
+.bloc2{
+    background-color:#443F3F;
+    color: white;
+    margin: 1%;
+    padding: 1%;
+    width: 45%;
+    border-radius: 21px;
 }
 
 .profildata{
