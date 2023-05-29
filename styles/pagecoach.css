@@ -5,11 +5,13 @@
 }
 
 .header{
+    font-family: "dosis", sans-serif;
+    line-height: 350%;
     background-color:#443F3F;
     color: white;
     margin-top: 10%;
     padding: 1%;
-    width: 420%;
+    width: 220%;
     border-radius: 21px;
     height:50%;
 }
@@ -25,7 +27,7 @@
     padding-bottom: 0;
     padding-right: 1%;
     padding-left: 1%;
-    width: 55%;
+    width: 70%;
     border-radius: 21px;
 }
 
@@ -59,7 +61,7 @@
     margin-top: 11%;
     color: white;
     padding: 1%;
-    width: 420%;
+    width: 220%;
     border-radius: 21px;
     height:15%;
 }
@@ -69,9 +71,17 @@
     margin-top: 10%;
     color: white;
     padding: 1%;
-    width: 420%;
+    width: 150%;
     border-radius: 21px;
-    height:22%;
+    height:18%;
+}
+
+.calend{
+    margin-top: 7% ;
+    font-family: "dosis", sans-serif;
+    text-align : left;
+    margin-left : 6%;
+    font-size: 200%;
 }
 
 .dates{
@@ -87,5 +97,16 @@
 .profildata{
     text-align:left;
     margin-left: 2%;
+}
+
+.carre{
+    background-color:#443F3F;
+    margin-top: 10%;
+    margin-right : 20%;
+    color: white;
+    padding: 1%;
+    width: 70%;
+    border-radius: 21px;
+    height:18%;
 }
 
