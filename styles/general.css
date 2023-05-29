@@ -1,0 +1,20 @@
+body{
+    background-color:#1E1E1C;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+
+}
+
+button{
+    font-size: 150%;
+    background-color: #FFFFFF00;
+    border-radius: 20px;
+    border: solid #BBAE90;
+    padding: 1%;
+    margin: 1%;
+    color: white;
+    height: 30%;
+    width: 30%;
+}
