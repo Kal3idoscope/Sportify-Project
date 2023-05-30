@@ -86,7 +86,7 @@ hr:after {
 .bloc6{
     background-size: contain;
     backdrop-filter: blur(30px);
-    background-image: url("/Images/Salledesport.png");
+    background-image: url("../Images/Salledesport.png");
 
 }
 

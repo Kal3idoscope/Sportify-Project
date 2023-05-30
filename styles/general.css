@@ -6,6 +6,8 @@ body{
     margin: 0;
 }
 
+
+a,
 h1,
 h2,
 h3,
@@ -14,6 +16,10 @@ p
     color: white;
     padding: 0;
     margin: 0;
+   list-style: none;
+    border-style: none;
+    outline: none;
+    text-decoration: none;
 }
 
 button{
@@ -86,8 +92,10 @@ button{
 }
 
 .header{
+    text-align: center;
     font-family: "dosis", sans-serif;
-    line-height: 350%;
+    line-height: 320%;
+    font-size: 130%;
     background-color:#443F3F;
     color: white;
     margin-top: 7%;
