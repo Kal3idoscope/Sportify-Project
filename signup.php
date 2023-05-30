@@ -20,41 +20,67 @@ if (isset($_SESSION['unique_id'])) {
 ?>
 
 <?php include_once "header.php"; ?>
+    <head>
+      <meta charset="UTF-8">
+      <title>Home</title>
+      <link rel="stylesheet" href="styles/connexion.css" type="text/css" />
+      <link rel="stylesheet" href="styles/general.css" type="text/css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Shrikhand&display=swap" rel="stylesheet">
+
+    </head>
 <body>
-<div class="wrapper">
-    <section class="form signup">
-        <header>wsh</header>
+
+<div class="blocHeader">
+    <div class="bloc1">
+    <section class="formSignup">
+        <h1 class="titre">SIGN UP</h1>
         <form action="php/signup.php" method="POST" enctype="multipart/form-data" autocomplete="off">
             <div class="error-text"></div>
             <div class="name-details">
-                <div class="field input">
-                    <label>Prenom</label>
-                    <input type="text" name="prenom" placeholder="Prenom" required>
+                <div class="fieldInput">
+                    <label>Prenom : </label>
+                    <input class="in" type="text" name="prenom" placeholder="Prenom" required>
                 </div>
-                <div class="field input">
-                    <label>Nom</label>
-                    <input type="text" name="nom" placeholder="Nom" required>
+                <div class="fieldInput">
+                    <label>Nom : </label>
+                    <input class="in" type="text" name="nom" placeholder="Nom" required>
                 </div>
             </div>
-            <div class="field input">
-                <label>Adresse Email</label>
-                <input type="text" name="email" placeholder="Saisir votre email" required>
+            <div class="fieldInput">
+                <label>Adresse Email : </label>
+                <input class="in" type="text" name="email" placeholder="Saisir votre email" required>
             </div>
-            <div class="field input">
-                <label>Mot de Passe</label>
-                <input type="password" name="password" placeholder="Enter new password" required>
+            <div class="fieldInput">
+                <label>Mot de Passe : </label>
+                <input class="in" type="password" name="password" placeholder="Enter new password" required>
                 <i class="fas fa-eye"></i>
             </div>
-            <div class="field image">
-                <label>Selectionner une image</label>
+            <div class="fieldInput">
+                <label>Selectionner une image : </label>
                 <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
             </div>
-            <div class="field button">
-                <input type="submit" name="submit" value="S'inscrire">
+            <div class="fieldButton">
+                <input class="bouton" type="submit" name="submit" value="S'inscrire">
             </div>
         </form>
         <div class="link">Déjà inscrit? <a href="login.php">Se connecter</a></div>
     </section>
+    </div>
+    <div class="bloc2">
+
+            <div class="barrerecherche">
+              <input class="rechercher" type="text" placeholder="Search..">
+            </div>
+            <div class="header">
+              <a href="./index.html">ACCUEIL</a> <br>
+              <a href="./Parcourir.html">TOUT PARCOURIR</a> <br>
+              <a href="./RDV.html">RDV</a> <br>
+              <a href="./COMPTE.html">COMPTE</a> <br>
+            </div>
+          </div>
+          </div>
 </div>
 
 <script src="javascript/show_hide_mdp.js"></script>

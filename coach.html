@@ -9,6 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Shrikhand&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $("document").ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
 </head>
 <body>
 <div class="blocHeader">
@@ -24,12 +32,12 @@
                 <p>TELEPHONE : </p>
                 <p>MAIL :  </p>
             </div>
-        </div>
+        </div> <br>
         <div class="option1">
             <button>PRENDRE RENDEZ-VOUS</button>
             <button>VOIR LE CV</button>
             <button>COMMUNIQUER</button>
-        </div>
+        </div> <br>
     </div>
     <div class="bloc2">
 
@@ -38,9 +46,14 @@
         </div>
         <div class="header">
             <a href="./index.html">ACCUEIL</a> <br>
-            <a href="./Parcourir.html">TOUT PARCOURIR</a> <br>
+            <div id="flip">TOUT PARCOURIR</div>
+            <div id="panel">
+                <a href="./Activites_Sportives.html">ACTIVITÉS SPORTIVES</a><br>
+                <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a><br>
+                <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
+            </div>
             <a href="./RDV.html">RDV</a> <br>
-            <a href="./COMPTE.html">COMPTE</a> <br>
+            <a href="./login.php">COMPTE</a> <br>
         </div>
         <div class="calendrier">
             <div class="">CALENDRIER</div>

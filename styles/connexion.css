@@ -1,8 +1,20 @@
 .bouton
 {
-    padding: 0;
+
     text-align:center;
     margin: 5% 0 0 0;
+
+    font-family: "dosis", sans-serif;
+    font-weight: 300;
+    font-size: 140%;
+    background-color: #FFFFFF00;
+    border-radius: 30px;
+    border: solid #BBAE90;
+    padding: 2%;
+
+    color: white;
+    height: 50%;
+    width: 40%;
 
 }
 
@@ -15,7 +27,7 @@
     color: #BBAE90;
 }
 
-.texte
+.fieldInput
 {
     margin-top: 2%;
     font-family: "dosis",sans-serif;
@@ -41,5 +53,13 @@
     font-family: "dosis",sans-serif;
     text-align:center;
 
+}
+
+.formLogin{
+    text-align: center;
+}
+
+.formSignup{
+    text-align: center;
 }
 
