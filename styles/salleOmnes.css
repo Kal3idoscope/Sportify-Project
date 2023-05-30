@@ -38,6 +38,8 @@ hr {
 .consult{
     font-size: 290%;
     margin-left : 2%;
+    margin-top: 1%;
+    margin-bottom: 2%;
 }
 
 .soustitre
@@ -121,7 +123,7 @@ hr {
     font-family: "dosis", sans-serif;
     font-weight: 200;
     text-align: center;
-    font-size:80px;
+    font-size:70px;
     margin: 2%;
 }
 
@@ -186,6 +188,13 @@ hr {
     line-height : 330%;
     font-size: 200%;
     text-align: center;
+
+}
+
+.bloc6{
+    background-size: contain;
+    backdrop-filter: blur(30px);
+    background-image: url("../Images/Salledesport.png");
 
 }
 
