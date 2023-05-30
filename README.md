@@ -4,6 +4,10 @@ Swimming project
 Sportify : Le plateforme pour la
 consultation sportive pour la communauté
  Omnes
+ 
+ 
+ 
+ 
  Sujet du projet : "On souhaite créer un site web pour prendre un rendez-vous sportif en ligne pour la communauté
 d’Omnes Education. On va l’appeler « Sportify ». Ce site innovant permet au client de voir une liste
 de tous le personnel de Sportify, de sélectionner un spécialiste préféré, de voir ses informations
