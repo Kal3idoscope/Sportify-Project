@@ -8,3 +8,25 @@
     height: 75%;
     width: 100%;
 }
+
+.imageAS {
+    height: 200px;
+    width: 90%;
+    margin-left: 4%;
+}
+
+.muscu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family:"shrikhand", cursive;
+    font-size: 300%;
+}
+
+.contain {
+    position: relative;
+    text-align: center;
+    color: blue;
+}
