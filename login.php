@@ -19,8 +19,7 @@ if (isset($_SESSION['unique_id'])) {
 }
 ?>
 
-    <?php include_once "header.php"; ?>
-    <section class="form login">
+<?php include_once "header.php"; ?>
     <body>
     <div class="wrapper">
         <section class="form login">
