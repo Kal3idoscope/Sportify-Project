@@ -2,11 +2,13 @@
 {
     padding: 0;
     text-align:center;
-    margin: 0;
+    margin: 5% 0 0 0;
+
 }
 
 .titre
 {
+
     margin-top: 2%;
     font-size: 400%;
     text-align: center;
@@ -31,3 +33,13 @@
     border-bottom: solid white 2px;
     background-color: transparent;
 }
+
+.inscription
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+    font-family: "dosis",sans-serif;
+    text-align:center;
+
+}
+
