@@ -20,7 +20,7 @@ button{
 
     font-family: "dosis", sans-serif;
     font-weight: 300;
-    font-size: 120%;
+    font-size: 140%;
     background-color: #FFFFFF00;
     border-radius: 30px;
     border: solid #BBAE90;
@@ -90,7 +90,7 @@ button{
     line-height: 350%;
     background-color:#443F3F;
     color: white;
-    margin-top: 10%;
+    margin-top: 7%;
     padding: 10%;
     width: 100%;
     border-radius: 21px;
@@ -110,7 +110,7 @@ button{
     color: white;
     margin: 1%;
     padding: 0 1% 0 1%;
-
+    height : 95%;
     width: 77%;
     border-radius: 21px;
 }
