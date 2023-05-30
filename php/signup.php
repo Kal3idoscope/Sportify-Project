@@ -51,15 +51,15 @@ if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($password)) {
                                 $select_sql_coach = mysqli_query($conn, "SELECT * FROM coach WHERE email = '{$email}'");
                                 if (mysqli_num_rows($select_sql_admin) > 0) {
                                     $result = mysqli_fetch_assoc($select_sql_admin);
-                                    $_SESSION['unique_id'] = $result['unique_id'];
+                                    $_SESSION['unique_id'] = $result['ID_Admin'];
                                     echo "success";
                                 } else if (mysqli_num_rows($select_sql_client) > 0){
                                     $result = mysqli_fetch_assoc($select_sql_client);
-                                    $_SESSION['unique_id'] = $result['unique_id'];
+                                    $_SESSION['unique_id'] = $result['ID_Client'];
                                     echo "success";
                                 } else if (mysqli_num_rows($select_sql_coach) > 0){
                                     $result = mysqli_fetch_assoc($select_sql_coach);
-                                    $_SESSION['unique_id'] = $result['unique_id'];
+                                    $_SESSION['unique_id'] = $result['ID_C'];
                                     echo "success";
                                 } else {
                                     echo "This email address not Exist!";
