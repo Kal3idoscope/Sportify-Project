@@ -1,10 +1,11 @@
 <?php
 session_start();
+include_once "php/config.php";
 if (isset($_SESSION['unique_id'])) {
     $unique_id = $_SESSION['unique_id'];
     $admin_query = mysqli_query($conn, "SELECT * FROM admin WHERE ID_admin = '{$unique_id}'");
     $client_query = mysqli_query($conn, "SELECT * FROM client WHERE ID_Client = '{$unique_id}'");
-    $coach_query = mysqli_query($conn, "SELECT * FROM coach WHERE ID_C = '{$unique_id}'");
+    $coach_query = mysqli_query($conn, "SELECT * FROM coach WHERE ID_Coach = '{$unique_id}'");
 
     if (mysqli_num_rows($admin_query) > 0) {
         $_SESSION['user_type'] = 'admin';
@@ -57,7 +58,7 @@ if (isset($_SESSION['unique_id'])) {
       </div>
       </div>
 
-    <script src="javascript/pass-show-hide.js"></script>
+    <script src="javascript/show_hide_mdp.js"></script>
     <script src="javascript/login.js"></script>
 
     </body>
