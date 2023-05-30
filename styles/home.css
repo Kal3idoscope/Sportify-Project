@@ -28,10 +28,15 @@ hr:after {
 
 .image1
 {
-    height: 60%;
+    min-height: 10px;
     width: 100%;
     padding: 0;
-    margin: 0;
+
+}
+
+.consult{
+    font-size: 290%;
+    margin-left : 2%;
 }
 
 .soustitre
@@ -46,21 +51,14 @@ hr:after {
 
 .bouton
 {
-    margin: 0;
+    padding: 0;
     text-align:end;
+    margin: 0;
 }
 
-.bloc1{
-    font-family: "shrikhand", cursive;
-    line-height: 270%;
-    background-color:#443F3F;
-    color: white;
-    margin: 1%;
-    padding-top: 0;
 
-    width: 77%;
-    border-radius: 21px;
-}
+
+
 
 .blocblur1{
 
@@ -88,7 +86,7 @@ hr:after {
 .bloc6{
     background-size: contain;
     backdrop-filter: blur(30px);
-    background-image: url("/Images/Salledesport.png");
+    background-image: url("../Images/Salledesport.png");
 
 }
 

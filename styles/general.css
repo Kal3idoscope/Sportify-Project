@@ -6,6 +6,8 @@ body{
     margin: 0;
 }
 
+
+a,
 h1,
 h2,
 h3,
@@ -14,13 +16,17 @@ p
     color: white;
     padding: 0;
     margin: 0;
+   list-style: none;
+    border-style: none;
+    outline: none;
+    text-decoration: none;
 }
 
 button{
 
     font-family: "dosis", sans-serif;
     font-weight: 300;
-    font-size: 120%;
+    font-size: 140%;
     background-color: #FFFFFF00;
     border-radius: 30px;
     border: solid #BBAE90;
@@ -37,11 +43,9 @@ button{
 
 
 
+
 .centré{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 2% 5% 2% 5%;
     font-family:"dosis",sans-serif;
     font-weight: 300;
     font-size: 180%;
@@ -56,24 +60,65 @@ button{
     display:block;
 }
 
+.blocHeader
+{
+
+    display:flex;
+}
+
 .barrerecherche{
     background-color:#443F3F;
-    margin-top: 11%;
-    color: white;
-    padding: 1%;
-    width: 220%;
+
+
+    padding: 10%;
+    text-align:end;
     border-radius: 21px;
-    height:15%;
+    width: 100%;
+    color: #BBAE90;
+}
+
+.rechercher
+{
+    color: white;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    text-align: end;
+    border: transparent;
+    border-bottom-color: #BBAE90; !important;
+    width: 100%;
+    height: 10%;
+
 }
 
 .header{
+    text-align: center;
     font-family: "dosis", sans-serif;
-    line-height: 350%;
+    line-height: 320%;
+    font-size: 130%;
     background-color:#443F3F;
     color: white;
-    margin-top: 10%;
-    padding: 1%;
-    width: 220%;
+    margin-top: 7%;
+    padding: 10%;
+    width: 100%;
     border-radius: 21px;
-    height:50%;
+
+}
+
+.bloc2{
+    margin-top: 1%;
+    width: 15%;
+
+}
+
+.bloc1{
+    font-family: "shrikhand", cursive;
+    line-height: 300%;
+    background-color:#443F3F;
+    color: white;
+    margin: 1%;
+    padding: 0 1% 0 1%;
+    height : 95%;
+    width: 77%;
+    border-radius: 21px;
 }
