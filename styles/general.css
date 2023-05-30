@@ -120,3 +120,8 @@ button{
     width: 77%;
     border-radius: 21px;
 }
+
+#panel
+{
+    display: none;
+}
