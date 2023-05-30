@@ -35,7 +35,7 @@
     margin-left : 5%;
     display : flex;
     font-family: "dosis", sans-serif;
-    line-height: 230%;
+    line-height: 300%;
     background-color:#443F3F;
     color: white;
     padding-top: 0;
@@ -49,12 +49,16 @@
 
 .calendrier{
     background-color:#443F3F;
-    margin-top: 10%;
+    font-family: "dosis", sans-serif;
+    text-align: center;
+    font-size: 130%;
+    line-height: 320%;
+    margin-top: 5%;
     color: white;
     padding: 1%;
-    width: 150%;
+    width: 120%;
     border-radius: 21px;
-    height:18%;
+    height:16%;
 }
 
 .calend{
