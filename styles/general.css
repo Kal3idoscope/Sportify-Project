@@ -55,3 +55,25 @@ button{
 .option2{
     display:block;
 }
+
+.barrerecherche{
+    background-color:#443F3F;
+    margin-top: 11%;
+    color: white;
+    padding: 1%;
+    width: 220%;
+    border-radius: 21px;
+    height:15%;
+}
+
+.header{
+    font-family: "dosis", sans-serif;
+    line-height: 350%;
+    background-color:#443F3F;
+    color: white;
+    margin-top: 10%;
+    padding: 1%;
+    width: 220%;
+    border-radius: 21px;
+    height:50%;
+}

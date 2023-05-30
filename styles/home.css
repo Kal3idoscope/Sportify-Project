@@ -28,7 +28,7 @@ hr:after {
 
 .image1
 {
-    height: 20%;
+    height: 60%;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -57,10 +57,8 @@ hr:after {
     color: white;
     margin: 1%;
     padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 1%;
-    padding-left: 1%;
-    width: 55%;
+
+    width: 77%;
     border-radius: 21px;
 }
 
@@ -90,6 +88,71 @@ hr:after {
 .bloc6{
     background-size: contain;
     backdrop-filter: blur(30px);
-    background-image: url("/Images/Salledesport.png") ;
-    min-height:10000%;
+    background-image: url("/Images/Salledesport.png");
+
+}
+
+.citation
+{
+    font-family: "dosis", sans-serif;
+    font-weight: 200;
+    text-align: center;
+    font-size:80px;
+    margin: 2%;
+}
+
+.footer
+{
+    padding: 2%;
+    margin: 0;
+    display: flex;
+}
+
+.bloc7{
+    height:600px;
+    align-content: center;
+    width: 50%;
+
+}
+
+.bloc8{
+    height:600px;
+    width: 50%;
+    padding: 2%;
+
+}
+.titleFooter
+{
+    margin-top: 10px;
+    font-family: "shrikhand", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 70px;
+    height: 20%;
+}
+
+.maps
+{
+
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    background-color:#443F3F;
+}
+
+.RS{
+
+    width: 100%;
+    height: 16%;
+    border-radius: 20px;
+    background-color:#443F3F;
+}
+
+.Contact{
+    margin-top: 4%;
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    background-color:#443F3F;
+
 }
