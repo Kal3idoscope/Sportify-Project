@@ -34,7 +34,7 @@ if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($password)) {
                             $encrypt_pass = md5($password);
                            /*$insert_query = mysqli_query($conn, "INSERT INTO users (unique_id, fname, lname, email, password, img, status)
                                 VALUES ({$ran_id}, '{$prenom}','{$nom}', '{$email}', '{$encrypt_pass}', '{$new_img_name}', '{$status}')");*/
-                            if (mysqli_num_rows($sql_admin) > 0) {
+                            /*if (mysqli_num_rows($sql_admin) > 0) {
                                 $insert_query = mysqli_query($conn, "INSERT INTO admin (ID_admin , Nom, Prenom, Email, Pass, Photo)
                             VALUES ('{$ran_id}', '{$nom}', '{$prenom}', '{$email}', '{$encrypt_pass}', '{$new_img_name}')");
                             } elseif (mysqli_num_rows($sql_client) > 0) {
@@ -43,9 +43,9 @@ if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($password)) {
                             } elseif (mysqli_num_rows($sql_coach) > 0) {
                                 $insert_query = mysqli_query($conn, "INSERT INTO coach (ID_Client , Nom, Prenom, Email, Pass, Photo)
                             VALUES ('{$ran_id}', '{$nom}', '{$prenom}', '{$email}', '{$encrypt_pass}', '{$new_img_name}')");
-                            }
+                            }*/
 
-                            if ($insert_query) {
+                            /*if ($insert_query) {
                                 $select_sql_admin = mysqli_query($conn, "SELECT * FROM admin WHERE email = '{$email}'");
                                 $select_sql_client = mysqli_query($conn, "SELECT * FROM client WHERE email = '{$email}'");
                                 $select_sql_coach = mysqli_query($conn, "SELECT * FROM coach WHERE email = '{$email}'");
@@ -60,6 +60,21 @@ if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($password)) {
                                 } else if (mysqli_num_rows($select_sql_coach) > 0){
                                     $result = mysqli_fetch_assoc($select_sql_coach);
                                     $_SESSION['unique_id'] = $result['ID_C'];
+                                    echo "success";
+                                } else {
+                                    echo "This email address not Exist!";
+                                }
+                            } else {
+                                echo "Something went wrong. Please try again!";
+                            }*/
+                            $insert_query = mysqli_query($conn, "INSERT INTO client (ID_Coach , Nom, Prenom, Email, Pass, Photo)
+                            VALUES ('{$ran_id}', '{$nom}', '{$prenom}', '{$email}', '{$encrypt_pass}', '{$new_img_name}')");
+                            if ($insert_query) {
+                                $select_sql_client = mysqli_query($conn, "SELECT * FROM client WHERE email = '{$email}'");
+
+                                if (mysqli_num_rows($select_sql_client) > 0){
+                                    $result = mysqli_fetch_assoc($select_sql_client);
+                                    $_SESSION['unique_id'] = $result['ID_Client'];
                                     echo "success";
                                 } else {
                                     echo "This email address not Exist!";

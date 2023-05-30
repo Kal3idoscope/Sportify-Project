@@ -25,22 +25,22 @@ if (isset($_SESSION['unique_id'])) {
     <div class="wrapper">
         <section class="form login">
             <header>Wsh ma parole</header>
-            <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
+            <form action="php/login.php" method="POST" enctype="multipart/form-data" autocomplete="off">
                 <div class="error-text"></div>
                 <div class="field input">
-                    <label>Email Address</label>
-                    <input type="text" name="email" placeholder="Enter your email" required>
+                    <label>Adresse Email</label>
+                    <input type="text" name="email" placeholder="Saisir votre email" required>
                 </div>
                 <div class="field input">
-                    <label>Password</label>
-                    <input type="password" name="password" placeholder="Enter your password" required>
+                    <label>Mot de Passe</label>
+                    <input type="password" name="password" placeholder="Saisir votre password" required>
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field button">
-                    <input type="submit" name="submit" value="Continue to Chat">
+                    <input type="submit" name="submit" value="Se Connecter">
                 </div>
             </form>
-            <div class="link">Not yet signed up? <a href="signup.php">Signup now</a></div>
+            <div class="link">Déjà inscrit? <a href="signup.php">S'inscrire</a></div>
         </section>
     </div>
 
