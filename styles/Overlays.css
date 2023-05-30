@@ -1,0 +1,23 @@
+#overlay{
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+
+#scrolling-img {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    animation: scrollingAnimation 7s linear infinite; /* Ajustez la durée de l'animation selon vos besoins */
+}
+
+@keyframes scrollingAnimation {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}

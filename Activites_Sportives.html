@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/general.css" type="text/css" />
     <link rel="stylesheet" href="styles/pagecoach.css" type="text/css" />
     <link rel="stylesheet" href="styles/activites_sportives.css" type="text/css" />
+    <link rel="stylesheet" href="styles/Overlays.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Shrikhand&display=swap" rel="stylesheet">
@@ -19,9 +20,10 @@
         });
         $(document).ready(function(){
             $(".contain").hover(function(){
-                $(this).css("filter", "blur(10px)");
+                $(this).css("filter", "blur(5px)");
+            }, function() {
+                $(this).css("filter", "none");
             });
-
         });
     </script>
 </head>
