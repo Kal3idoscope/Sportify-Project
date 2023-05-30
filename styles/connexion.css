@@ -12,3 +12,22 @@
     text-align: center;
     color: #BBAE90;
 }
+
+.texte
+{
+    margin-top: 2%;
+    font-family: "dosis",sans-serif;
+    font-size: 200%;
+
+    text-align:center;
+}
+
+.in
+{
+
+    color:white;
+    height: 200%;
+    border-style: none;
+    border-bottom: solid white 2px;
+    background-color: transparent;
+}
