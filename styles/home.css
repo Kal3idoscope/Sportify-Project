@@ -92,6 +92,20 @@ hr:after {
 
 }
 
+.fleche{
+    background-color:#FFFFFF00;
+    font-family: "dosis", sans-serif;
+    text-align: center;
+    font-size: 130%;
+    line-height: 320%;
+    margin-top: 5%;
+    color: white;
+    padding: 1%;
+    width: 118.5%;
+    border-radius: 21px;
+    height:1%;
+}
+
 .citation
 {
     font-family: "dosis", sans-serif;
@@ -164,5 +178,7 @@ hr:after {
     text-align: center;
 
 }
+
+
 
 
