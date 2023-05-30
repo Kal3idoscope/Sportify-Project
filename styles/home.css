@@ -28,10 +28,10 @@ hr:after {
 
 .image1
 {
-    height: 10%;
-    width: 95%;
+    min-height: 10px;
+    width: 100%;
     padding: 0;
-    margin-left: 2%;
+
 }
 
 .consult{
