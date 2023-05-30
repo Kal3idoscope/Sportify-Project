@@ -35,7 +35,7 @@ if (isset($_SESSION['unique_id'])) {
     <div class="blocHeader">
       <div class="bloc1">
         <section class="formLogin">
-            <h1 class="titre">Wsh ma parole</h1>
+            <h1 class="titre">LOGIN</h1>
             <form action="php/login.php" method="POST" enctype="multipart/form-data" autocomplete="off">
                 <div class="error-text"></div>
                 <div class="fieldInput">
@@ -47,8 +47,8 @@ if (isset($_SESSION['unique_id'])) {
                     <input class="in" type="password" name="password"  required>
                     <i class="fas fa-eye"></i>
                 </div>
-                <div class="fieldButton">
-                    <input class="bouton" type="submit" name="submit" value="Se Connecter">
+                <div class="field Button">
+                    <input type="submit" name="submit" value="Se Connecter">
                 </div>
             </form>
             <div class="link">Déjà inscrit? <a href="signup.php">S'inscrire</a></div>
