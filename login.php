@@ -20,7 +20,7 @@ if (isset($_SESSION['unique_id'])) {
 ?>
 
     <?php include_once "header.php"; ?>
-
+    <section class="form login">
     <body>
     <div class="wrapper">
         <section class="form login">

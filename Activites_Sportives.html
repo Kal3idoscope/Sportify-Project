@@ -17,6 +17,11 @@
                 $("#panel").slideToggle("slow");
             });
         });
+        $(document).ready(function(){
+            $(".contain").click(function(){
+                $(this).css("filter", "blur(10px)");;
+       q     });
+        });
     </script>
 </head>
 <body>
@@ -33,15 +38,12 @@
             <input class="rechercher" type="text" placeholder="Search..">
         </div>
         <div class="header">
-            <a href="./index.html">ACCUEIL</a> <br>
-            <div id="flip">TOUT PARCOURIR</div>
-            <div id="panel">
-                <a href="./Activites_Sportives.html">ACTIVITÉS SPORTIVES</a><br>
-                <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a><br>
-                <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
-            </div>
-            <a href="./RDV.html">RDV</a> <br>
-            <a href="./login.php">COMPTE</a> <br>
+            <p style="text-align:center">
+                <a href="./index.html">ACCUEIL</a> <br>
+                <a href="./Parcourir.html">TOUT PARCOURIR</a> <br>
+                <a href="./RDV.html">RDV</a> <br>
+                <a href="./COMPTE.html">COMPTE</a> <br>
+            </p>
         </div>
     </div>
 </div>
