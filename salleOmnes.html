@@ -11,11 +11,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Shrikhand&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript">
-    $("document").ready(function(){
-      $("#flip").click(function(){
+    $("document").ready(function() {
+      $("#flip").click(function() {
         $("#panel").slideToggle("slow");
       });
+
+      $(".quoi a").click(function(event) {
+        event.preventDefault();
+        $(".overlay").fadeIn("slow");
+      });
+
+      $(".overlay").click(function(event) {
+        if ($(event.target).hasClass("overlay")) {
+          $(".overlay").fadeOut("slow");
+        }
+      });
     });
+
   </script>
 </head>
 <body>
@@ -23,7 +35,7 @@
   <div class="bloc1">
     <h2>SPORTIFY</h2>
     <img class="image1" src="Images/sportifyphoto.png" alt="Sportify photo"/>
-    <h1 class = "consult">SALLE DE SPORT OMNES </h1>
+    <h1 class = "consult">SALLE DE SPORT <br> OMNES </h1>
 
   </div>
   <div class="bloc2">
@@ -42,6 +54,9 @@
       <a href="./RDV.html">RDV</a> <br>
       <a href="./login.php">COMPTE</a> <br>
     </div>
+    <div class="fleche">
+      <img src="Images/flechepho.png" alt="flechePho"/>
+    </div>
   </div>
 </div>
 <div  class="centré">
@@ -58,7 +73,7 @@
       <p class ="quand"> QUAND? <br> <br> Du lundi au samedi <br> 9h00-22h00</p>
       <p class ="ou"> OU? <br> <br> 6 rue Sextius Michel <br> 75015, Paris</p>
       <p class ="qui"> QUI? <br> <br> Liste du personnel</p>
-      <p class ="quoi"> QUOI? <br> <br> Le matériel </p>
+      <p class ="quoi"> <a href="#">QUOI? <br> <br> Le matériel</a> </p>
     </div>
   </div>
   <div class="bloc6-2">
@@ -68,6 +83,9 @@
   <p>
     "Retrouvez notre programme de nutrition ici !"
   </p>
+</div>
+<div class="overlay">
+  <img src="Images/materiel.png" alt="mat" />
 </div>
 <div class="footer">
   <div class="bloc7">
