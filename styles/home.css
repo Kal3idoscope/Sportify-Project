@@ -93,6 +93,19 @@ hr:after {
 
 }
 
+.titre{
+    text-align: center;
+    font-family: "shrikhand", cursive;
+    font-size: 300%;
+}
+
+.texte{
+    text-align: center;
+    font-family: "dosis", sans-serif;
+    font-weight: lighter;
+    font-size : 300%;
+}
+
 .fleche{
     background-color:#FFFFFF00;
     font-family: "dosis", sans-serif;
