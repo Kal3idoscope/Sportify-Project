@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CURRICULUM>
+  <CURRICULUM category="Tennis">
+    <Prénom>Waleed</Prénom>
+    <Nom>Mouhali</Nom>
+    <Coord category="Coordonnées">
+      <Adresse>76 Avenue de l'Horizon, 75017 Paris</Adresse>
+      <telephone>06 11 43 20 15</telephone>
+      <mail>waleed.mouhali@sportify.fr</mail>
+    </Coord>
+    <Profil>Spécialiste en Natation avec une expérience approfondie dans l'enseignement, l'entraînement et la coordination d'activités liées à la natation. Je possède une connaissance approfondie des techniques de natation, des règles de sécurité et des principes d'entraînement. Passionné par la natation, je suis capable de motiver et d'inspirer les individus à tous les niveaux, des débutants aux nageurs compétitifs. Je suis également un communicateur efficace et un leader soucieux du bien-être des nageurs.
+</Profil>
+    <competences category="compétences">
+      <u>Excellente connaissance des techniques de natation et des principes d'entraînement.</u>
+      <d>Capacité à enseigner et à communiquer efficacement avec différents groupes d'âge et niveaux de compétence.
+</d>
+      <t>Capacité à planifier et à organiser des activités et des compétitions de natation.
+</t>
+<q>Souci constant de la sécurité des nageurs et connaissance des règles de sécurité dans l'eau.</q>
+<c>Compétences en leadership et en gestion d'équipe.</c>
+</competences>
+<exppro category="Experience professionnelle">
+  <u>Spécialiste en Natation, Centre Olympique Aquatique, Frankfurt, Berlin
+</u>
+<d>Entraîneur de Natation, Club de Natation de Dauville, France</d>
+</exppro>
+<formation category="Formation">
+ <u>Diplôme en Éducation Physique et Sportive, Université de Lille, France</u>
+<d>CCours spécialisés en Natation et en Techniques d'Enseignement de la Natation.
+Formation en Secourisme Aquatique et en RCR.</d>
+</formation>
+  </CURRICULUM>
+</CURRICULUM>

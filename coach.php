@@ -6,39 +6,62 @@ if(!isset($_SESSION['unique_id'])){
 }
 ?>
 <?php include_once "header.php"; ?>
-<link rel="stylesheet" href="styles/admin.css" type="text/css" />
 <link rel="stylesheet" href="styles/pagecoach.css" type="text/css" />
 <link rel="stylesheet" href="styles/scrollmenu.css" type="text/css" />
-    <script type="text/javascript">
-        $("document").ready(function(){
-            $("#flip").click(function(){
-                $("#panel").slideToggle("slow");
-            });
-        });
-    </script>
-
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
 <body>
+<?php
+$sql = mysqli_query($conn, "SELECT * FROM client WHERE ID_Client = {$_SESSION['unique_id']}");
+if (mysqli_num_rows($sql) > 0) {
+    $row = mysqli_fetch_assoc($sql);
+}
+?>
 <div class="blocHeader">
-    <div class="blocCoach">
-        <h1 class="natation">  <br> NATATION</h1>
+    <div class="bloc1">
+        <h1 class="titre">COMPTE COACH <h1>
         <br>
-        <div class="blocProfil">
-            <img class="photodeprofil" src="Images/mouhali.jpeg" alt="mouhali"/>
-            <div class="profildata2">
-                <p>NOM :  </p>
-                <p>PRENOM : </p>
-                <p>BUREAU : </p>
-                <p>TELEPHONE : </p>
-                <p>MAIL :  </p>
+                <div class="blocProfil">
+                    <img class="photodeprofil" src="Images/mouhali.jpeg" alt="mouhali"/>
+                    <div class="profildata">
+                        <p>NOM : </p>
+                        <p>PRENOM : </p>
+                        <p>MAIL : </p>
+                        <p>BUREAU :  </p>
+                        <p>TELEPHONE :  </p>
+
+
+                    </div>
+                </div>
+                <div class="option7">
+                            <button><a href="./change_info_admin.php">MODIFIER MES INFOS</a></button>
+                            <button>PRENDRE UN RDV</button>
+                            <button>HISTORIQUE DE MES RDV</button>
+                </div>
             </div>
-        </div> <br>
-        <div class="option10">
-            <button>PRENDRE RENDEZ-VOUS</button>
-            <button>VOIR LE CV</button>
-            <button>COMMUNIQUER</button>
-        </div> <br>
-    </div>
+
+
+
     <div class="bloc2">
+
         <div class="barrerecherche">
             <input class="rechercher" type="text" placeholder="Search..">
         </div>
@@ -52,19 +75,22 @@ if(!isset($_SESSION['unique_id'])){
                     <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
                 </div>
             </div>
-            <a href="./rdv.php">RDV</a><br>
+            <a href="./RDV.html">RDV</a><br>
             <a href="./login.php">COMPTE</a><br>
         </div>
         <div class="calendrier">
-            <div class="">CALENDRIER</div>
-        </div>
-
+                     <p class ="calend"> CALENDRIER </p>
+                </div>
     </div>
 </div>
+
+<div class="option9">
+
+<div class="dispo", style ="height : 150%">
+<p> Mes disponibilités <br> <br> <p>
 </div>
 
-<div class="dates">
-    <p>""</p>
 </div>
+
 </body>
 </html>

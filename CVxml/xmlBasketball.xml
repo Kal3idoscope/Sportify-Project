@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CURRICULUM>
+
+  <CURRICULUM category="Basketball">
+    <Prénom>Marc</Prénom>
+    <Nom>Bianchini</Nom>
+    <Coord category="Coordonnées">
+      <Adresse>28 Rue du Muguet, 75020 Paris</Adresse>
+      <telephone>06 02 23 24 56</telephone>
+      <mail>marc.bianchini@sportify.fr</mail>
+    </Coord>
+    <Profil>Spécialiste en basketball passionné et expérimenté avec une solide connaissance du jeu et des compétences techniques avancées. Possédant une vaste expérience en tant que joueur, entraîneur et analyste, je suis un professionnel dévoué et motivé qui cherche à partager ma passion pour le basketball avec les autres. Je suis capable de travailler en équipe, de fournir un encadrement efficace et de développer les compétences des joueurs de tous les niveaux.
+</Profil>
+    <competences category="compétences">
+      <u>Maîtrise des fondamentaux du basketball, y compris le dribble, le tir, le jeu de jambes, les passes et la défense. Capacité à enseigner ces compétences de manière efficace aux joueurs de tous les niveaux.</u>
+      <d>Aptitude à analyser les stratégies, les tactiques et les performances des équipes et des joueurs afin de développer des plans de jeu adaptés et de maximiser les chances de succès.</d>
+      <t>Expérience en tant qu'entraîneur, capable de diriger, motiver et développer les compétences des joueurs. Capacité à favoriser un environnement positif et à encourager la collaboration au sein de l'équipe.</t>
+<q>Capable de m'adapter rapidement aux changements de situation et de faire preuve de flexibilité pour répondre aux besoins de l'équipe. Ouvert à l'apprentissage continu et à l'amélioration constante de mes compétences en basketball.</q>
+</competences>
+<exppro category="Experience professionnelle">
+  <u>DEntraîneur principal, Équipe de basketball junior des Lakers : Encadrement d'une équipe de jeunes joueurs, en développant leurs compétences techniques, en concevant des stratégies de jeu efficaces et en les préparant pour les compétitions.
+</u>
+<d>Analyste du basketball, NBA : Analyse approfondie des performances des équipes et des joueurs, en identifiant les forces, les faiblesses et les opportunités d'amélioration. Présentation de rapports et de recommandations aux entraîneurs et aux dirigeants d'équipe.</d>
+<t>Joueur professionnel, NBA : Participation à des compétitions de haut niveau, en démontrant des compétences exceptionnelles et en contribuant au succès de l'équipe.</t>
+</exppro>
+<formation category="Formation">
+ <u>Diplôme en éducation physique, Université de Louisiana</u>
+<d>Certificat d'entraîneur de basketball, Montana</d>
+</formation>
+  </CURRICULUM>
+
+</CURRICULUM>

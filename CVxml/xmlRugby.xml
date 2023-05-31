@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CURRICULUM>
+
+  <CURRICULUM category="Rugby">
+    <Prénom>Christine</Prénom>
+    <Nom>Crambes</Nom>
+    <Coord category="Coordonnées">
+      <Adresse>22 Avenue du Val Fleuri, 75019 Paris</Adresse>
+      <telephone>06 22 88 12 35</telephone>
+      <mail>christine.crambes@sportify.fr</mail>
+    </Coord>
+    <Profil>Enthousiaste et passionnée de rugby, je suis une spécialiste chevronné dans ce sport dynamique. Avec plusieurs années d'expérience en tant que joueuse, entraîneuse et analyste, j'ai développé une expertise approfondie dans tous les aspects du jeu. Je suis capable de fournir des analyses techniques précises, des conseils tactiques et des programmes d'entraînement personnalisés pour maximiser les performances individuelles et d'équipe. Mon engagement envers l'excellence, ma connaissance approfondie du jeu et ma capacité à communiquer efficacement font de moi un atout précieux pour toute organisation rugbyistique.
+</Profil>
+    <competences category="compétences">
+      <u>Maîtrise des règles et des techniques du rugby, y compris les différentes positions et stratégies de jeu.</u>
+      <d>Capacité à analyser et à évaluer les performances individuelles et collectives pour identifier les points forts et les axes d'amélioration.
+</d>
+      <t>Expertise dans la planification et la conception de programmes d'entraînement adaptés aux besoins spécifiques des joueurs.
+</t>
+<q>Esprit d'équipe et capacité à favoriser la collaboration et la motivation au sein d'un groupe.</q>
+<c>Connaissance des techniques d'analyse vidéo et des logiciels spécialisés utilisés dans l'analyse du jeu.</c>
+</competences>
+<exppro category="Experience professionnelle">
+  <u>Analyste de rugby : J'ai travaillé en tant qu'analyste pour [club/équipe]. J'ai utilisé des outils et des logiciels spécialisés pour analyser les performances des joueurs et des équipes, fournissant des informations précieuses pour l'amélioration de la tactique et la prise de décisions stratégiques.
+</u>
+<d>Entraîneuse : J'ai occupé le poste d'entraîneur au sein de [club/équipe] pendant [nombre d'années]. J'ai encadré et formé avec succès des joueurs de différents niveaux, en mettant l'accent sur le développement des compétences individuelles, la compréhension tactique et la cohésion d'équipe.</d>
+<t>Joueuse de rugby professionnel : J'ai joué en tant que [poste] pour [club/équipe] pendant [nombre d'années]. J'ai acquis une connaissance approfondie des différentes stratégies, techniques et tactiques du jeu à travers une pratique et une participation active en compétition.
+</t>
+</exppro>
+<formation category="Formation">
+ <u>Diplôme en éducation physique, en sciences du sport ou dans un domaine connexe.</u>
+<d>Certificat d'entraîneur de rugby reconnu.</d>
+<t>Formation continue dans le domaine de l'analyse du jeu et des nouvelles tendances tactiques.</t>
+</formation>
+  </CURRICULUM>
+</CURRICULUM>
