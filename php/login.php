@@ -27,7 +27,7 @@ if (!empty($email) && !empty($password)) {
         if ($user_pass === $enc_pass) {
             $status = "Active now";
             if (mysqli_num_rows($sql_admin) > 0) {
-                $sql2 = mysqli_query($conn, "UPDATE admin SET status = '{$status}' WHERE ID_Admin = {$result['ID_Admin']}");
+                $sql2 = mysqli_query($conn, "UPDATE admin SET Status = '{$status}' WHERE ID_Admin = {$result['ID_Admin']}");
                 if ($sql2) {
                     $_SESSION['unique_id'] = $result['ID_Admin'];
                     echo "success";
@@ -35,7 +35,7 @@ if (!empty($email) && !empty($password)) {
                     echo "Something went wrong. Please try again!";
                 }
             } else if (mysqli_num_rows($sql_client) > 0){
-                $sql2 = mysqli_query($conn, "UPDATE client SET status = '{$status}' WHERE unique_id = {$result['ID_Client']}");
+                $sql2 = mysqli_query($conn, "UPDATE client SET Status = '{$status}' WHERE unique_id = {$result['ID_Client']}");
                 if ($sql2) {
                     $_SESSION['unique_id'] = $result['ID_Client'];
                     echo "success";
@@ -43,7 +43,7 @@ if (!empty($email) && !empty($password)) {
                     echo "Something went wrong. Please try again!";
                 }
             } else if (mysqli_num_rows($sql_coach) > 0) {
-                $sql2 = mysqli_query($conn, "UPDATE coach SET status = '{$status}' WHERE unique_id = {$result['ID_Coach']}");
+                $sql2 = mysqli_query($conn, "UPDATE coach SET Status = '{$status}' WHERE unique_id = {$result['ID_Coach']}");
                 if ($sql2) {
                     $_SESSION['unique_id'] = $result['ID_Coach'];
                     echo "success";

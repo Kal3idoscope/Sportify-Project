@@ -20,7 +20,7 @@ if(!isset($_SESSION['unique_id'])){
                         <p>NOM :  </p>
                         <p>PRENOM : </p>
                          <p>MAIL :  </p>
-                         <p class="modifInfo"> Modifier mes informations </p>
+                         <p class="modifInfo"> <a href="./change_info_admin.php">Modifier mes informations</a></p>
 
 
                     </div>
