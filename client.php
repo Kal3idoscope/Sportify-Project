@@ -10,7 +10,12 @@ if(!isset($_SESSION['unique_id'])){
 
 
 <body>
-
+<?php
+$sql = mysqli_query($conn, "SELECT * FROM admin WHERE ID_Admin = {$_SESSION['unique_id']}");
+if(mysqli_num_rows($sql) > 0){
+    $row = mysqli_fetch_assoc($sql);
+}
+?>
 <div class="blocHeader">
     <div class="bloc1">
         <h1 class="titre">COMPTE CLIENT <h1>
