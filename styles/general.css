@@ -23,7 +23,7 @@ p
     text-decoration: none;
 }
 
-button{
+/*button{
 
     font-family: "dosis", sans-serif;
     font-weight: 300;
@@ -36,6 +36,49 @@ button{
     color: white;
     height: 50%;
     width: 40%;
+}*/
+
+button {
+    font-family: "dosis", sans-serif;
+    display: inline-block;
+    position: relative;
+    color: #BBAE90;
+    background: #443F3F;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 12px 20px;
+    margin: 20px;
+    border: 2px solid #BBAE90;
+    border-radius: 21px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+button:before {
+
+    content: "";
+    position: absolute;
+    background: #BBAE90;
+    height: 300px;
+    width: 700px;
+    border-radius: 27%;
+    z-index: -1;
+}
+button:hover {
+    color: #443F3F;
+}
+button:before {
+    top: 600%;
+    left: 1800%;
+    transition: 0.6s;
+}
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+button:active:before {
+    background: #3a0ca3;
+    transition: 0s;
 }
 
 .options{

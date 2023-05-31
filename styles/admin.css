@@ -6,19 +6,18 @@
     color: #BBAE90;
 }
 
-.chat{
-    background-color:#FFFFFF00;
+.boutonLOGOUT{
     font-family: "dosis", sans-serif;
     text-align: center;
-    font-size: 200%;
+    font-size: 130%;
     line-height: 320%;
-    margin-top: 1%;
+    margin-top: -4%;
+    margin-left : -10%;
     color: white;
     padding: 1%;
-    width: 290%;
+    width: 118.5%;
     border-radius: 21px;
-    height:55%;
-    margin-left: -85%;
+    height:25%;
 }
 .modifInfo{
     font-size : 60%;
@@ -57,20 +56,9 @@
 .option1{
     display:flex;
     font-size: 50%;
-    margin-top : -4%
+    margin-top : -4%;
+    color: #BBAE90;
+    margin-left: 20%;
+    margin-top: -4%;
 }
 
-button{
-
-    font-family: "dosis", sans-serif;
-    font-weight: 300;
-    font-size: 140%;
-    background-color: #FFFFFF00;
-    border-radius: 30px;
-    border: solid #BBAE90;
-    padding: 2%;
-    margin:2%;
-    color: white;
-    height: 50%;
-    width: 40%;
-}
