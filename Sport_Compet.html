@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/home.css" type="text/css" />
     <link rel="stylesheet" href="styles/general.css" type="text/css" />
     <link rel="stylesheet" href="styles/pagecoach.css" type="text/css" />
+    <link rel="stylesheet" href="styles/scrollmenu.css" type="text/css" />
     <link rel="stylesheet" href="styles/activites_sportives.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +18,36 @@
                 $("#panel").slideToggle("slow");
             });
         });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".contain").hover(function(){
+                $(this).children("img").css("filter", "brightness(50%)");
+                $(this).children("p").show();
+            }, function() {
+                $(this).children("img").css("filter", "brightness(100%)");
+                $(this).children("p").hide();
+
+            });
+        });
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
     </script>
 </head>
 <body>
@@ -33,45 +64,53 @@
             <input class="rechercher" type="text" placeholder="Search..">
         </div>
         <div class="header">
-            <a href="./index.html">ACCUEIL</a> <br>
-            <div id="flip">TOUT PARCOURIR</div>
-            <div id="panel">
-                <a href="./Activites_Sportives.html">ACTIVITÉS SPORTIVES</a><br>
-                <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a><br>
-                <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
+            <a href="./index.html">ACCUEIL</a>
+            <div class="dropdown">
+                <div onclick="myFunction()" class="dropbtn">TOUT PARCOURIR</div>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="./Activites_Sportives.html">ACTIVITÉS SPORTIVES</a>
+                    <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a>
+                    <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
+                </div>
             </div>
-            <a href="./RDV.html">RDV</a> <br>
-            <a href="./login.php">COMPTE</a> <br>
+            <a href="./RDV.html">RDV</a><br>
+            <a href="./login.php">COMPTE</a><br>
         </div>
     </div>
 </div>
 <div class="contain">
     <img class="imageAS" src="Images/basket.png" alt="activite1 photo"/>
+    <p class="Coach">ASFDDASGAG</p>
     <div class="muscu">BASKETBALL</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/foot.png" alt="activite1 photo"/>
+    <p class="Coach">ASFDDASGAG</p>
     <div class="muscu">FOOTBALL</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/rugby.png" alt="activite1 photo"/>
+    <p class="Coach">ASFDDASGAG</p>
     <div class="muscu">RUGBY</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/tennis.png" alt="activite1 photo"/>
+    <p class="Coach">ASFDDASGAG</p>
     <div class="muscu">TENNIS</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/natation.png" alt="activite1 photo"/>
+    <p class="Coach">ASFDDASGAG</p>
     <div class="muscu">NATATION</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/plongeon.png" alt="activite1 photo"/>
+    <p class="Coach">ASFDDASGAG</p>
     <div class="muscu">PLONGEON</div>
 </div>
 <p>&nbsp;</p>
