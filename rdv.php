@@ -9,13 +9,13 @@ if (isset($_SESSION['unique_id'])) {
 
     if (mysqli_num_rows($admin_query) > 0) {
         $_SESSION['user_type'] = 'admin';
-        header("location: admin.php");
+        header("location: rdvadmin.php");
     } elseif (mysqli_num_rows($client_query) > 0) {
         $_SESSION['user_type'] = 'client';
-        header("location: client.php");
+        header("location: rdvclient.php");
     } elseif (mysqli_num_rows($coach_query) > 0) {
         $_SESSION['user_type'] = 'coach';
-        header("location: coach.php");
+        header("location: rdvcoach.php");
     }
 }
 ?>
