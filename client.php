@@ -56,7 +56,7 @@ if(!isset($_SESSION['unique_id'])){
             <a href="./login.php">COMPTE</a><br>
         </div>
         <div class="chat">
-             <button>LOG <br> OUT</button>
+            <button><a href="php/logout.php?logout_id=<?php echo $row['ID_Admin']; ?>" class="logout">LOG <br> OUT</a></button>
         </div>
     </div>
 </div>
