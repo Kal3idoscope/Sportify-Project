@@ -31,6 +31,7 @@ if (!empty($email) && !empty($password)) {
                 if ($sql2) {
                     $_SESSION['unique_id'] = $result['ID_Admin'];
                     echo "success";
+                    header("location: ../admin.php");
                 } else {
                     echo "Something went wrong. Please try again!";
                 }
@@ -39,6 +40,7 @@ if (!empty($email) && !empty($password)) {
                 if ($sql2) {
                     $_SESSION['unique_id'] = $result['ID_Client'];
                     echo "success";
+                    header("location: ../client.php");
                 } else {
                     echo "Something went wrong. Please try again!";
                 }
@@ -47,17 +49,21 @@ if (!empty($email) && !empty($password)) {
                 if ($sql2) {
                     $_SESSION['unique_id'] = $result['ID_Coach'];
                     echo "success";
+                    header("location: ../coach.php");
                 } else {
                     echo "Something went wrong. Please try again!";
                 }
             }
         } else {
             echo "Email or Password is Incorrect!";
+            header("location: ../login.php");
         }
     } else {
         echo "$email - This email not Exist!";
+        header("location: ../login.php");
     }
 } else {
     echo "All input fields are required!";
+    header("location: ../login.php");
 }
 ?>

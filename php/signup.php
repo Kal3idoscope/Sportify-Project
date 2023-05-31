@@ -78,6 +78,7 @@ if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($password)) {
                                     $result = mysqli_fetch_assoc($select_sql_client);
                                     $_SESSION['unique_id'] = $result['ID_Client'];
                                     echo "success";
+                                    header("location: ../client.php");
                                 } else {
                                     echo "This email address not Exist!";
                                 }
@@ -95,8 +96,10 @@ if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($password)) {
         }
     } else {
         echo "$email is not a valid email!";
+        header("location: ../signup.php");
     }
 } else {
     echo "All input fields are required!";
+    header("location: ../signup.php");
 }
 ?>
