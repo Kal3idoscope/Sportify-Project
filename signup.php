@@ -68,7 +68,7 @@ if (isset($_SESSION['unique_id'])) {
               <a href="./index.html">ACCUEIL</a> <br>
               <a href="./Parcourir.html">TOUT PARCOURIR</a> <br>
               <a href="./RDV.html">RDV</a> <br>
-              <a href="./COMPTE.html">COMPTE</a> <br>
+              <a href="./login.php">COMPTE</a> <br>
             </div>
           </div>
           </div>
