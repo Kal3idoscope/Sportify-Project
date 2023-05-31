@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/home.css" type="text/css" />
     <link rel="stylesheet" href="styles/general.css" type="text/css" />
     <link rel="stylesheet" href="styles/pagecoach.css" type="text/css" />
+    <link rel="stylesheet" href="styles/scrollmenu.css" type="text/css" />
     <link rel="stylesheet" href="styles/activites_sportives.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +18,26 @@
                 $("#panel").slideToggle("slow");
             });
         });
+    </script>
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
     </script>
 </head>
 <body>
@@ -33,15 +54,17 @@
             <input class="rechercher" type="text" placeholder="Search..">
         </div>
         <div class="header">
-            <a href="./index.html">ACCUEIL</a> <br>
-            <div id="flip">TOUT PARCOURIR</div>
-            <div id="panel">
-                <a href="./Activites_Sportives.html">ACTIVITÉS SPORTIVES</a><br>
-                <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a><br>
-                <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
+            <a href="./index.html">ACCUEIL</a>
+            <div class="dropdown">
+                <div onclick="myFunction()" class="dropbtn">TOUT PARCOURIR</div>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="./Activites_Sportives.html">ACTIVITÉS SPORTIVES</a>
+                    <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a>
+                    <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
+                </div>
             </div>
-            <a href="./RDV.html">RDV</a> <br>
-            <a href="./login.php">COMPTE</a> <br>
+            <a href="./RDV.html">RDV</a><br>
+            <a href="./login.php">COMPTE</a><br>
         </div>
     </div>
 </div>
