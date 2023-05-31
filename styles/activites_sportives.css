@@ -31,3 +31,13 @@
     position: relative;
     text-align: center;
 }
+.Coach{
+    position: absolute;
+    top: 45%;
+    font-weight: 600;
+    right: 5%;
+    display: none;
+    color: white;
+    font-family:"dosis", cursive;
+    font-size: 120%;
+}

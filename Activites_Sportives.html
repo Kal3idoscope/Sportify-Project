@@ -21,9 +21,12 @@
         });
         $(document).ready(function(){
             $(".contain").hover(function(){
-                $(this).css("filter", "blur(5px)");
+                $(this).children("img").css("filter", "brightness(50%)");
+                $(this).children("p").show();
             }, function() {
-                $(this).css("filter", "none");
+                $(this).children("img").css("filter", "brightness(100%)");
+                $(this).children("p").hide();
+
             });
         });
     </script>
@@ -78,26 +81,31 @@
 </div>
 <div class="contain">
     <img class="imageAS" src="Images/image 7.png" alt="activite1 photo"/>
+    <p class="Coach">KJCGHKJVCKJBDUOVA</p>
     <div class="muscu">MUSCULATION</div>
 </div>
-    <p>&nbsp;</p>
+<p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/image 8.png" alt="activite1 photo"/>
+    <p class="Coach">ADFSHFDAS</p>
     <div class="muscu">FITNESS</div>
 </div>
     <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/image 9.png" alt="activite1 photo"/>
+    <p class="Coach">ASFDDASGAG</p>
     <div class="muscu">BIKING</div>
 </div>
     <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/image 10.png" alt="activite1 photo"/>
+    <p class="Coach">AGFGDHFHZAGRSDFAV</p>
     <div class="muscu">CARDIO-TRAINING</div>
 </div>
     <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/image 11.png" alt="activite1 photo"/>
+    <p class="Coach">ADGSASHFDFHA</p>
     <div class="muscu">COURS COLLECTIFS</div>
 </div>
 <p>&nbsp;</p>
