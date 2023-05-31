@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CURRICULUM>
+
+  <CURRICULUM category="Tennis">
+    <Prénom>Jean-Pierre</Prénom>
+    <Nom>Segado</Nom>
+    <Coord category="Coordonnées">
+      <Adresse>63 Rue de l'Émeraude, 94500 Champigny-sur-Marne</Adresse>
+      <telephone>06 19 64 79 84</telephone>
+      <mail>jp.segado@sportify.fr</mail>
+    </Coord>
+    <Profil>Spécialiste en tennis passionné doté d'une solide expérience dans le domaine. Je suis un joueur de tennis compétitif depuis mon plus jeune âge et j'ai développé une expertise approfondie dans tous les aspects du jeu. J'ai une connaissance approfondie des règles, des techniques et des stratégies du tennis, ainsi qu'une grande capacité à enseigner et à coacher les joueurs de tous les niveaux. Mon objectif est d'aider les joueurs à maximiser leur potentiel et à atteindre leurs objectifs dans le monde du tennis.
+</Profil>
+    <competences category="compétences">
+      <u>Maîtrise des techniques et des stratégies du tennis : Je possède une connaissance approfondie des différentes techniques de coup, des stratégies de jeu et des tactiques spécifiques à chaque surface de terrain. Je suis capable de les enseigner et de les appliquer efficacement.</u>
+      <d>Coaching et enseignement : J'ai une vaste expérience en tant qu'entraîneur de tennis, ayant travaillé avec des joueurs de tous les niveaux, des débutants aux professionnels. Je suis capable de développer des programmes d'entraînement adaptés aux besoins individuels des joueurs et de fournir des conseils précis pour améliorer leurs compétences.
+</d>
+      <t>Analyse des performances : Je suis compétent dans l'utilisation d'outils et de logiciels d'analyse vidéo pour évaluer les performances des joueurs. Je suis capable d'identifier les points forts et les faiblesses, de fournir des retours d'information détaillés et de recommander des ajustements techniques pour optimiser les performances.
+</t>
+<q>Gestion de tournois : Je possède une solide expérience dans l'organisation et la gestion de tournois de tennis, y compris la planification des horaires, la coordination des équipes et l'établissement des règles et des règlements.</q>
+</competences>
+<exppro category="Experience professionnelle">
+  <u>Spécialiste en tennis - Club de tennis de Milan (Depuis 2015)
+</u>
+<d>Entraîneur de tennis indépendant (2006-2015)</d>
+</exppro>
+<formation category="Formation">
+ <u>Diplôme en éducation physique et sportive, Université de Florence</u>
+<d>Certificat de coach de tennis accrédité par l'Association de tennis de France</d>
+<t>Formation continue en techniques d'enseignement du tennis et en analyse de performance.</t>
+</formation>
+  </CURRICULUM>
+</CURRICULUM>

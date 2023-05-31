@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CURRICULUM>
+
+<CURRICULUM category="Fitness">
+    <Prénom>Laurent</Prénom>
+    <Nom>Delisle</Nom>
+    <Coord category="Coordonnées">
+      <Adresse>55 Boulevard de la Roseraie, 75018 Paris</Adresse>
+      <telephone>06 23 48 71 55</telephone>
+      <mail>laurent.delisle@sportify.fr</mail>
+    </Coord>
+    <Profil>Je suis un spécialiste en fitness passionné, dévoué et hautement compétent, avec une solide expérience dans l'industrie du fitness. J'ai développé une expertise approfondie dans la conception de programmes d'entraînement personnalisés, la gestion des besoins individuels des clients et la création d'un environnement motivant pour les aider à atteindre leurs objectifs de remise en forme.</Profil>
+    <competences category="compétences">
+      <u>Conception de programmes d'entraînement : création de programmes d'entraînement personnalisés en fonction des besoins et objectifs des clients.</u> <d>Coaching individuel : identifier les forces et faiblesses du client, améliorer leur condition physique.</d> <t>Compétences en nutrition : connaissance approfondie en nutrition sportive</t>  
+      <q>Communication et relation client : établir une relation de confiance avec les clients, les motiver et les encourager tout au long de leur parcours.</q></competences>
+      <exppro category="Experience professionnelle">
+        <u>Spécialiste en fitness, Centre de remise en forme KeepCool, 2018-2023</u>
+  <d>Organisation de cours de groupe et de séances d'entraînement collectives.</d>
+  <t>Fourniture d'un coaching individuel pour aider les clients à atteindre leurs objectifs de remise en forme.</t>
+  <q>Évaluation périodique des progrès des clients et ajustement des programmes en conséquence.</q>
+      </exppro>
+      <formation category="Formation">
+  <u>Licence en sciences du sport et de l'exercice, Université de Paris, 2017</u>
+  <d>Certification en tant que spécialiste en fitness, Association professionnelle du fitness, 2018</d>
+</formation>
+  </CURRICULUM>
+
+ 
+ </CURRICULUM>

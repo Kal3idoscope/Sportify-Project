@@ -1,0 +1,34 @@
+?xml version="1.0" encoding="UTF-8"?>
+<CURRICULUM>
+
+  <CURRICULUM category="Cours collectifs">
+    <Prénom>Amar Cherif</Prénom>
+    <Nom>Ramdane</Nom>
+    <Coord category="Coordonnées">
+      <Adresse>81 Rue du Cèdre, 92100 Boulogne-Billancourt</Adresse>
+      <telephone>06 13 56 47 31</telephone>
+      <mail>amarcherif.ramdane@sportify.fr</mail>
+    </Coord>
+    <Profil>Spécialiste en cours collectifs passionné et énergique, doté d'une solide expérience dans la création et la coordination de programmes d'entraînement en groupe. Je suis un professionnel dévoué qui excelle dans la motivation des participants, en les aidant à atteindre leurs objectifs de remise en forme de manière amusante et engageante. J'ai une connaissance approfondie des différentes méthodes d'enseignement et des techniques de coaching, ce qui me permet de fournir des cours collectifs de haute qualité, adaptés aux besoins et aux niveaux de chacun.
+</Profil>
+    <competences category="compétences">
+      <u>Expert en création de programmes d'entraînement variés et stimulants pour des cours collectifs, en utilisant une combinaison de techniques d'aérobic, de musculation, de Pilates, de yoga, etc.</u>
+      <d>CExpérience de travail au sein d'une équipe de professionnels du fitness, en favorisant une atmosphère de travail collaborative et en contribuant à la planification et à l'organisation d'événements spéciaux.</d>
+      <t>Aptitude à ajuster rapidement les exercices et les routines en fonction des besoins spécifiques des participants, en fournissant des modifications pour les différents niveaux de condition physique.</t>
+      <q>Capacité à inspirer et à motiver les participants, en les encourageant à se dépasser et à atteindre leurs objectifs de remise en forme.</q>
+<q>Connaissance approfondie de l'anatomie, de la physiologie et de la biomécanique liées à l'entraînement en musculation</q>
+<c>Capacité à fournir des conseils en matière de nutrition pour optimiser les résultats de l'entraînement</c>
+<s>Excellent sens de la communication et compétences interpersonnelles pour établir des relations solides avec les clients, Motivation et capacité à inspirer et à encourager les clients à atteindre leurs objectifs de remise en forme </s> 
+</competences>
+<exppro category="Experience professionnelle">
+  <u>Spécialiste en cours collectifs - Centre de remise en forme Olympiades, Paris, France
+</u>
+</exppro>
+<formation category="Certifications">
+ <u>Certification en entraînement personnel (ACE, NASM, etc.)</u>
+<d>Certification en cours collectifs (Les Mills, Zumba, etc.)</d>
+<t>Formation en premiers secours et RCR (réanimation cardiorespiratoire)</t>
+</formation>
+  </CURRICULUM>
+
+</CURRICULUM>

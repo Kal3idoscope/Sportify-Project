@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CURRICULUM>
+  <CURRICULUM category="Plongeon">
+    <Prénom>Amine</Prénom>
+    <Nom>Jaouadi</Nom>
+    <Coord category="Coordonnées">
+      <Adresse>11 Rue du Papillon, 75013 Paris/Adresse>
+      <telephone>06 24 77 05 20</telephone>
+      <mail>amine.jaouadi@sportify.fr</mail>
+    </Coord>
+    <Profil>Passionné de plongeon avec une solide expérience compétitive, je suis un spécialiste en plongeon déterminé, compétent et dévoué à atteindre l'excellence dans mon domaine. Ayant acquis une expertise technique et une compréhension approfondie des différentes disciplines du plongeon, je suis prêt à apporter mes compétences à une équipe ou à un club à la recherche d'un professionnel hautement qualifié.
+</Profil>
+    <competences category="compétences">
+      <u>Vaste expérience dans les disciplines du plongeon, y compris le plongeon de haut vol, le plongeon synchronisé, le plongeon à la plateforme et le plongeon à la tour.</u>
+      <d>Maîtrise des techniques de plongeon avancées, y compris les vrilles, les flips, les sauts périlleux et les entrées élégantes dans l'eau.
+</d>
+      <t>CConnaissance approfondie des règles, des normes et des critères de notation des compétitions de plongeon.
+</t>
+<q>Compétences en matière de sécurité aquatique et de secourisme, garantissant un environnement sûr lors des séances d'entraînement et des compétitions.
+</q>
+<c>Compétences en matière de coaching et d'encadrement, avec la capacité de guider et de motiver les plongeurs de tous les niveaux.</c>
+</competences>
+<exppro category="Experience professionnelle">
+  <u>Entraîneur de plongeon | Club de plongeon des Hautes-Pyrénées | 2015 - Présent
+</u>
+<d>Plongeur compétitif | Équipe nationale de plongeon | 2010 - 2015</d>
+</exppro>
+<formation category="Formation">
+ <u>Baccalauréat en éducation physique et sportive | Université XYZ</u>
+<d>Cours de secourisme et de sécurité aquatique | Organisation de sauvetage aquatique</d>
+</formation>
+  </CURRICULUM>
+</CURRICULUM>
