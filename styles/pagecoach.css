@@ -1,39 +1,28 @@
-
-
-
-
 .calendrier{
     background-color:#443F3F;
     font-family: "dosis", sans-serif;
     text-align: center;
     font-size: 130%;
     line-height: 320%;
-    margin-top: 5%;
+    margin-top: 7%;
     color: white;
     padding: 1%;
     width: 118.5%;
     border-radius: 21px;
     height:30%;
+
 }
 
 .calend{
-    margin-top: 7% ;
+    margin-top: 4% ;
     font-family: "dosis", sans-serif;
     text-align : left;
-    margin-left : 6%;
-    font-size: 200%;
+    margin-left : 13%;
+    font-size: 170%;
 }
 
-.dates{
-    background-color:#443F3F;
-    color: white;
-    padding: 1%;
-    border-radius: 21px;
-    margin-left: 1%;
-    margin-right: 1%;
-    height:130px;
-    font-family: "shrikhand", cursive;
-}
+
+
 
 
 .titre {
@@ -63,7 +52,7 @@
 }
 
 .blocProfil{
-    margin-top : -6%;
+    margin-top : -4%;
     margin : 5%;
     display : flex;
     font-family: "dosis", sans-serif;
@@ -77,20 +66,34 @@
 
 }
 
-.profildata2{
+.profildata{
     margin-top: -8%;
-
 }
 
 
-.option10{
+.option7{
     display:flex;
     font-size: 50%;
-    margin-top : -8%;
+    margin-top : -4%;
     color: #BBAE90;
-    margin-left: 20%;
+    margin-left: 23%;
+    margin-top: -4%;
 }
 
-
+.dispo{
+    background-color:#443F3F;
+    font-family: "dosis", sans-serif;
+    font-size: 150%;
+    font-weight: lighter;
+    color: white;
+    padding: 1%;
+    border-radius: 21px;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    line-height : 120%;
+    width : 96.05%;
+    height : 150%;
+}
 
 
