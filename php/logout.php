@@ -13,10 +13,10 @@ if (isset($_SESSION['unique_id'])) {
                 $sql = mysqli_query($conn, "UPDATE admin SET Status = '{$status}' WHERE ID_Admin={$_GET['logout_id']}");
                 //echo "success";
             } else if (mysqli_num_rows($sql_client) > 0) {
-                $sql = mysqli_query($conn, "UPDATE admin SET Status = '{$status}' WHERE ID_Admin={$_GET['logout_id']}");
+                $sql = mysqli_query($conn, "UPDATE client SET Status = '{$status}' WHERE ID_Client={$_GET['logout_id']}");
                 //echo "success";
             } else if (mysqli_num_rows($sql_coach) > 0) {
-                $sql = mysqli_query($conn, "UPDATE admin SET Status = '{$status}' WHERE ID_Admin={$_GET['logout_id']}");
+                $sql = mysqli_query($conn, "UPDATE coach SET Status = '{$status}' WHERE ID_Coach={$_GET['logout_id']}");
                 //echo "success";
             }
             if ($sql) {

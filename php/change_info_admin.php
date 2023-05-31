@@ -7,6 +7,7 @@ $nom = mysqli_real_escape_string($conn, $_POST['nom']);
 $email = mysqli_real_escape_string($conn, $_POST['email']);
 $password = mysqli_real_escape_string($conn, $_POST['password']);
 //$photo = mysqli_real_escape_string($conn, $_POST['photo']); Photo de profil
+$verif = 1;
 
 if(!empty($prenom)){
     $sql = mysqli_query($conn, "UPDATE admin SET Prenom = '{$prenom}' WHERE ID_Admin = {$_SESSION['unique_id']}");
@@ -14,6 +15,7 @@ if(!empty($prenom)){
         echo "success";
     } else {
         echo "Something went wrong. Please try again!";
+        $verif = 0;
     }
 }
 
@@ -23,6 +25,7 @@ if(!empty($nom)){
         echo "success";
     } else {
         echo "Something went wrong. Please try again!";
+        $verif = 0;
     }
 }
 
@@ -32,6 +35,7 @@ if(!empty($email)){
         echo "success";
     } else {
         echo "Something went wrong. Please try again!";
+        $verif = 0;
     }
 }
 
@@ -41,5 +45,11 @@ if(!empty($password)){
         echo "success";
     } else {
         echo "Something went wrong. Please try again!";
+        $verif = 0;
     }
+}
+
+if($verif)
+{
+    header("location: ../admin.php");
 }

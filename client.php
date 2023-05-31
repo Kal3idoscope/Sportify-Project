@@ -1,45 +1,46 @@
 <?php
 session_start();
 include_once "php/config.php";
-if(!isset($_SESSION['unique_id'])){
+if (!isset($_SESSION['unique_id'])) {
     header("location: login.php");
 }
 ?>
 <?php include_once "header.php"; ?>
-<link rel="stylesheet" href="styles/client.css" type="text/css" />
+<link rel="stylesheet" href="styles/client.css" type="text/css"/>
 
 
 <body>
 <?php
 $sql = mysqli_query($conn, "SELECT * FROM client WHERE ID_Client = {$_SESSION['unique_id']}");
-if(mysqli_num_rows($sql) > 0){
+if (mysqli_num_rows($sql) > 0) {
     $row = mysqli_fetch_assoc($sql);
 }
 ?>
 <div class="blocHeader">
     <div class="bloc1">
-        <h1 class="titre">COMPTE CLIENT <h1>
-        <br>
+        <h1 class="titre">COMPTE CLIENT
+            <h1>
+                <br>
                 <div class="blocProfil">
                     <img class="photodeprofil" src="Images/mouhali.jpeg" alt="mouhali"/>
                     <div class="profildata">
-                        <p>NOM :  </p>
+                        <p>NOM : </p>
                         <p>PRENOM : </p>
-                         <p>ADRESSE :  </p>
-                         <p>MAIL :  </p>
-                         <p>CARTE ETUDIANTE :  </p>
-                         <p class="modifInfo"> INFORMATIONS DE PAIEMENT </p>
+                        <p>ADRESSE : </p>
+                        <p>MAIL : </p>
+                        <p>CARTE ETUDIANTE : </p>
+                        <p class="modifInfo"> INFORMATIONS DE PAIEMENT </p>
 
 
                     </div>
                 </div>
                 <div class="option1">
-                            <button>MODIFIER MES INFOS</button>
-                            <button>PRENDRE UN RDV</button>
-                            <button>HISTORIQUE DE MES RDV</button>
-                </div>
-            </div>
 
+                    <button><a href="./change_info_admin.php">MODIFIER MES INFOS</a></button>
+                    <button>PRENDRE UN RDV</button>
+                    <button>HISTORIQUE DE MES RDV</button>
+                </div>
+    </div>
 
 
     <div class="bloc2">
@@ -61,7 +62,8 @@ if(mysqli_num_rows($sql) > 0){
             <a href="./login.php">COMPTE</a><br>
         </div>
         <div class="chat">
-            <button><a href="php/logout.php?logout_id=<?php echo $row['ID_Client']; ?>" class="logout">LOG <br> OUT</a></button>
+            <button><a href="php/logout.php?logout_id=<?php echo $row['ID_Client']; ?>" class="logout">LOG <br> OUT</a>
+            </button>
         </div>
     </div>
 </div>
