@@ -41,7 +41,7 @@ if (isset($_SESSION['unique_id'])) {
                     <input type="submit" name="submit" value="Se Connecter">
                 </div>
             </form>
-            <div class="link">Déjà inscrit? <a href="signup.php">S'inscrire</a></div>
+            <div class="link" id="lien">Pas inscrit ? <a href="signup.php">S'inscrire</a></div>
         </section>
     </div>
     <div class="bloc2">

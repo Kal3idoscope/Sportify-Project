@@ -19,17 +19,19 @@ if(!isset($_SESSION['unique_id'])){
                     <div class="profildata">
                         <p>NOM :  </p>
                         <p>PRENOM : </p>
-                          <p>MAIL :  </p>
+                         <p>MAIL :  </p>
+                         <p class="modifInfo"> Modifier mes informations </p>
 
 
                     </div>
                 </div>
-                <div class="bouton">
-                    <button>PRENDRE RENDEZ-VOUS</button>
-                    <button>VOIR LE CV</button>
-                    <button>PRENDRE RENDEZ-VOUS</button>
-             </div>
+                <div class="option1">
+                            <button>LISTE DES COACHS</button>
+                            <button>ENLEVER UN COACH</button>
+                            <button>AJOUTER UN COACH</button>
+                </div>
             </div>
+
 
 
     <div class="bloc2">
@@ -48,7 +50,9 @@ if(!isset($_SESSION['unique_id'])){
             <a href="./RDV.html">RDV</a> <br>
             <a href="./login.php">COMPTE</a> <br>
         </div>
-
+        <div class="chat">
+             <button>LOG <br> OUT</button>
+        </div>
     </div>
 </div>
 
