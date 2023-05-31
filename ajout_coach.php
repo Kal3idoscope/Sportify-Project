@@ -7,51 +7,50 @@ if(!isset($_SESSION['unique_id'])){
 ?>
 <?php include_once "header.php"; ?>
 <head>
-<link rel="stylesheet" href="styles/connexion.css" type="text/css" />
+<link rel="stylesheet" href="styles/co.css" type="text/css" />
 </head>
 <body>
 
 <div class="blocHeader">
     <div class="bloc1">
         <section class="formSignup">
-            <h1 class="titre">Ajout Coach</h1>
+            <h1 class="titre">Ajout Coach <br> </h1>
+
             <form action="php/ajout_coach.php" method="POST" enctype="multipart/form-data" autocomplete="off">
                 <div class="error-text"></div>
                 <div class="name-details">
                     <div class="fieldInput">
-                        <label>Prenom : </label>
+                        <label><br>Prenom : </label>
                         <input class="in" type="text" name="prenom" placeholder="Prenom" required>
-                    </div>
-                    <div class="fieldInput">
                         <label>Nom : </label>
                         <input class="in" type="text" name="nom" placeholder="Nom" required>
-                    </div>
-                </div>
-                <div class="fieldInput">
-                    <label>Adresse Email : </label>
-                    <input class="in" type="text" name="email" placeholder="Saisir votre email" required>
-                </div>
-                <div class="fieldInput">
-                    <label>Mot de Passe : </label>
-                    <input class="in" type="password" name="password" placeholder="Enter new password" required>
-                    <i class="fas fa-eye"></i>
+                        <label>Adresse Email : </label>
+                        <input class="in" type="text" name="email" placeholder="Saisir votre email" required>
+                        <label>Mot de Passe : </label>
+                        <input class="in" type="password" name="password" placeholder="Enter new password" required>
+                        <i class="fas fa-eye"></i>
                 </div>
                 <div class="fieldInput">
                     <label>Selectionner une image : </label>
                     <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
-                </div>
+                </div> <br>
+                <hr>
                 <tr>
-
-                    <td>Sport:</td>
                     <td>
-                        <div class ="fieldInput">
-                        ACTIVITES SPORTIVES<br>
+                        <div class ="titre4">
+                        <p style="margin-top:3%"> ACTIVITES SPORTIVES </p>
+                        </div>
+                        <div class ="fieldInput1">
                         <input type="radio" name="sport" value="1">Musculation<br>
                         <input type="radio" name="sport" value="2">Fitness<br>
                         <input type="radio" name="sport" value="3">Biking<br>
                         <input type="radio" name="sport" value="4">Cardio-Training<br>
                         <input type="radio" name="sport" value="5">Cours Collectifs<br>
-                        SPORTS DE COMPETITION<br>
+                        </div>
+                        <div class ="titre4">
+                        <p> SPORTS DE COMPETITION </p>
+                        </div>
+                        <div class ="fieldInput1">
                         <input type="radio" name="sport" value="6">Basketball<br>
                         <input type="radio" name="sport" value="7">Football<br>
                         <input type="radio" name="sport" value="8">Rugby<br>
