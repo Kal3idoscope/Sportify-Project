@@ -1,0 +1,35 @@
+.dropbtn {
+    background-color: #443F3F;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+}
+
+.dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #BBAE90;
+    border-radius: 21px;
+    min-width: 200px;
+    overflow: auto  ;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size:17px;
+}
+
+.dropdown a:hover {background-color: #F5F5F1;}
+
+.show {display: block;}
