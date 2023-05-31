@@ -67,10 +67,12 @@ if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($password)) {
                             } else {
                                 echo "Something went wrong. Please try again!";
                             }*/
-                            $insert_query = mysqli_query($conn, "INSERT INTO client (ID_Coach , Nom, Prenom, Email, Pass, Photo)
-                            VALUES ('{$ran_id}', '{$nom}', '{$prenom}', '{$email}', '{$encrypt_pass}', '{$new_img_name}')");
+
+                            $insert_query = mysqli_query($conn, "INSERT INTO client (ID_Client , Nom, Prenom, Email, Pass, Photo, Status)
+                            VALUES ('$ran_id', '$nom', '$prenom', '$email', '$encrypt_pass', '$new_img_name', '$status')");
+                            echo $insert_query;
                             if ($insert_query) {
-                                $select_sql_client = mysqli_query($conn, "SELECT * FROM client WHERE email = '{$email}'");
+                                $select_sql_client = mysqli_query($conn, "SELECT * FROM client WHERE Email = '{$email}'");
 
                                 if (mysqli_num_rows($select_sql_client) > 0){
                                     $result = mysqli_fetch_assoc($select_sql_client);
