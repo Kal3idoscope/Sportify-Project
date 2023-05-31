@@ -6,7 +6,6 @@ $nom = mysqli_real_escape_string($conn, $_POST['nom']);
 $email = mysqli_real_escape_string($conn, $_POST['email']);
 $password = mysqli_real_escape_string($conn, $_POST['password']);
 $sport = mysqli_real_escape_string($conn, $_POST['sport']);
-echo $sport;
 if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($password) && !empty($sport)) {
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         //$sql = mysqli_query($conn, "SELECT * FROM admin WHERE email = '{$email}' UNION SELECT * FROM client WHERE email = '{$email}' UNION SELECT * FROM coach WHERE email = '{$email}'");
@@ -58,10 +57,10 @@ if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($password) && !e
         }
     } else {
         echo "$email is not a valid email!";
-        //header("location: ../ajout_coach.php");
+        header("location: ../ajout_coach.php");
     }
 } else {
     echo "All input fields are required!";
-    //header("location: ../ajout_coach.php");
+    header("location: ../ajout_coach.php");
 }
 ?>
