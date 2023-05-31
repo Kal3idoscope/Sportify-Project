@@ -20,16 +20,6 @@ if (isset($_SESSION['unique_id'])) {
 ?>
 
 <?php include_once "header.php"; ?>
-    <head>
-      <meta charset="UTF-8">
-      <title>Home</title>
-      <link rel="stylesheet" href="styles/connexion.css" type="text/css" />
-      <link rel="stylesheet" href="styles/general.css" type="text/css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Shrikhand&display=swap" rel="stylesheet">
-
-    </head>
 <body>
 
 <div class="blocHeader">

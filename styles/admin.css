@@ -1,0 +1,43 @@
+.titre {
+
+    margin-top: 2%;
+    font-size: 400%;
+    text-align: center;
+    color: #BBAE90;
+}
+
+
+.photodeprofil{
+    border-radius: 50%;
+
+    margin-right:5% ;
+}
+
+
+.photoMouhali {
+
+    margin : 5%;
+}
+
+.blocProfil{
+    margin : 5%;
+    display : flex;
+    font-family: "dosis", sans-serif;
+    font-weight: 300;
+    line-height: 300%;
+    background-color:#443F3F;
+    color: white;
+    padding: 0 1% 0 1%;
+    width: 55%;
+    border-radius: 21px;
+
+}
+
+.bouton{
+    justify-items: center;
+
+    display: grid;
+    margin: 1%;
+
+    font-size: 100%;
+}
