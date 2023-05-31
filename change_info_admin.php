@@ -41,15 +41,19 @@ if(!isset($_SESSION['unique_id'])){
     </div>
     <div class="bloc2">
 
-        <div class="barrerecherche">
-            <input class="rechercher" type="text" placeholder="Search..">
-        </div>
-        <div class="header">
-            <a href="./index.html">ACCUEIL</a> <br>
-            <a href="./Parcourir.html">TOUT PARCOURIR</a> <br>
-            <a href="./RDV.html">RDV</a> <br>
-            <a href="./login.php">COMPTE</a> <br>
-        </div>
+           <div class="header">
+             <a href="./index.html">ACCUEIL</a> <br>
+             <div class="dropdown">
+               <div onclick="myFunction()" class="dropbtn">TOUT PARCOURIR</div>
+               <div id="myDropdown" class="dropdown-content">
+                 <a href="./Activites_Sportives.html">ACTIVITÉS SPORTIVES</a>
+                 <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a>
+                 <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
+               </div>
+             </div>
+             <a href="./RDV.php">RDV</a> <br>
+             <a href="./login.php">COMPTE</a> <br>
+           </div>
     </div>
 </div>
 
