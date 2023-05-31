@@ -6,7 +6,9 @@ if(!isset($_SESSION['unique_id'])){
 }
 ?>
 <?php include_once "header.php"; ?>
+<head>
 <link rel="stylesheet" href="styles/connexion.css" type="text/css" />
+</head>
 <body>
 
 <div class="blocHeader">
@@ -39,25 +41,29 @@ if(!isset($_SESSION['unique_id'])){
                     <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
                 </div>
                 <tr>
+
                     <td>Sport:</td>
                     <td>
-                        Activités Sportives<br>
+                        <div class ="fieldInput">
+                        ACTIVITES SPORTIVES<br>
                         <input type="radio" name="sport" value="1">Musculation<br>
                         <input type="radio" name="sport" value="2">Fitness<br>
                         <input type="radio" name="sport" value="3">Biking<br>
                         <input type="radio" name="sport" value="4">Cardio-Training<br>
                         <input type="radio" name="sport" value="5">Cours Collectifs<br>
-                        Sports Compétition<br>
+                        SPORTS DE COMPETITION<br>
                         <input type="radio" name="sport" value="6">Basketball<br>
                         <input type="radio" name="sport" value="7">Football<br>
                         <input type="radio" name="sport" value="8">Rugby<br>
                         <input type="radio" name="sport" value="9">Tennis<br>
                         <input type="radio" name="sport" value="10">Natation<br>
                         <input type="radio" name="sport" value="11">Plongeon<br>
+                        </div>
                     </td>
+
                 </tr>
-                <div class="fieldButton">
-                    <input class="bouton" type="submit" name="submit" value="Inscrire un coach">
+                <div class="button">
+                    <input class="button" type="submit" name="submit" value="INSCRIRE UN COACH">
                 </div>
             </form>
         </section>

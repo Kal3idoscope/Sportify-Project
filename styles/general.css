@@ -77,7 +77,7 @@ button:hover:before {
     left: -30px;
 }
 button:active:before {
-    background: #3a0ca3;
+    background: #BBAE90;
     transition: 0s;
 }
 
