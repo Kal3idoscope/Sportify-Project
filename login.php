@@ -21,6 +21,7 @@ if (isset($_SESSION['unique_id'])) {
 ?>
 
 <?php include_once "header.php"; ?>
+<link rel="stylesheet" href="styles/connexion.css" type="text/css" />
 <link rel="stylesheet" href="styles/admin.css" type="text/css" />
     <body>
     <div class="blocHeader">
