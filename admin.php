@@ -52,7 +52,7 @@ if(mysqli_num_rows($sql) > 0){
                 <div class="option1">
                             <button>LISTE DES COACHS</button>
                             <button>ENLEVER UN COACH</button>
-                            <button>AJOUTER UN COACH</button>
+                    <button><a href="ajout_coach.php">AJOUTER UN COACH</a></button>
                 </div>
             </div>
 

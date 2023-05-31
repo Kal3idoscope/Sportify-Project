@@ -5,10 +5,10 @@ $email = mysqli_real_escape_string($conn, $_POST['email']);
 $password = mysqli_real_escape_string($conn, $_POST['password']);
 if (!empty($email) && !empty($password)) {
     //$sql = mysqli_query($conn, "SELECT * FROM admin WHERE email = '{$email}' UNION SELECT * FROM client WHERE email = '{$email}' UNION SELECT * FROM coach WHERE email = '{$email}'");
-    $sql_admin = mysqli_query($conn, "SELECT * FROM admin WHERE email = '{$email}'");
-    $sql_client = mysqli_query($conn, "SELECT * FROM client WHERE email = '{$email}'");
-    $sql_coach = mysqli_query($conn, "SELECT * FROM coach WHERE email = '{$email}'");
-    if (mysqli_num_rows($sql_admin) > 0 || mysqli_num_rows($sql_client) > 0 || mysqli_num_rows($sql_client) > 0 ) {
+    $sql_admin = mysqli_query($conn, "SELECT * FROM admin WHERE Email = '{$email}'");
+    $sql_client = mysqli_query($conn, "SELECT * FROM client WHERE Email = '{$email}'");
+    $sql_coach = mysqli_query($conn, "SELECT * FROM coach WHERE Email = '{$email}'");
+    if (mysqli_num_rows($sql_admin) > 0 || mysqli_num_rows($sql_client) > 0 || mysqli_num_rows($sql_coach) > 0 ) {
         if (mysqli_num_rows($sql_admin) > 0) {
             $result = mysqli_fetch_assoc($sql_admin);
             $user_pass = $password;
@@ -19,7 +19,7 @@ if (!empty($email) && !empty($password)) {
             //echo "success";
         } else if (mysqli_num_rows($sql_coach) > 0) {
             $result = mysqli_fetch_assoc($sql_coach);
-            $user_pass = $password;
+            $user_pass = md5($password);
             //echo "success";
         }
 

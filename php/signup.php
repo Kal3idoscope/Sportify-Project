@@ -8,10 +8,10 @@ $password = mysqli_real_escape_string($conn, $_POST['password']);
 if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($password)) {
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         //$sql = mysqli_query($conn, "SELECT * FROM admin WHERE email = '{$email}' UNION SELECT * FROM client WHERE email = '{$email}' UNION SELECT * FROM coach WHERE email = '{$email}'");
-        $sql_admin = mysqli_query($conn, "SELECT * FROM admin WHERE email = '{$email}'");
+        //$sql_admin = mysqli_query($conn, "SELECT * FROM admin WHERE email = '{$email}'");
         $sql_client = mysqli_query($conn, "SELECT * FROM client WHERE email = '{$email}'");
-        $sql_coach = mysqli_query($conn, "SELECT * FROM coach WHERE email = '{$email}'");
-        if (mysqli_num_rows($sql_admin) > 0 || mysqli_num_rows($sql_client) > 0 || mysqli_num_rows($sql_client) > 0 ) {
+        //$sql_coach = mysqli_query($conn, "SELECT * FROM coach WHERE email = '{$email}'");
+        if (mysqli_num_rows($sql_client) > 0 ) {
             echo "$email - This email already exist!";
         } else {
             if (isset($_FILES['image'])) {
