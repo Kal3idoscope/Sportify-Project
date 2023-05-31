@@ -38,7 +38,7 @@ $sql2 = mysqli_query($conn, "SELECT * FROM coach");
                         echo "<td>" . $row2['Nom'] . "</td>";
                         echo "<td>" . $row2['Prenom'] . "</td>";
                         echo "<td>" . $row2['Email'] . "</td>";
-                        echo "<td><img src='" . $row2['Photo'] . "' alt='Photo' height='60' width='80'></td>";
+                        echo "<td><img src='./php/pic/" . $row2['Photo'] . "' alt='Photo' height='60' width='80'></td>";
                         echo "</tr>";
                     }
                     ?>
