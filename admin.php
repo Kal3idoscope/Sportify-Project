@@ -14,6 +14,7 @@ if(!isset($_SESSION['unique_id'])){
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
     }
+
     // Close the dropdown if the user clicks outside of it
     window.onclick = function(event) {
         if (!event.target.matches('.dropbtn')) {
@@ -50,8 +51,8 @@ if(mysqli_num_rows($sql) > 0){
                     </div>
                 </div>
                 <div class="option1">
-                            <button>LISTE DES COACHS</button>
-                            <button>ENLEVER UN COACH</button>
+                    <button><a href="affichage_coach.php">LISTE DES COACHS</a></button>
+                    <button><a href="retrait_coach.php">ENLEVER UN COACH</a></button>
                     <button><a href="ajout_coach.php">AJOUTER UN COACH</a></button>
                 </div>
             </div>
