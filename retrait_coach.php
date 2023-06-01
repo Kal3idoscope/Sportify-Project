@@ -6,14 +6,14 @@ if(!isset($_SESSION['unique_id'])){
 }
 ?>
 <?php include_once "header.php"; ?>
-<link rel="stylesheet" href="styles/connexion.css" type="text/css" />
+<link rel="stylesheet" href="styles/co.css" type="text/css" />
 <body>
 
 <div class="blocHeader">
     <div class="bloc1">
         <section class="formSignup">
             <h1 class="titre">Retrait Coach</h1>
-            <h2 class="titre">Saisir email ou ID</h2>
+            <h2 class="titre5">Saisir email ou ID</h2>
             <form action="php/retrait_coach.php" method="POST" enctype="multipart/form-data" autocomplete="off">
                 <div class="fieldInput">
                     <label>Adresse Email : </label>
@@ -25,14 +25,14 @@ if(!isset($_SESSION['unique_id'])){
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="fieldButton">
-                    <input class="bouton" type="submit" name="submit" value="Supprimer le coach">
+                    <button> SUPPRIMER LE COACH </button>
                 </div>
             </form>
         </section>
     </div>
     <div class="bloc2">
 
-        <div class="header">
+        <div class="header", style="margin-top:-0.4%">
             <a href="./index.html">ACCUEIL</a> <br>
             <div class="dropdown">
                 <div onclick="myFunction()" class="dropbtn">TOUT PARCOURIR</div>

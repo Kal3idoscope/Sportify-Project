@@ -19,10 +19,21 @@
     color: #BBAE90;
 }
 
+.titre5
+{
+    font-family: "dosis",sans-serif;
+    font-weight: lighter;
+    margin-top: 1%;
+    font-size: 150%;
+    text-align: center;
+    color: #BBAE90;
+}
+
 .fieldInput
 {
     margin-top: 2%;
     font-family: "dosis",sans-serif;
+    font-weight: lighter;
     font-size: 150%;
     line-height: 90%;
     text-align:center;
@@ -34,7 +45,7 @@
     font-family: "dosis",sans-serif;
     font-weight: lighter;
     font-size: 150%;
-margin:5%;
+    margin:5%;
     text-align:center;
 }
 

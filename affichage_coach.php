@@ -6,8 +6,7 @@ if (!isset($_SESSION['unique_id'])) {
 }
 ?>
 <?php include_once "header.php"; ?>
-
-
+<link rel="stylesheet" href="styles/co.css" type="text/css" />
 <body>
 <?php
 $sql = mysqli_query($conn, "SELECT * FROM admin WHERE ID_Admin = {$_SESSION['unique_id']}");
@@ -20,16 +19,19 @@ $sql2 = mysqli_query($conn, "SELECT * FROM coach");
 <div class="blocHeader">
     <div class="bloc1">
         <h1 class="titre">LISTE DE COACH<h1>
+            <div class = "fieldInput" style="margin-left:22% ; font-weight:lighter; margin-bottom:2%">
                 <table>
+
                     <thead>
                     <tr>
-                        <th>ID Coach</th>
-                        <th>Nom</th>
-                        <th>Prénom</th>
-                        <th>Email</th>
+                        <th>ID Coach </th>
+                        <th>Nom </th>
+                        <th>Prénom </th>
+                        <th>Email </th>
                         <th>Photo</th>
                     </tr>
                     </thead>
+
                     <tbody>
                     <?php
                     while ($row2 = mysqli_fetch_assoc($sql2)) {
@@ -44,6 +46,7 @@ $sql2 = mysqli_query($conn, "SELECT * FROM coach");
                     ?>
                     </tbody>
                 </table>
+            </div>
     </div>
 
 
@@ -67,8 +70,8 @@ $sql2 = mysqli_query($conn, "SELECT * FROM coach");
             <a href="./login.php">COMPTE</a><br>
         </div>
         <div class="boutonLOGOUT">
-            <button style="width:100% ; height:95%; font-size: 200%"><a
-                        href="php/logout.php?logout_id=<?php echo $row['ID_Admin']; ?>" class="logout">LOG <br> OUT</a>
+            <button style="width:119% ; height:99%; font-size: 200%; margin-left:-0.3%; margin-top : 6%"><a
+                        href="php/logout.php?logout_id=<?php echo $row['ID_Admin']; ?>" class="logout">LOG OUT</a>
             </button>
         </div>
     </div>

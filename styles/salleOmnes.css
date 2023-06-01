@@ -232,4 +232,17 @@ hr {
     margin-top: 10%;
 }
 
+.souligne {
+    position: relative;
+}
+
+.souligne::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5%; /* Décalage vers le bas */
+    width: 100%;
+    border-bottom: 2px solid white; /* Style de soulignement */
+}
+
 

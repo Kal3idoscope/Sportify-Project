@@ -53,7 +53,8 @@ if (isset($_SESSION['unique_id'])) {
                 <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
             </div>
             <div class="fieldButton">
-                <input class="bouton" type="submit" name="submit" value="S'inscrire">
+            <button> S'INSCRIRE </button>
+
             </div>
         </form>
         <div class="link">Déjà inscrit? <a href="login.php">Se connecter</a></div>

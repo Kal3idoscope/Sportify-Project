@@ -21,7 +21,7 @@ if (isset($_SESSION['unique_id'])) {
 ?>
 
 <?php include_once "header.php"; ?>
-<link rel="stylesheet" href="styles/connexion.css" type="text/css" />
+<link rel="stylesheet" href="styles/co.css" type="text/css" />
 <link rel="stylesheet" href="styles/admin.css" type="text/css" />
     <body>
     <div class="blocHeader">
@@ -30,8 +30,8 @@ if (isset($_SESSION['unique_id'])) {
             <h1 class="titre">LOGIN</h1>
             <form action="php/login.php" method="POST" enctype="multipart/form-data" autocomplete="off">
                 <div class="error-text"></div>
-                <div class="fieldInput">
-                    <label>Adresse Email : </label>
+                <div class="fieldInput", style="margin-left:2.3%">
+                    <label>E-mail : </label>
                     <input class="in"  type="text" name="email" placeholder="Saisir votre email" required>
                 </div>
                 <div class="fieldInput">
@@ -40,13 +40,13 @@ if (isset($_SESSION['unique_id'])) {
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field button">
-                    <input type="submit" name="submit" value="Se Connecter">
+                    <button style="margin-top:3.5%">ME CONNECTER</button>
                 </div>
             </form>
-            <div class="link" id="lien">Pas inscrit ? <a href="signup.php">S'inscrire</a></div>
+            <div class="link" id="lien" style="margin-top:-1%">Pas inscrit ? <a href="signup.php">S'inscrire</a></div>
         </section>
     </div>
-    <div class="bloc2">
+    <div class="bloc2" style="margin-top:-0.1%">
 
             <div class="header">
               <a href="./index.html">ACCUEIL</a> <br>
