@@ -29,51 +29,48 @@
 </head>
 <body>
     <?php
+    // Configuration de la connexion à la base de données
+    $serveur = "localhost";
+    $utilisateur = "root";
+    $motDePasse = "";
+    $baseDeDonnees = "sportify";
+
     // Récupérer la date et l'heure actuelles
     $dateActuelle = date("Y-m-d");
     $heureActuelle = date("H:i");
 
-    // Connexion à la base de données
-    $serveur = "localhost";
-    $utilisateur = "root";
-    $motDePasse = "";
-    $baseDeDonnees = "rdv";
-
-    $connexion = mysqli_connect($serveur, $utilisateur, $motDePasse, $baseDeDonnees);
-
-    // Vérifier la connexion
-    if (!$connexion) {
-        die("La connexion à la base de données a échoué : " . mysqli_connect_error());
-    }
-
     // Calculer la date du premier jour de la semaine (lundi)
     $premierJourSemaine = date("Y-m-d", strtotime('monday this week', strtotime($dateActuelle)));
 
-    // Fonction pour récupérer les rendez-vous d'un jour
-    function getRendezVous($date) {
-        global $connexion;
+    // Connecter à la base de données
+    $connexion = new mysqli($serveur, $utilisateur, $motDePasse, $baseDeDonnees);
 
-        $query = "SELECT heure, description FROM rendez_vous WHERE date = '$date'";
-        $resultat = mysqli_query($connexion, $query);
+    // Vérifier la connexion
+    if ($connexion->connect_error) {
+        die("Erreur de connexion à la base de données : " . $connexion->connect_error);
+    }
 
-        $rendezVous = array();
+    // Récupérer les rendez-vous de la semaine
+    $requete = "SELECT * FROM prendre_rdv WHERE Date_rdv >= '" . $premierJourSemaine . "' AND Date_rdv < DATE_ADD('" . $premierJourSemaine . "', INTERVAL 7 DAY)";
+    $resultat = $connexion->query($requete);
 
-        while ($row = mysqli_fetch_assoc($resultat)) {
-            $heure = $row['heure'];
-            $description = $row['description'];
-            $rendezVous[$heure] = $description;
+
+    // Tableau de rendez-vous pour chaque jour
+    $rendezVous = array();
+    while ($row = $resultat->fetch_assoc()) {
+        $jour = $row["Date_rdv"];
+        $Heure = $row["Plage_horaire"];
+        $Coach = $row["ID_Coach"];
+        $Client = $row["ID_Client"];
+        $Statut= $row["Statut"];
+        if (!isset($rendezVous[$jour])) {
+            $rendezVous[$jour] = array();
         }
-
-        return $rendezVous;
+        $rendezVous[$jour][$Heure] = $Statut;
     }
 
-    // Fonction pour enregistrer un rendez-vous
-    function enregistrerRendezVous($date, $heure, $description) {
-        global $connexion;
-
-        $query = "INSERT INTO rendez_vous (date, heure, description) VALUES ('$date', '$heure', '$description')";
-        mysqli_query($connexion, $query);
-    }
+    // Fermer la connexion à la base de données
+    $connexion->close();
 
     // Afficher le calendrier
     echo "<h2>Calendrier de la semaine avec les rendez-vous</h2>";
@@ -93,7 +90,7 @@
     echo "</tr>";
 
     // Afficher les heures et les rendez-vous pour chaque jour
-    for ($heure = 6; $heure < 18; $heure+2) {
+    for ($heure = 8; $heure < 16; $heure=$heure+2) {
         echo "<tr>";
         for ($i = 0; $i < 7; $i++) {
             $jour = date("Y-m-d", strtotime('+' . $i . ' day', strtotime($premierJourSemaine)));
@@ -101,27 +98,8 @@
             $heureSuivante = sprintf("%02d:00", $heure + 2);
             echo "<td>";
             echo "<div>" . $heureCourante . " - " . $heureSuivante . "</div>";
-            $rendezVous = getRendezVous($jour);
-            if (isset($rendezVous[$heureCourante])) {
-                echo "<div class='appointment'>" . $rendezVous[$heureCourante] . "</div>";
-            } else {
-                // Formulaire d'ajout de rendez-vous
-                echo "<form method='POST'>";
-                echo "<input type='hidden' name='date' value='$jour'>";
-                echo "<input type='hidden' name='heure' value='$heureCourante'>";
-                echo "<input type='text' name='description' placeholder='Description'>";
-                echo "<input type='submit' value='Ajouter'>";
-                echo "</form>";
-
-                // Vérifier si un rendez-vous est ajouté
-                if (isset($_POST['date']) && isset($_POST['heure']) && isset($_POST['description'])) {
-                    $date = $_POST['date'];
-                    $heure = $_POST['heure'];
-                    $description = $_POST['description'];
-
-                    enregistrerRendezVous($date, $heure, $description);
-                    header("Location: ".$_SERVER['PHP_SELF']);
-                }
+            if (isset($rendezVous[$jour]) && array_key_exists($heureCourante . " - " . $heureSuivante, $rendezVous[$jour])) {
+                echo "<div class='appointment'> <p>dasgkjlökgjndg</p> </div>";
             }
             echo "</td>";
         }
@@ -129,9 +107,7 @@
     }
 
     echo "</table>";
-
-    // Fermer la connexion à la base de données
-    mysqli_close($connexion);
     ?>
+
 </body>
 </html>

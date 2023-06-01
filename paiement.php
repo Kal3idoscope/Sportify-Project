@@ -67,8 +67,8 @@ if(!isset($_SESSION['unique_id'])){
            <div class="CARTEDECREDIT">
            <div class="fieldInput3">
                         <label>Type de carte :</label>
-                        </div>
-                </div>
+           </div>
+
                 <tr>
                     <td>
                         <div class ="fieldInput3", style="line-height:150%">
@@ -95,7 +95,7 @@ if(!isset($_SESSION['unique_id'])){
                 <label>Code de sécurité : </label>
                 <input class="in" type="text" name="codeSecu" required>
                 </div> <br>
-
+</div>
 
 
             </div>

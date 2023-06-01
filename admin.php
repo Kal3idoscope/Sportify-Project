@@ -31,10 +31,33 @@ if(!isset($_SESSION['unique_id'])){
 </script>
 <body>
 <?php
+
 $sql = mysqli_query($conn, "SELECT * FROM admin WHERE ID_Admin = {$_SESSION['unique_id']}");
 if(mysqli_num_rows($sql) > 0){
     $row = mysqli_fetch_assoc($sql);
 }
+ $serveur = "localhost";
+    $utilisateur = "root";
+    $motDePasse = "";
+    $baseDeDonnees = "sportify";
+
+  $connexion = new mysqli($serveur, $utilisateur, $motDePasse, $baseDeDonnees);
+$requete = "SELECT * FROM admin WHERE ID_Admin = {$_SESSION['unique_id']}";
+$resultat = $connexion->query($requete);
+
+
+    // Tableau de rendez-vous pour chaque jour
+    $admin = array();
+    while ($row = $resultat->fetch_assoc()) {
+
+        $nom = $row["Nom"];
+        $prenom = $row["Prenom"];
+        $mail = $row["Email"];
+        $id=$row["ID_Admin"];
+
+    }
+
+     $connexion->close();
 ?>
 
 <div class="blocHeader">
@@ -42,11 +65,10 @@ if(mysqli_num_rows($sql) > 0){
         <h1 class="titre">ADMINISTRATEUR <h1>
         <br>
                 <div class="blocProfil">
-                    <img class="photodeprofil" src="Images/mouhali.jpeg" alt="mouhali"/>
                     <div class="profildata">
-                        <p>NOM :  </p>
-                        <p>PRENOM : </p>
-                         <p>MAIL :  </p>
+                        <p>NOM :  <?php echo $nom; ?> </p>
+                        <p>PRENOM : <?php echo $prenom; ?> </p>
+                         <p>MAIL : <?php echo $mail; ?> </p>
                          <p class="modifInfo"> <a href="./change_info_admin.php">Modifier mes informations</a></p>
                     </div>
                 </div>
@@ -75,10 +97,10 @@ if(mysqli_num_rows($sql) > 0){
                 </div>
             </div>
             <a href="./rdv.php">RDV</a><br>
-            <a href="./login.php">COMPTE</a><br>
+            <a href="./login.php">COMPTE</a><br>""
         </div>
         <div class="boutonLOGOUT">
-             <button style="width:100% ; height:95%; font-size: 200%"><a href="php/logout.php?logout_id=<?php echo $row['ID_Admin']; ?>" class="logout">LOG <br> OUT</a></button>
+             <button style="width:100% ; height:95%; font-size: 200%"><a href="php/logout.php?logout_id=<?php echo $id ?>" class="logout">LOG <br> OUT</a></button>
         </div>
     </div>
 </div>

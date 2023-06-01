@@ -83,6 +83,16 @@ hr:after {
     font-weight: lighter;
 
 }
+.INFOCLIENT
+{
+    width: 50%;
+}
+
+.CARTEDECREDIT
+{
+    margin: 1%;
+    width: 50%;
+}
 
 button{
     font-family: "dosis", sans-serif;
@@ -129,5 +139,6 @@ button:active:before {
 
 .option48
 {
+
     display: flex;
 }
