@@ -6,7 +6,7 @@ if(!isset($_SESSION['unique_id'])){
 }
 ?>
 <?php include_once "header.php"; ?>
-<link rel="stylesheet" href="styles/Comptecoach.css" type="text/css" />
+<link rel="stylesheet" href="styles/Fichecoach.css" type="text/css" />
 <link rel="stylesheet" href="styles/scrollmenu.css" type="text/css" />
 <script>
     /* When the user clicks on the button,

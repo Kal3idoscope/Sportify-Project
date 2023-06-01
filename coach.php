@@ -109,7 +109,7 @@ $resultat = $connexion->query($requete);
 <div class="option9">
 
 <div class="dispo", style ="height : 150%">
-<p> Mes disponibilités <br> <br> <p>
+<p> Mes futurs rendez-vous <br> <br> <p>
 </div>
 
 </div>

@@ -34,7 +34,7 @@ if($_SESSION['user_type'] == 'admin'){
                     <p><?php echo $row['Status']; ?></p>
                 </div>
             </div>
-            <a href="php/logout.php?logout_id=<?php echo $row[$id]; ?>" class="logout">Logout</a>
+            <a href="login.php" class="logout">Retour en arriere</a>
         </header>
         <div class="search">
             <span class="text">SELECTIONNEZ AVEC QUI PARLER</span>

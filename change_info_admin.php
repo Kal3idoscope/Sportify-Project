@@ -6,35 +6,36 @@ if(!isset($_SESSION['unique_id'])){
 }
 ?>
 <?php include_once "header.php"; ?>
+<link rel="stylesheet" href="styles/co.css" type="text/css"/>
 
 <body>
 <div class="blocHeader">
     <div class="bloc1">
         <section class="formLogin">
-            <h1 class="titre">Changement des informations</h1>
+            <h1 class="titre", style="font-size:200%">Changement des informations</h1>
             <form action="php/change_info_admin.php" method="POST" enctype="multipart/form-data" autocomplete="off">
                 <div class="error-text"></div>
-                <div class="fieldInput">
+                <div class="fieldInput", style="font-size:120%">
                     <label>Prénom : </label>
                     <input class="in" type="text" name="prenom" placeholder="Saisir un nouveau prénom">
                     <i class="fas fa-eye"></i>
                 </div>
-                <div class="fieldInput">
+                <div class="fieldInput", style="font-size:120%">
                     <label>Nom : </label>
                     <input class="in" type="text" name="nom" placeholder="Saisir un nouveau nom">
                     <i class="fas fa-eye"></i>
                 </div>
-                <div class="fieldInput">
+                <div class="fieldInput", style="font-size:120%">
                     <label>Adresse Email : </label>
                     <input class="in"  type="text" name="email" placeholder="Saisir un nouvel email">
                 </div>
-                <div class="fieldInput">
+                <div class="fieldInput", style="font-size:120%">
                     <label>Mot de Passe : </label>
                     <input class="in" type="password" name="password" placeholder="Saisir un nouveau mot de passe">
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field button">
-                    <input type="submit" name="submit" value="Changer les informations">
+                    <button>CHANGER LES INFORMATIONS</button>
                 </div>
             </form>
         </section>
