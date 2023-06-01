@@ -19,16 +19,23 @@ if(!isset($_SESSION['unique_id'])){
             <form action="php/ajout_coach.php" method="POST" enctype="multipart/form-data" autocomplete="off">
                 <div class="error-text"></div>
                 <div class="name-details">
-                    <div class="fieldInput">
+                        <div class="fieldInput">
                         <label><br>Prenom : </label>
                         <input class="in" type="text" name="prenom" placeholder="Prenom" required>
+                        </div>
+                        <div class="fieldInput">
                         <label>Nom : </label>
                         <input class="in" type="text" name="nom" placeholder="Nom" required>
+                        </div>
+                        <div class="fieldInput">
                         <label>Adresse Email : </label>
                         <input class="in" type="text" name="email" placeholder="Saisir votre email" required>
+                        </div>
+                        <div class="fieldInput">
                         <label>Mot de Passe : </label>
                         <input class="in" type="password" name="password" placeholder="Enter new password" required>
                         <i class="fas fa-eye"></i>
+                        </div>
                 </div>
                 <div class="fieldInput">
                     <label>Selectionner une image : </label>
