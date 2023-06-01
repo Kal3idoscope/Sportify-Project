@@ -41,3 +41,10 @@
     font-family:"dosis", cursive;
     font-size: 120%;
 }
+
+.resume{
+    text-align: center;
+    font-family: "dosis", sans-serif;
+    font-weight: lighter;
+    font-size : 140%;
+}
