@@ -30,6 +30,7 @@ if (!empty($email) && !empty($password)) {
                 $sql2 = mysqli_query($conn, "UPDATE admin SET Status = '{$status}' WHERE ID_Admin = {$result['ID_Admin']}");
                 if ($sql2) {
                     $_SESSION['unique_id'] = $result['ID_Admin'];
+                    $_SESSION['user_type'] = 'admin';
                     echo "success";
                     header("location: ../admin.php");
                 } else {
@@ -39,6 +40,7 @@ if (!empty($email) && !empty($password)) {
                 $sql2 = mysqli_query($conn, "UPDATE client SET Status = '{$status}' WHERE ID_Client = {$result['ID_Client']}");
                 if ($sql2) {
                     $_SESSION['unique_id'] = $result['ID_Client'];
+                    $_SESSION['user_type'] = 'client';
                     echo "success";
                     header("location: ../client.php");
                 } else {
@@ -48,6 +50,7 @@ if (!empty($email) && !empty($password)) {
                 $sql2 = mysqli_query($conn, "UPDATE coach SET Status = '{$status}' WHERE ID_Coach = {$result['ID_Coach']}");
                 if ($sql2) {
                     $_SESSION['unique_id'] = $result['ID_Coach'];
+                    $_SESSION['user_type'] = 'coach';
                     echo "success";
                     header("location: ../coach.php");
                 } else {

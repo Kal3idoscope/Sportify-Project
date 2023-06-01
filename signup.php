@@ -1,19 +1,11 @@
 <?php
 session_start();
 if (isset($_SESSION['unique_id'])) {
-    $unique_id = $_SESSION['unique_id'];
-    $admin_query = mysqli_query($conn, "SELECT * FROM admin WHERE ID_admin = '{$unique_id}'");
-    $client_query = mysqli_query($conn, "SELECT * FROM client WHERE ID_Client = '{$unique_id}'");
-    $coach_query = mysqli_query($conn, "SELECT * FROM coach WHERE ID_C = '{$unique_id}'");
-
-    if (mysqli_num_rows($admin_query) > 0) {
-        $_SESSION['user_type'] = 'admin';
+    if ($_SESSION['user_type'] == 'admin') {
         header("location: admin.php");
-    } elseif (mysqli_num_rows($client_query) > 0) {
-        $_SESSION['user_type'] = 'client';
+    } elseif ($_SESSION['user_type'] == 'client') {
         header("location: client.php");
-    } elseif (mysqli_num_rows($coach_query) > 0) {
-        $_SESSION['user_type'] = 'coach';
+    } elseif ($_SESSION['user_type'] == 'coach') {
         header("location: coach.php");
     }
 }

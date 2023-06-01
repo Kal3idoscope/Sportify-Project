@@ -54,7 +54,7 @@ if (mysqli_num_rows($sql) > 0) {
                 </div>
                 <div class="option7">
                             <button><a href="./change_info_admin.php">MODIFIER MES INFOS</a></button>
-                            <button>PRENDRE UN RDV</button>
+                            <button><a href="users.php">PRENDRE UN RDV</a></button>
                             <button>HISTORIQUE DE MES RDV</button>
                 </div>
             </div>

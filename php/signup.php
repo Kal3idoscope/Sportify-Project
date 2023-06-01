@@ -77,6 +77,7 @@ if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($password)) {
                                 if (mysqli_num_rows($select_sql_client) > 0){
                                     $result = mysqli_fetch_assoc($select_sql_client);
                                     $_SESSION['unique_id'] = $result['ID_Client'];
+                                    $_SESSION['user_type'] = 'client';
                                     echo "success";
                                     header("location: ../client.php");
                                 } else {
