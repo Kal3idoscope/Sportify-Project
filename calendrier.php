@@ -93,12 +93,12 @@
     echo "</tr>";
 
     // Afficher les heures et les rendez-vous pour chaque jour
-    for ($heure = 6; $heure < 18; $heure++) {
+    for ($heure = 6; $heure < 18; $heure+2) {
         echo "<tr>";
         for ($i = 0; $i < 7; $i++) {
             $jour = date("Y-m-d", strtotime('+' . $i . ' day', strtotime($premierJourSemaine)));
             $heureCourante = sprintf("%02d:00", $heure);
-            $heureSuivante = sprintf("%02d:00", $heure + 1);
+            $heureSuivante = sprintf("%02d:00", $heure + 2);
             echo "<td>";
             echo "<div>" . $heureCourante . " - " . $heureSuivante . "</div>";
             $rendezVous = getRendezVous($jour);
