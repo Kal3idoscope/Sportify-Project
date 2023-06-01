@@ -77,9 +77,7 @@ if (mysqli_num_rows($sql) > 0) {
             <a href="./RDV.html">RDV</a><br>
             <a href="./login.php">COMPTE</a><br>
         </div>
-        <div class="boutonLOGOUT">
-                     <button style="width:100% ; height:95%; font-size: 200%" ><a href="php/logout.php?logout_id=<?php echo $row['ID_Client']; ?>" class="logout">LOG OUT</a></button>
-                </div>
+
     </div>
 </div>
 

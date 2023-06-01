@@ -36,8 +36,8 @@ if (mysqli_num_rows($sql) > 0) {
 }
 
 
-$requete = "SELECT * FROM coach WHERE ID_Coach = {$_SESSION['unique_id']}";
-$resultat = $conn->query($requete);
+    $requete = "SELECT * FROM coach WHERE ID_Coach = {$_SESSION['unique_id']}";
+    $resultat = $conn->query($requete);
 
 
     // Tableau de rendez-vous pour chaque jour
@@ -48,7 +48,7 @@ $resultat = $conn->query($requete);
         $prenom = $row["Prenom"];
         $mail = $row["Email"];
         $id=$row["ID_Coach"];
-     $photo=$row["Photo"];
+        $photo=$row["Photo"];
     }
 
 ?>
@@ -94,9 +94,9 @@ $resultat = $conn->query($requete);
             <a href="./RDV.html">RDV</a><br>
             <a href="./login.php">COMPTE</a><br>
         </div>
-        <div class="calendrier">
-                     <p class ="calend"> CALENDRIER </p>
-                </div>
+        <div class="boutonLOGOUT">
+            <button style="width:100% ; height:95%; font-size: 200%" ><a href="php/logout.php?logout_id=<?php echo $id ?>" class="logout">LOG <br> OUT</a></button>
+        </div>
     </div>
 </div>
 
