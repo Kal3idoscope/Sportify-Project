@@ -34,19 +34,41 @@ $sql = mysqli_query($conn, "SELECT * FROM client WHERE ID_Client = {$_SESSION['u
 if (mysqli_num_rows($sql) > 0) {
     $row = mysqli_fetch_assoc($sql);
 }
+
+ $serveur = "localhost";
+    $utilisateur = "root";
+    $motDePasse = "";
+    $baseDeDonnees = "sportify";
+
+  $connexion = new mysqli($serveur, $utilisateur, $motDePasse, $baseDeDonnees);
+$requete = "SELECT * FROM coach WHERE ID_Coach = {$_SESSION['unique_id']}";
+$resultat = $connexion->query($requete);
+
+
+    // Tableau de rendez-vous pour chaque jour
+    $admin = array();
+    while ($row = $resultat->fetch_assoc()) {
+
+        $nom = $row["Nom"];
+        $prenom = $row["Prenom"];
+        $mail = $row["Email"];
+        $id=$row["ID_Coach"];
+     $photo=$row["Photo"];
+    }
+
+     $connexion->close();
 ?>
 <div class="blocHeader">
     <div class="bloc1">
         <h1 class="titre1">COMPTE COACH <h1>
         <br>
                 <div class="blocProfil">
-                    <img class="photodeprofil" src="Images/mouhali.jpeg" alt="mouhali"/>
-                    <div class="profildata">
-                        <p>NOM : </p>
-                        <p>PRENOM : </p>
-                        <p>MAIL : </p>
-                        <p>BUREAU :  </p>
-                        <p>TELEPHONE :  </p>
+                    <img class="photodeprofil" src="php/pic/<?php echo $photo ?>" alt="">
+                                        <div class="profildata">
+                                            <p>NOM : <?php echo $nom; ?></p>
+                                            <p>PRENOM : <?php echo $prenom; ?></p>
+
+                                            <p>MAIL : <?php echo $mail; ?></p>
 
 
                     </div>

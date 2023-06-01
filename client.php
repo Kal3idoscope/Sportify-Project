@@ -34,20 +34,45 @@ $sql = mysqli_query($conn, "SELECT * FROM client WHERE ID_Client = {$_SESSION['u
 if (mysqli_num_rows($sql) > 0) {
     $row = mysqli_fetch_assoc($sql);
 }
+
+ $serveur = "localhost";
+    $utilisateur = "root";
+    $motDePasse = "";
+    $baseDeDonnees = "sportify";
+
+  $connexion = new mysqli($serveur, $utilisateur, $motDePasse, $baseDeDonnees);
+$requete = "SELECT * FROM client WHERE ID_Client = {$_SESSION['unique_id']}";
+$resultat = $connexion->query($requete);
+
+
+    // Tableau de rendez-vous pour chaque jour
+    $client = array();
+    while ($row = $resultat->fetch_assoc()) {
+        $nom = $row["Nom"];
+        $prenom = $row["Prenom"];
+        $mail = $row["Email"];
+        $id=$row["ID_Client"];
+        $photo=$row["Photo"];
+
+    }
+
+     $connexion->close();
+
 ?>
 <div class="blocHeader">
     <div class="bloc1">
-        <h1 class="titre">COMPTE CLIENT <h1>
-        <br>
+
+        <h1 class="titre">COMPTE CLIENT </h1>
+
                 <div class="blocProfil">
-                    <img class="photodeprofil" src="Images/mouhali.jpeg" alt="mouhali"/>
+                     <img class="photodeprofil" src="php/pic/<?php echo $photo ?>" alt="">
                     <div class="profildata">
-                        <p>NOM : </p>
-                        <p>PRENOM : </p>
-                        <p>ADRESSE : </p>
-                        <p>MAIL : </p>
-                        <p>CARTE ETUDIANTE : </p>
-                        <p class="modifInfo"> INFORMATIONS DE PAIEMENT </p>
+                        <p>NOM : <?php echo $nom; ?></p>
+                        <p>PRENOM : <?php echo $prenom; ?></p>
+
+                        <p>MAIL : <?php echo $mail; ?></p>
+                        <p>CARTE ETUDIANTE : <?php echo $id; ?></p>
+                        <p class="modifInfo"> MODIFIER INFORMATIONS </p>
 
 
                     </div>
@@ -58,6 +83,7 @@ if (mysqli_num_rows($sql) > 0) {
                             <button>HISTORIQUE DE MES RDV</button>
                 </div>
             </div>
+
 
 
 
@@ -80,7 +106,7 @@ if (mysqli_num_rows($sql) > 0) {
             <a href="./login.php">COMPTE</a><br>
         </div>
         <div class="boutonLOGOUT">
-                     <button style="width:100% ; height:95%; font-size: 200%" ><a href="php/logout.php?logout_id=<?php echo $row['ID_Client']; ?>" class="logout">LOG OUT</a></button>
+                     <button ><a href="php/logout.php?logout_id=<?php echo $id ?>" class="logout">LOG OUT</a></button>
                 </div>
     </div>
 </div>
