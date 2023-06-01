@@ -42,22 +42,25 @@ if(!isset($_SESSION['unique_id'])){
                     <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
                 </div> <br>
                 <hr>
+                <div class="options 2">
                 <tr>
                     <td>
-                        <div class ="titre4">
-                        <p style="margin-top:3%"> ACTIVITES SPORTIVES </p>
-                        </div>
+
                         <div class ="fieldInput1">
+                        <div class ="titre4">
+                                                <p style="margin-top:3%"> ACTIVITES SPORTIVES </p>
+                                                </div>
                         <input type="radio" name="sport" value="1">Musculation<br>
                         <input type="radio" name="sport" value="2">Fitness<br>
                         <input type="radio" name="sport" value="3">Biking<br>
                         <input type="radio" name="sport" value="4">Cardio-Training<br>
                         <input type="radio" name="sport" value="5">Cours Collectifs<br>
                         </div>
-                        <div class ="titre4">
-                        <p> SPORTS DE COMPETITION </p>
-                        </div>
+
                         <div class ="fieldInput1">
+                         <div class ="titre4">
+                                                <p> SPORTS DE COMPETITION </p>
+                                                </div>
                         <input type="radio" name="sport" value="6">Basketball<br>
                         <input type="radio" name="sport" value="7">Football<br>
                         <input type="radio" name="sport" value="8">Rugby<br>
@@ -68,11 +71,14 @@ if(!isset($_SESSION['unique_id'])){
                     </td>
 
                 </tr>
-                <div class="button">
-                    <input class="button" type="submit" name="submit" value="INSCRIRE UN COACH">
                 </div>
+                          <button>INSCRIRE UN COACH</button>
+
+
             </form>
+
         </section>
+
     </div>
     <div class="bloc2">
 
