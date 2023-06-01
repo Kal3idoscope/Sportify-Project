@@ -43,8 +43,8 @@ if(mysqli_num_rows($sql) > 0){
             <a href="./rdv.php">RDV</a><br>
             <a href="./login.php">COMPTE</a><br>
         </div>
-        <div class="chat">
-             <button><a href="php/logout.php?logout_id=<?php echo $row['ID_Admin']; ?>" class="logout">LOG <br> OUT</a></button>
+        <div class="boutonLOGOUT">
+             <button style="width:100% ; height:95%; font-size: 200%"><a href="php/logout.php?logout_id=<?php echo $row['ID_Admin']; ?>" class="logout">LOG OUT</a></button>
         </div>
     </div>
 </div>
