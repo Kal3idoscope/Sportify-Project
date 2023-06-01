@@ -35,14 +35,8 @@ if (mysqli_num_rows($sql) > 0) {
     $row = mysqli_fetch_assoc($sql);
 }
 
- $serveur = "localhost";
-    $utilisateur = "root";
-    $motDePasse = "";
-    $baseDeDonnees = "sportify";
-
-  $connexion = new mysqli($serveur, $utilisateur, $motDePasse, $baseDeDonnees);
 $requete = "SELECT * FROM client WHERE ID_Client = {$_SESSION['unique_id']}";
-$resultat = $connexion->query($requete);
+$resultat = $conn->query($requete);
 
 
     // Tableau de rendez-vous pour chaque jour
@@ -55,9 +49,6 @@ $resultat = $connexion->query($requete);
         $photo=$row["Photo"];
 
     }
-
-     $connexion->close();
-
 ?>
 <div class="blocHeader">
     <div class="bloc1">
