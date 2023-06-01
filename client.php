@@ -101,9 +101,7 @@ $resultat = $conn->query($requete);
                 </div>
     </div>
 </div>
-<div class="RDV">
-    <p>RENDEZ-VOUS <br> à venir </p>
-</div>
+
 
 </body>
 </html>
