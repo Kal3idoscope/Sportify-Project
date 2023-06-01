@@ -41,6 +41,7 @@ if(!isset($_SESSION['unique_id'])){
                 <tr>
                     <td>Sport:</td>
                     <td>
+                        <div class="fieldInput">
                         Activités Sportives<br>
                         <input type="radio" name="sport" value="1">Musculation<br>
                         <input type="radio" name="sport" value="2">Fitness<br>
@@ -54,6 +55,7 @@ if(!isset($_SESSION['unique_id'])){
                         <input type="radio" name="sport" value="9">Tennis<br>
                         <input type="radio" name="sport" value="10">Natation<br>
                         <input type="radio" name="sport" value="11">Plongeon<br>
+                        </div>
                     </td>
                 </tr>
                 <div class="fieldButton">
