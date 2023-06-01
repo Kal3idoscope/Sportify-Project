@@ -66,8 +66,9 @@ if(mysqli_num_rows($sql) > 0){
     }
 
     // Récupérer les rendez-vous de la semaine
-    $requete = "SELECT * FROM prendre_rdv WHERE ID_Coach = {$_SESSION['unique_id']} AND Date_rdv >= '" . $premierJourSemaine . "' AND Date_rdv < DATE_ADD('" . $premierJourSemaine . "', INTERVAL 7 DAY)" ;
+    $requete = "SELECT * FROM prendre_rdv  NATURAL JOIN client WHERE ID_Coach = {$_SESSION['unique_id']} AND Date_rdv >= '" . $premierJourSemaine . "' AND Date_rdv < DATE_ADD('" . $premierJourSemaine . "', INTERVAL 7 DAY)" ;
     $resultat = $connexion->query($requete);
+
 
 
     // Tableau de rendez-vous pour chaque jour
@@ -81,8 +82,10 @@ if(mysqli_num_rows($sql) > 0){
         if (!isset($rendezVous[$jour])) {
             $rendezVous[$jour] = array();
         }
-        $rendezVous[$jour][$Heure] = $Statut;
+        $Nom = $row["Nom"];;
     }
+
+
 
     // Fermer la connexion à la base de données
     $connexion->close();
@@ -114,7 +117,7 @@ if(mysqli_num_rows($sql) > 0){
             echo "<td>";
             echo "<div>" . $heureCourante . " - " . $heureSuivante . "</div>";
             if (isset($rendezVous[$jour]) && array_key_exists($heureCourante . " - " . $heureSuivante, $rendezVous[$jour])) {
-                echo "<div class='appointment'> <p>$Client</p> </div>";
+                echo "<div class='appointment'> <p>adsfk<p>  </div>";
             }
             echo "</td>";
         }
