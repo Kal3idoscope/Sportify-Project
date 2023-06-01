@@ -65,7 +65,7 @@ $resultat = $connexion->query($requete);
         <h1 class="titre">COMPTE CLIENT </h1>
 
                 <div class="blocProfil">
-                    <img class="photodeprofil" src="Images/mouhali.jpeg" alt="mouhali"/>
+                     <img class="photodeprofil" src="php/pic/<?php echo $photo ?>" alt="">
                     <div class="profildata">
                         <p>NOM : <?php echo $nom; ?></p>
                         <p>PRENOM : <?php echo $prenom; ?></p>

@@ -62,8 +62,8 @@ $resultat = $connexion->query($requete);
 
 <div class="blocHeader">
     <div class="bloc1">
-        <h1 class="titre">ADMINISTRATEUR <h1>
-        <br>
+        <h1 class="titre">ADMINISTRATEUR </h1>
+
                 <div class="blocProfil">
                     <div class="profildata">
                         <p>NOM :  <?php echo $nom; ?> </p>
@@ -97,7 +97,7 @@ $resultat = $connexion->query($requete);
                 </div>
             </div>
             <a href="./rdv.php">RDV</a><br>
-            <a href="./login.php">COMPTE</a><br>""
+            <a href="./login.php">COMPTE</a><br>
         </div>
         <div class="boutonLOGOUT">
              <button style="width:100% ; height:95%; font-size: 200%"><a href="php/logout.php?logout_id=<?php echo $id ?>" class="logout">LOG <br> OUT</a></button>

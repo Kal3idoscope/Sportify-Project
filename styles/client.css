@@ -40,16 +40,12 @@
 }
 
 .photodeprofil{
-    border-radius: 70%;
-
+    border-radius: 100%;
+    height: 250px;
+    width:250px;
     margin-right:5% ;
 }
 
-
-.photoMouhali {
-
-    margin : 5%;
-}
 
 .blocProfil{
     align-items: center;
@@ -66,9 +62,6 @@
 
 }
 
-.profildata{
-
-}
 
 
 .option7{
