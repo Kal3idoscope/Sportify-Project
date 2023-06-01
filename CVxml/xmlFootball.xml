@@ -1,35 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Geeks.css"?>
 <CURRICULUM>
-
-  <CURRICULUM category="Basketball">
+  <title>CURRICULUM VITAE</title> 
+  <geeks_section>
     <Prénom>Anis</Prénom>
-    <Nom>Chaari</Nom>
-    <Coord category="Coordonnées">
-      <Adresse>22 Avenue du Val Fleuri, 92350 Le Plessis-Robinson</Adresse>
-      <telephone>06 34 26 42 66</telephone>
-      <mail>anis.chaari@sportify.fr</mail>
-    </Coord>
-    <Profil>Je suis un spécialiste passionné du football avec une connaissance approfondie du jeu et de ses multiples facettes. Mon expérience et mes compétences me permettent d'apporter une expertise précieuse dans tous les aspects du football, que ce soit sur le terrain, en tant qu'entraîneur ou dans la gestion des opérations.
-</Profil>
-    <competences category="compétences">
+    <Prénom>Chaari</Prénom>
+  </geeks_section>
+    <geeks_section>
+    <name>Coordonnées</name>
+      <geeks_section>
+      <Adresse>22 Avenue du Val Fleuri, 92350 Le Plessis-Robinson</Adresse>  </geeks_section>
+  <geeks_section>
+      <telephone>06 34 26 42 66</telephone></geeks_section>
+        <geeks_section>
+      <mail>anis.chaari@sportify.fr</mail></geeks_section>
+    </geeks_section>    
+    <geeks_section>
+      <name>Profil</name>
+    <u>Je suis un spécialiste passionné du football avec une connaissance approfondie du jeu et de ses multiples facettes. Mon expérience et mes compétences me permettent d'apporter une expertise précieuse dans tous les aspects du football, que ce soit sur le terrain, en tant qu'entraîneur ou dans la gestion des opérations.
+</u></geeks_section>
+  <geeks_section>
+    <name>Compétences</name>
       <u>Expertise technique : Je possède une connaissance approfondie des règles et des stratégies du football. J'ai une excellente compréhension des différents systèmes de jeu, des tactiques et des techniques de base. Je suis capable d'analyser les matchs, d'identifier les forces et les faiblesses des joueurs et des équipes, et de formuler des recommandations pour améliorer les performances.</u>
       <d>Gestion de l'équipe : J'ai une expérience avérée en tant qu'entraîneur, ayant travaillé avec des équipes de jeunes et des équipes professionnelles. Je suis compétent pour évaluer les compétences des joueurs, développer des programmes d'entraînement efficaces, motiver les joueurs et favoriser une atmosphère positive dans l'équipe. Je peux également gérer les relations avec les membres du personnel, les parents des joueurs et les parties prenantes externes.
 </d>
       <t>Analyse des données : Je suis à l'aise avec l'utilisation des outils d'analyse de données appliqués au football. Je peux collecter, analyser et interpréter les statistiques de jeu pour obtenir des informations clés sur les performances des joueurs et des équipes. J'utilise ces informations pour améliorer les stratégies et les décisions prises sur le terrain.
 </t>
-</competences>
-<exppro category="Experience professionnelle">
+</geeks_section>
+  <geeks_section>
+<name>Experience professionnelle</name>
   <u>Entraîneur principal d'une équipe de jeunes pendant 5 ans, en mettant en œuvre des programmes d'entraînement et en développant les compétences techniques et tactiques des joueurs.
 </u>
 <d>Analyste de données pour une équipe de football professionnelle, en fournissant des rapports d'analyse approfondis sur les performances des joueurs et des équipes.</d>
 <t>Consultant en football, offrant des services de conseil aux clubs et aux entraîneurs pour améliorer les performances de leurs équipes.
 </t>
-</exppro>
-<formation category="Formation">
+</geeks_section>
+  <geeks_section>
+<name>Formation</name>
  <u>Licence en éducation physique et sportive, avec spécialisation en football.</u>
 <d>Certificat d'entraîneur de football reconnu par l'association nationale de football.</d>
 <t>Formation continue en analyse de données appliquée au football.</t>
-</formation>
-  </CURRICULUM>
-
+</geeks_section>
 </CURRICULUM>

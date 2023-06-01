@@ -1,35 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Geeks.css"?>
 <CURRICULUM>
-
-  <CURRICULUM category="Cardio-Training">
+  <title>CURRICULUM VITAE</title>
+  <geeks_section>
     <Prénom>Iman</Prénom>
-    <Nom>Ragheb</Nom>
-    <Coord category="Coordonnées">
+    <Prénom>Ragheb</Prénom>
+    </geeks_section>
+    <name>Coordonnées</name>
+    <geeks_section>
+      <geeks_section>
       <Adresse>63 Rue de l'Émeraude, 75014 Paris</Adresse>
+    </geeks_section>
+    <geeks_section>
       <telephone>06 52 84 10 22</telephone>
+    </geeks_section>
+    <geeks_section>
       <mail>iman.ragheb@sportify.fr</mail>
-    </Coord>
-    <Profil>Enthousiaste et passionnée par la santé et la forme physique, je suis une spécialiste hautement qualifiée dans le domaine du cardio training. Forte d'une solide expérience, mon objectif est d'aider les individus à améliorer leur endurance, leur condition physique et leur santé globale. Je me distingue par ma capacité à concevoir des programmes d'entraînement personnalisés et à fournir des conseils spécialisés, garantissant ainsi à mes clients des résultats efficaces et sécuritaires.
-</Profil>
-    <competences category="compétences">
+    </geeks_section>
+    </geeks_section>
+    <geeks_section>
+      <name>Profil</name>
+    <u>Enthousiaste et passionnée par la santé et la forme physique, je suis une spécialiste hautement qualifiée dans le domaine du cardio training. Forte d'une solide expérience, mon objectif est d'aider les individus à améliorer leur endurance, leur condition physique et leur santé globale. Je me distingue par ma capacité à concevoir des programmes d'entraînement personnalisés et à fournir des conseils spécialisés, garantissant ainsi à mes clients des résultats efficaces et sécuritaires.
+</u>
+</geeks_section>
+    <geeks_section>
+      <name>Compétences</name>
       <u>Maîtrise des principes fondamentaux de l'entraînement cardiovasculaire, incluant l'utilisation d'équipements tels que les tapis de course, les vélos stationnaires, les elliptiques et les rameurs.</u>
       <d>Capacité à élaborer des programmes sur mesure, adaptés aux besoins et aux objectifs spécifiques de chaque client, tout en prenant en compte leur niveau de condition physique, leurs antécédents médicaux et leurs préférences personnelles.</d>
       <t>Compétence dans l'évaluation initiale de la condition physique des clients grâce à des tests et des mesures appropriés, permettant d'établir une référence pour le suivi des progrès.</t>
 <q>Connaissance approfondie de l'anatomie, de la physiologie et de la biomécanique liées à l'entraînement en musculation</q>
 <c>Capacité à fournir des conseils en matière de nutrition pour optimiser les résultats de l'entraînement</c>
 <s>Excellent sens de la communication et compétences interpersonnelles pour établir des relations solides avec les clients, Motivation et capacité à inspirer et à encourager les clients à atteindre leurs objectifs de remise en forme </s> 
-</competences>
-<exppro category="Experience professionnelle">
-  <u>Décembre 2012 – septembre 2022
-Entraîneuse de cardio-training
-Centre de Gym Water & Brave
-</u>
-</exppro>
-<formation category="Formation">
- <u>L2010 : Licence staps – Université de Paris</u>
+</geeks_section>
+<geeks_section>
+<name>Experience professionnelle</name>
+  <u>Décembre 2012 – septembre 2022</u>
+<d>Entraîneuse de cardio-training</d>
+<t>Centre de Gym Water n Brave
+</t>
+</geeks_section>
+<geeks_section>
+<name>Formation</name>
+ <u>2010 : Licence staps – Université de Paris</u>
 <d>2009 : Concours capeps – Ecole Supérieure Monopole de Lyon</d>
 <t>2007 : Baccalauréat S – Lycée Sainte Thérèse de Dijon</t>
-</formation>
-  </CURRICULUM>
-
+</geeks_section>
 </CURRICULUM>

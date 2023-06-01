@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Geeks.css"?>
 <CURRICULUM>
-
-  <CURRICULUM category="Musculation">
+  <title>CURRICULUM VITAE</title> 
+    <geeks_section>
     <Prénom>Louis</Prénom>
-    <Nom>Mahl</Nom>
-    <Coord category="Coordonnées">
-      <Adresse>9 Rue de la Fontaine, 75015 Paris</Adresse>
-      <telephone>06 32 98 01 16</telephone>
-      <mail>louis.mahl@sportify.fr</mail>
-    </Coord>
-    <Profil>Spécialiste en musculation passionné et motivé, doté d'une solide expérience dans le domaine du fitness et de la musculation. Expérimenté dans la conception de programmes d'entraînement personnalisés et la prestation de conseils professionnels pour aider les clients à atteindre leurs objectifs de remise en forme. Excellent communicateur et motivateur, capable d'inspirer et de guider les individus à travers des routines d'exercices efficaces. Soucieux de rester à la pointe des dernières tendances en matière d'entraînement et de nutrition pour fournir des conseils basés sur des preuves scientifiques. Prêt à partager mes connaissances et mon expertise pour aider les clients à transformer leur vie grâce à la musculation et à l'exercice physique.</Profil>
-    <competences category="compétences">
+    <Prénom>Mahl</Prénom>
+  </geeks_section>
+    <geeks_section>
+    <name>Coordonnées</name>
+        <geeks_section>9 Rue de la Fontaine, 75015 Paris</geeks_section>
+        <geeks_section>06 32 98 01 16</geeks_section>
+        <geeks_section>louis.mahl@sportify.fr</geeks_section>
+  </geeks_section>
+      <geeks_section>
+    <name>Profil</name>
+    <u>Spécialiste en musculation passionné et motivé, doté d'une solide expérience dans le domaine du fitness et de la musculation. Expérimenté dans la conception de programmes d'entraînement personnalisés et la prestation de conseils professionnels pour aider les clients à atteindre leurs objectifs de remise en forme. Excellent communicateur et motivateur, capable d'inspirer et de guider les individus à travers des routines d'exercices efficaces. Soucieux de rester à la pointe des dernières tendances en matière d'entraînement et de nutrition pour fournir des conseils basés sur des preuves scientifiques. Prêt à partager mes connaissances et mon expertise pour aider les clients à transformer leur vie grâce à la musculation et à l'exercice physique.</u></geeks_section>
+      <geeks_section>
+    <name>Compétences</name>
       <u>Conception et mise en œuvre de programmes d'entraînement personnalisés</u>
       <d>Évaluation approfondie des besoins et des capacités des clients</d>
       <t>Suivi des progrès et adaptation des programmes d'entraînement en conséquence -
@@ -18,15 +24,13 @@ Expertise dans une variété de techniques de musculation, y compris l'haltérop
 <q>Connaissance approfondie de l'anatomie, de la physiologie et de la biomécanique liées à l'entraînement en musculation</q>
 <c>Capacité à fournir des conseils en matière de nutrition pour optimiser les résultats de l'entraînement</c>
 <s>Excellent sens de la communication et compétences interpersonnelles pour établir des relations solides avec les clients, Motivation et capacité à inspirer et à encourager les clients à atteindre leurs objectifs de remise en forme </s> 
-</competences>
-<exppro category="Experience professionnelle">
-  
-</exppro>
-<formation category="Formation">
+  </geeks_section>
+    <geeks_section>
+<name>Experience professionnelle</name></geeks_section>
+  <geeks_section>
+<name>Formation</name>
  <u>Licence en sciences de l'exercice, Université de Cergy</u>
 <d>Certification en entraînement personnel, Institution de formation nationale des sports, Paris</d>
 <t>Formation avancée en nutrition sportive, Institution de nutrition et de complémentation naturelle, Paris</t>
-</formation>
-  </CURRICULUM>
-
+  </geeks_section>
 </CURRICULUM>

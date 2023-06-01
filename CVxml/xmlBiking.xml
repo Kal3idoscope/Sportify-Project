@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Geeks.css"?>
 <CURRICULUM>
-
-<CURRICULUM category="Biking">
+<title>CURRICULUM VITAE</title>
+<geeks_section>
   <Prénom>Ahmed</Prénom>
-  <Nom>Hamraoui</Nom>
-  <Coord category="Coordonnées">
-    <Adresse>37 Rue de la Cascade, 75016 Paris</Adresse>
-    <telephone>06 21 14 89 38</telephone>
-    <mail>ahmed.hamraoui@sportify.fr</mail>
-  </Coord>
-   <Profil>Spécialiste en Biking passionné et expérimenté, doté d'une expertise approfondie dans le domaine du cyclisme. Je possède une solide expérience pratique ainsi qu'une connaissance approfondie des différents types de vélos, des techniques de réparation et de maintenance, ainsi que des compétences en coaching et en planification d'entraînement. Je suis passionné par le cyclisme depuis mon enfance et j'ai développé une carrière professionnelle autour de ma passion.</Profil>
-   <competences category="compétences">
+  <Prénom>Hamraoui</Prénom>
+  </geeks_section>
+  <geeks_section>
+    <name>Coordonnées</name>
+    <geeks_section>
+    37 Rue de la Cascade, 75016 Paris</geeks_section>
+    <geeks_section>06 21 14 89 38</geeks_section>
+    <geeks_section>ahmed.hamraoui@sportify.fr</geeks_section>
+  </geeks_section>
+  <geeks_section>
+    <name>Profil</name>
+   <u>Spécialiste en Biking passionné et expérimenté, doté d'une expertise approfondie dans le domaine du cyclisme. Je possède une solide expérience pratique ainsi qu'une connaissance approfondie des différents types de vélos, des techniques de réparation et de maintenance, ainsi que des compétences en coaching et en planification d'entraînement. Je suis passionné par le cyclisme depuis mon enfance et j'ai développé une carrière professionnelle autour de ma passion.</u>
+   </geeks_section>
+   <geeks_section>
+    <name>Compétences</name>
      <u>Expertise en cyclisme: Maîtrise des différentes disciplines du cyclisme, y compris le VTT, le cyclisme sur route et le cyclisme en salle. Connaissance approfondie des règles, des techniques de conduite et des stratégies de course.</u>
 <d>Réparation et maintenance: Compétences avancées en matière de réparation et d'entretien des vélos. Capacité à diagnostiquer et à résoudre les problèmes mécaniques, à ajuster les composants et à effectuer des réglages précis pour assurer des performances optimales.</d>
 <t>Coaching et planification d'entraînement: Expérience dans l'élaboration de programmes d'entraînement personnalisés pour des individus et des groupes. Capacité à évaluer les besoins des clients, à définir des objectifs réalistes et à fournir des conseils techniques pour améliorer les performances.</t><q>Sécurité et prévention des accidents: Connaissance approfondie des règles de sécurité routière et des mesures de prévention des accidents liés au cyclisme. Capacité à informer les cyclistes sur les bonnes pratiques en matière de sécurité et à fournir des conseils sur l'équipement de protection approprié.</q>
-   </competences>
-   <exppro category="Experience professionnelle">
+   </geeks_section>
+   <geeks_section>
+   <name>Expérience professionnelle</name>
     <u>Poste actuel : Spécialiste en Biking chez Epsilon (depuis 2016)
       <uu>Fournir des services de réparation et d'entretien de vélos de haute qualité pour les clients.</uu>
       <dd>Organiser des cours de formation pour les cyclistes débutants et intermédiaires.</dd>
@@ -27,12 +36,10 @@
       <tt>Conseiller les clients sur l'entretien régulier et les bonnes pratiques de cyclisme.</tt>
       <qq>Assister à des formations et des ateliers pour se tenir à jour sur les nouvelles technologies et techniques</qq>
     </d>
-   </exppro>
-   <formation category="Formation">
+   </geeks_section>
+   <geeks_section>
+    <name>Formation</name>
      <u>STAPS</u>
      <d>Docteur en cyclisme</d>
-   </formation>
-
-
- </CURRICULUM>  
+   </geeks_section> 
 </CURRICULUM>
