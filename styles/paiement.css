@@ -1,5 +1,41 @@
+.fieldInput3
+{
+    margin-top: 2%;
+    font-family: "dosis",sans-serif;
+    font-weight: lighter;
+    font-size: 150%;
+    line-height: 90%;
+    text-align:left;
+    margin-left : 5%;
+}
 
+hr {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    overflow: visible;
+    text-align: center;
+    height: 1px;
 
+    margin-top: 5%;
+
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+hr:after {
+    margin: 0;
+
+    color: white;
+    font-family: "dosis", sans-serif;
+    font-size: 300%;
+    background:#443F3F;
+    content: 'Informations carte de crédit';
+    padding: 0 30px 0 30px;
+    position: relative;
+    top: -40px;
+
+}
 
 .titre
 {
@@ -9,46 +45,6 @@
     text-align: center;
     color: #BBAE90;
 }
-
-.titre4
-{
-    font-family: "shrikhand", cursive;
-    margin-top: 2%;
-    font-size: 150%;
-    text-align: center;
-    color: #BBAE90;
-}
-
-.titre5
-{
-    font-family: "dosis",sans-serif;
-    font-weight: lighter;
-    margin-top: 1%;
-    font-size: 150%;
-    text-align: center;
-    color: #BBAE90;
-}
-
-.fieldInput
-{
-    margin-top: 2%;
-    font-family: "dosis",sans-serif;
-    font-weight: lighter;
-    font-size: 150%;
-    line-height: 90%;
-    text-align:center;
-}
-
-.fieldInput1
-{
-
-    font-family: "dosis",sans-serif;
-    font-weight: lighter;
-    font-size: 150%;
-    margin:5%;
-    text-align:center;
-}
-
 
 .in
 {
@@ -131,31 +127,7 @@ button:active:before {
     transition: 0s;
 }
 
-hr {
-    border: 1px solid #FFFFFF;
-    color: #FFFFFF;
-    background-color: #FFFFFF;
-    overflow: visible;
-    text-align: center;
-    height: 1px;
-
-    margin-top: 5%;
-
-    margin-left: 2%;
-    margin-right: 2%;
+.option48
+{
+    display: flex;
 }
-
-hr:after {
-    margin: 0;
-
-    color: white;
-    font-family: "dosis", sans-serif;
-    font-size: 300%;
-    background:#443F3F;
-    content: 'Choisissez votre sport';
-    padding: 0 30px 0 30px;
-    position: relative;
-    top: -40px;
-
-}
-
