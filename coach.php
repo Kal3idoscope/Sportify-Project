@@ -37,7 +37,7 @@ if (mysqli_num_rows($sql) > 0) {
 ?>
 <div class="blocHeader">
     <div class="bloc1">
-        <h1 class="titre">COMPTE COACH <h1>
+        <h1 class="titre1">COMPTE COACH <h1>
         <br>
                 <div class="blocProfil">
                     <img class="photodeprofil" src="Images/mouhali.jpeg" alt="mouhali"/>
@@ -53,7 +53,7 @@ if (mysqli_num_rows($sql) > 0) {
                 </div>
                 <div class="option7">
                             <button><a href="./change_info_admin.php">MODIFIER MES INFOS</a></button>
-                            <button><a href="users.php">PRENDRE UN RDV</a></button>
+                            <button><a href="users.php">CHATROOM</a></button>
                             <button>HISTORIQUE DE MES RDV</button>
                 </div>
             </div>

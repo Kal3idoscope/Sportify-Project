@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "dosis", sans-serif;
+    color : #ffffff;
 }
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #f7f7f7;
+    background: #1E1E1C;
     padding: 0 10px;
 }
 .wrapper{
-    background: #fff;
+    background: #443F3F;
     max-width: 450px;
     width: 100%;
     border-radius: 16px;
@@ -74,6 +74,7 @@ body{
 }
 .form form .field input{
     outline: none;
+    color: #333;
 }
 .form form .image input{
     font-size: 17px;
@@ -81,7 +82,7 @@ body{
 .form form .button input{
     height: 45px;
     border: none;
-    color: #fff;
+    color: #443F3F;
     font-size: 17px;
     background: #333;
     border-radius: 5px;
@@ -138,17 +139,18 @@ body{
     align-items: center;
 }
 :is(.users, .users-list) .content .details{
-    color: #000;
+    color: #333;
     margin-left: 20px;
 }
 :is(.users, .users-list) .details span{
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: lighter;
+
 }
 .users header .logout{
     display: block;
     background: #333;
-    color: #fff;
+    color : #ffffff;
     outline: none;
     border: none;
     padding: 7px 15px;
@@ -165,6 +167,7 @@ body{
 }
 .users .search .text{
     font-size: 18px;
+    color : #BBAE90;
 }
 .users .search input{
     position: absolute;
@@ -172,7 +175,7 @@ body{
     width: calc(100% - 50px);
     font-size: 16px;
     padding: 0 13px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #333;
     outline: none;
     border-radius: 5px 0 0 5px;
     opacity: 0;
@@ -182,6 +185,7 @@ body{
 .users .search input.show{
     opacity: 1;
     pointer-events: auto;
+    color: #333;
 }
 .users .search button{
     position: relative;
@@ -191,7 +195,7 @@ body{
     font-size: 17px;
     cursor: pointer;
     border: none;
-    background: #fff;
+    background: #443F3F;
     color: #333;
     outline: none;
     border-radius: 0 5px 5px 0;
@@ -199,7 +203,7 @@ body{
 }
 .users .search button.active{
     background: #333;
-    color: #fff;
+    color: #BBAE90;
 }
 .search button.active i::before{
     content: '\f00d';
@@ -207,15 +211,17 @@ body{
 .users-list{
     max-height: 350px;
     overflow-y: auto;
+    color: #333;
 }
 :is(.users-list, .chat-box)::-webkit-scrollbar{
     width: 0px;
+    color: #333;
 }
 .users-list a{
     padding-bottom: 10px;
     margin-bottom: 15px;
     padding-right: 15px;
-    border-bottom-color: #f1f1f1;
+    border-bottom-color: #BBAE90;
 }
 .users-list a:last-child{
     margin-bottom: 0px;
@@ -234,7 +240,7 @@ body{
     padding-left: 10px;
 }
 .users-list a .status-dot.offline{
-    color: #ccc;
+    color: #BBAE90;
 }
 
 /* Chat Area CSS Start */
@@ -255,6 +261,7 @@ body{
 .chat-area header .details span{
     font-size: 17px;
     font-weight: 500;
+    color : #BBAE90;
 }
 .chat-box{
     position: relative;
@@ -262,7 +269,7 @@ body{
     max-height: 500px;
     overflow-y: auto;
     padding: 10px 30px 20px 30px;
-    background: #f7f7f7;
+    background: #BBAE90;
     box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
     inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
 }
@@ -292,7 +299,7 @@ body{
 }
 .outgoing .details p{
     background: #333;
-    color: #fff;
+    color: #BBAE90;
     border-radius: 18px 18px 0 18px;
 }
 .chat-box .incoming{
@@ -309,7 +316,7 @@ body{
     max-width: calc(100% - 130px);
 }
 .incoming .details p{
-    background: #fff;
+    background: #BBAE90;
     color: #333;
     border-radius: 18px 18px 18px 0;
 }
@@ -323,12 +330,13 @@ body{
     width: calc(100% - 58px);
     font-size: 16px;
     padding: 0 13px;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #BBAE90;
     outline: none;
     border-radius: 5px 0 0 5px;
+    color:#333;
 }
 .typing-area button{
-    color: #fff;
+    color: #BBAE90;
     width: 55px;
     border: none;
     outline: none;
