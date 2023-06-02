@@ -37,7 +37,7 @@ if (mysqli_num_rows($sql) > 0) {
 ?>
 <div class="blocHeader">
     <div class="bloc1">
-        <h1 class="titre">COMPTE COACH <h1>
+        <h1 class="titre">FICHE COACH <h1>
         <br>
                 <div class="blocProfil">
                     <img class="photodeprofil" src="Images/mouhali.jpeg" alt="mouhali"/>
