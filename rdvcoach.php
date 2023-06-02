@@ -11,16 +11,20 @@ if(!isset($_SESSION['unique_id'])){
         table {
             width: 100%;
             border-collapse: collapse;
+            border-radius:50%;
         }
 
         th, td {
             text-align: center;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid #BBAE90;
+            color: #BBAE90;
+            font-family: "dosis", sans-serif;
+
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: #2B2525;
         }
 
         .current-date {
@@ -30,6 +34,16 @@ if(!isset($_SESSION['unique_id'])){
         .appointment {
 
             font-weight: bold;
+        }
+
+        .titre
+        {
+            font-family: "shrikhand", cursive;
+            margin-top: 2%;
+            font-size: 300%;
+            text-align: center;
+            color: #BBAE90;
+            margin-bottom:1%;
         }
     </style>
 </head>
@@ -95,6 +109,7 @@ if(mysqli_num_rows($sql) > 0){
   ?>
   <div class="blocHeader">
       <div class="bloc1">
+      <h1 class="titre">MES FUTURS RENDEZ-VOUS</h1>
     <?php
  echo "<table>";
 
@@ -128,7 +143,7 @@ if(mysqli_num_rows($sql) > 0){
     }
 
     echo "</table>";
-      ?>
+      ?> <br>
   </div>
 
     <div class="bloc2">
@@ -150,7 +165,7 @@ if(mysqli_num_rows($sql) > 0){
             <a href="./login.php">COMPTE</a><br>
         </div>
         <div class="boutonLOGOUT">
-             <button style="width:100% ; height:95%; font-size: 200%"><a href="php/logout.php?logout_id=<?php echo $Coach ; ?>" class="logout">LOG <br> OUT</a></button>
+             <button style="width:100% ; height:95%; font-size: 200%"><a href="php/logout.php?logout_id=<?php echo $Coach ; ?>" class="logout">LOG OUT</a></button>
         </div>
     </div>
 </div>
