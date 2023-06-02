@@ -84,6 +84,7 @@ if(!isset($_SESSION['unique_id'])){
         $PrenomC = $row["Prenom"];
         $Mail= $row["Email"];
         $photo=$row["Photo"];
+        $CV=$row["CV"];
         }
            $dateActuelle = date("Y-m-d");
             $heureActuelle = date("H:i");
@@ -126,7 +127,7 @@ if(!isset($_SESSION['unique_id'])){
                         <p>MAIL : <?php echo $Mail ?> </p>
                     </div>
                 </div>
-                <button style="margin-left:40%">VOIR LE CV DU COACH</button>
+        <button style="margin-left:40%"><a href="CVxml/<?php echo $CV; ?>">VOIR LE CV DU COACH</a></button>
             </div>
     <div class="bloc2">
         <div class="barrerecherche">
