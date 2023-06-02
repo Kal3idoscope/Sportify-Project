@@ -11,13 +11,13 @@
     text-align: center;
     font-size: 130%;
     line-height: 320%;
-    margin-top: -4%;
-    margin-left : -10%;
+    margin-top: 5%;
+    margin-left : -2%;
     color: white;
     padding: 1%;
-    width: 118.5%;
+    width: 120%;
     border-radius: 21px;
-    height:25%;
+
 }
 .modifInfo{
     font-size : 60%;
@@ -42,7 +42,7 @@
     margin : 5%;
     display : flex;
     font-family: "dosis", sans-serif;
-    font-weight: 270;
+    font-weight: 200;
     line-height: 200%;
     background-color:#443F3F;
     color: white;

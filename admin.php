@@ -59,14 +59,14 @@ $resultat = $conn->query($requete);
         <h1 class="titre">ADMINISTRATEUR </h1>
 
                 <div class="blocProfil">
-                    <div class="profildata">
+                    <div class="profildata", style="font-size:200%; margin-left:30%; margin-bottom:5%; line-height:175%">
                         <p>NOM :  <?php echo $nom; ?> </p>
                         <p>PRENOM : <?php echo $prenom; ?> </p>
                          <p>MAIL : <?php echo $mail; ?> </p>
                          <p class="modifInfo"> <a href="./change_info_admin.php">Modifier mes informations</a></p>
                     </div>
                 </div>
-                <div class="option1">
+                <div class="option1", style="margin-bottom:2.3%">
                     <button><a href="affichage_coach.php">LISTE DES COACHS</a></button>
                     <button><a href="retrait_coach.php">ENLEVER UN COACH</a></button>
                     <button><a href="ajout_coach.php">AJOUTER UN COACH</a></button>
@@ -94,10 +94,11 @@ $resultat = $conn->query($requete);
             <a href="./login.php">COMPTE</a><br>
         </div>
         <div class="boutonLOGOUT">
-             <button style="width:100% ; height:95%; font-size: 200%"><a href="php/logout.php?logout_id=<?php echo $id ?>" class="logout">LOG <br> OUT</a></button>
+             <button style="width:100% ; height:50%; font-size: 200%"><a href="php/logout.php?logout_id=<?php echo $id ?>" class="logout">LOG OUT</a></button>
         </div>
     </div>
 </div>
+<img style="width:98%; height:85%; margin-left:1%" src="Images/admin1.png" alt="admin"/>
 
 </body>
 </html>

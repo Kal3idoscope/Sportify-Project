@@ -55,7 +55,7 @@ if (mysqli_num_rows($sql) > 0) {
 <div class="blocHeader">
     <div class="bloc1">
         <h1 class="titre1">COMPTE COACH <h1>
-        <br>
+
                 <div class="blocProfil">
                     <img class="photodeprofil" src="php/pic/<?php echo $photo ?>" alt="">
                                         <div class="profildata">
@@ -86,7 +86,7 @@ if (mysqli_num_rows($sql) > 0) {
             <div class="dropdown">
                 <div onclick="myFunction()" class="dropbtn">TOUT PARCOURIR</div>
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="./Activites_Sportives.php">ACTIVITÉS SPORTIVES</a>
+                    <a href="./Activites_Sportives.html">ACTIVITÉS SPORTIVES</a>
                     <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a>
                     <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
                 </div>
@@ -95,9 +95,17 @@ if (mysqli_num_rows($sql) > 0) {
             <a href="./login.php">COMPTE</a><br>
         </div>
         <div class="boutonLOGOUT">
-            <button style="width:100% ; height:95%; font-size: 200%" ><a href="php/logout.php?logout_id=<?php echo $id ?>" class="logout">LOG <br> OUT</a></button>
+            <button style="width:115% ; font-size: 220%; margin-top:8%" ><a href="php/logout.php?logout_id=<?php echo $id ?>" class="logout">LOG OUT</a></button>
         </div>
     </div>
+</div>
+
+<div class="option9">
+
+<div class="dispo", style ="height : 150%">
+<p> Mes futurs rendez-vous <br> <br> <p>
+</div>
+
 </div>
 
 </body>
