@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mar. 30 mai 2023 à 20:54
+-- Généré le : ven. 02 juin 2023 à 11:29
 -- Version du serveur : 8.0.31
 -- Version de PHP : 8.0.26
 
@@ -33,18 +33,21 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `Nom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `Prenom` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `Pass` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `Photo` varchar(255) NOT NULL,
+  `Photo` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `Email` varchar(50) NOT NULL,
   `Status` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   PRIMARY KEY (`ID_Admin`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Déchargement des données de la table `admin`
 --
 
 INSERT INTO `admin` (`ID_Admin`, `Nom`, `Prenom`, `Pass`, `Photo`, `Email`, `Status`) VALUES
-(1, 'Boulic', 'Alexis', 'testadmin', '', 'boulicalexis@gmail.com', 'Active now');
+(0, 'Boulic', 'Alexis', 'testadmin', '', 'boulicalexis@gmail.com', 'Offline now'),
+(1, 'Gherras', 'Bilal', 'testadmin', NULL, 'bilg@gmail.com', 'Offline now'),
+(2, 'Drouart', 'Yolaine', 'testadmin', NULL, 'yoyo@gmail.com', 'Offline now'),
+(3, 'Adiguna', 'Cybélagéna', 'testadmin', NULL, 'cybel@gmail.com', 'Offline now');
 
 -- --------------------------------------------------------
 
@@ -69,25 +72,31 @@ CREATE TABLE IF NOT EXISTS `ajoutersupprimer` (
 DROP TABLE IF EXISTS `client`;
 CREATE TABLE IF NOT EXISTS `client` (
   `ID_Client` int NOT NULL AUTO_INCREMENT,
-  `ID_sport` int NOT NULL,
   `Email` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `Pass` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `Photo` varchar(255) NOT NULL,
-  `Status` varchar(50) NOT NULL,
+  `Status` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `Nom` varchar(50) NOT NULL,
   `Prenom` varchar(50) NOT NULL,
-  `Adresse1` varchar(50) NOT NULL,
-  `Adresse2` varchar(50) NOT NULL,
-  `Ville` varchar(50) NOT NULL,
-  `Code_postal` varchar(50) NOT NULL,
-  `Pays` varchar(50) NOT NULL,
-  `Telephone` int NOT NULL,
-  `Type_carte` varchar(50) NOT NULL,
-  `Num_carte` varchar(50) NOT NULL,
-  `Nom_carte` varchar(50) NOT NULL,
-  `Date_d_expiration` date NOT NULL,
+  `Adresse1` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Adresse2` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Ville` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Code_postal` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Pays` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Telephone` int DEFAULT NULL,
+  `Type_carte` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Num_carte` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Nom_carte` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Date_d_expiration` date DEFAULT NULL,
   PRIMARY KEY (`ID_Client`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1438752402 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `client`
+--
+
+INSERT INTO `client` (`ID_Client`, `Email`, `Pass`, `Photo`, `Status`, `Nom`, `Prenom`, `Adresse1`, `Adresse2`, `Ville`, `Code_postal`, `Pays`, `Telephone`, `Type_carte`, `Num_carte`, `Nom_carte`, `Date_d_expiration`) VALUES
+(531195571, 'alexisboulic@gmail.com', '83c44d2a7b80fff51591478a4936fa7d', '1685525853canard.jpg', 'Active now', 'Boulic', 'Alexis', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -100,15 +109,25 @@ CREATE TABLE IF NOT EXISTS `coach` (
   `ID_Coach` int NOT NULL AUTO_INCREMENT,
   `Nom` varchar(50) NOT NULL,
   `Prenom` varchar(50) NOT NULL,
-  `ID_sport` int NOT NULL,
+  `Sport` varchar(50) NOT NULL,
   `Email` varchar(50) NOT NULL,
   `Pass` varchar(50) NOT NULL,
-  `CV` varchar(255) NOT NULL,
-  `Video` varchar(255) NOT NULL,
+  `CV` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Video` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `Photo` varchar(255) NOT NULL,
+  `Telephone` int DEFAULT NULL,
   `Status` varchar(50) NOT NULL,
+  `Bureau` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`ID_Coach`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1364900196 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `coach`
+--
+
+INSERT INTO `coach` (`ID_Coach`, `Nom`, `Prenom`, `Sport`, `Email`, `Pass`, `CV`, `Video`, `Photo`, `Telephone`, `Status`, `Bureau`) VALUES
+(441535586, 'Hervault', 'Estelle', 'Natation', 'estellehervault@gmail.com', '01191b803289eca4ebfeee5fdaf7dd56', NULL, NULL, '1685627658ui.jpg', 650472456, 'Offline now', 'SC205'),
+(1250097031, 'Poisson', 'Augustin', 'Musculation', 'augustinpoisson@gmail.com', '01191b803289eca4ebfeee5fdaf7dd56', NULL, NULL, '1685565220cpgreFDv_400x400.jpg', 102030405, 'Offline now', 'SC205');
 
 -- --------------------------------------------------------
 
@@ -118,16 +137,28 @@ CREATE TABLE IF NOT EXISTS `coach` (
 
 DROP TABLE IF EXISTS `communiquer`;
 CREATE TABLE IF NOT EXISTS `communiquer` (
-  `ID_Coach` int NOT NULL,
-  `ID_Client` int NOT NULL,
-  `Type_communication` varchar(50) NOT NULL,
-  `Destinataire` varchar(50) NOT NULL,
-  `Envoyeur` varchar(50) NOT NULL,
-  `Date` date NOT NULL,
+  `ID_Message` int NOT NULL AUTO_INCREMENT,
+  `Type_communication` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `Destinataire` int NOT NULL,
+  `Envoyeur` int NOT NULL,
+  `Date` date DEFAULT NULL,
   `Message` text NOT NULL,
-  PRIMARY KEY (`ID_Coach`,`ID_Client`),
-  KEY `Communiquer_Client0_FK` (`ID_Client`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`ID_Message`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `communiquer`
+--
+
+INSERT INTO `communiquer` (`ID_Message`, `Type_communication`, `Destinataire`, `Envoyeur`, `Date`, `Message`) VALUES
+(1, NULL, 1250097031, 531195571, NULL, 'aaa'),
+(2, NULL, 531195571, 1250097031, NULL, 'salut fdp'),
+(3, NULL, 1250097031, 531195571, NULL, 'wsh gros'),
+(4, NULL, 531195571, 1250097031, NULL, 'alllezzzz'),
+(5, NULL, 531195571, 1250097031, NULL, 'grrr'),
+(6, NULL, 1250097031, 531195571, NULL, 'fdp'),
+(7, NULL, 1250097031, 531195571, NULL, 'salut gros'),
+(8, NULL, 531195571, 1250097031, NULL, 'llll');
 
 -- --------------------------------------------------------
 
@@ -168,7 +199,8 @@ CREATE TABLE IF NOT EXISTS `prendre_rdv` (
   `ID_Coach` int NOT NULL,
   `ID_Paiement` int NOT NULL,
   `ID_Client` int NOT NULL,
-  `Date_rdv` datetime NOT NULL,
+  `Date_rdv` date NOT NULL,
+  `Plage_horaire` varchar(20) NOT NULL,
   `Statut` int NOT NULL,
   PRIMARY KEY (`ID_Coach`,`ID_Paiement`,`ID_Client`),
   KEY `Prendre_rdv_Paiement0_FK` (`ID_Paiement`),
@@ -218,13 +250,6 @@ CREATE TABLE IF NOT EXISTS `s´inscrire` (
 ALTER TABLE `ajoutersupprimer`
   ADD CONSTRAINT `AjouterSupprimer_Admin0_FK` FOREIGN KEY (`ID_admin`) REFERENCES `admin` (`ID_Admin`),
   ADD CONSTRAINT `AjouterSupprimer_Coach_FK` FOREIGN KEY (`ID_Coach`) REFERENCES `coach` (`ID_Coach`);
-
---
--- Contraintes pour la table `communiquer`
---
-ALTER TABLE `communiquer`
-  ADD CONSTRAINT `Communiquer_Client0_FK` FOREIGN KEY (`ID_Client`) REFERENCES `client` (`ID_Client`),
-  ADD CONSTRAINT `Communiquer_Coach_FK` FOREIGN KEY (`ID_Coach`) REFERENCES `coach` (`ID_Coach`);
 
 --
 -- Contraintes pour la table `effectuer`
