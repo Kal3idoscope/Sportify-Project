@@ -5,7 +5,7 @@ include_once "config.php";
 $term = $_GET['term'];
 
 // Effectuer la requête pour rechercher les coachs par nom ou prénom
-$sql = "SELECT * FROM coach WHERE Prenom LIKE '%$term%' OR Nom LIKE '%$term%'";
+$sql = "SELECT * FROM coach WHERE Prenom LIKE '%$term%' OR Nom LIKE '%$term%' OR Sport LIKE '%$term%'";
 
 $output = "";
 $query = mysqli_query($conn, $sql);
