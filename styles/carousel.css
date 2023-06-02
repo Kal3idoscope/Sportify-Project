@@ -1,0 +1,51 @@
+.slider {
+    width: 500px;
+    height: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+}
+.cadre {
+    width: 1500px;
+    height: 750px;
+    clear: both;
+    border-radius: 100px;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+.slide {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+#slide-1:target ~ .cadre {
+    left: 0px;
+}
+#slide-2:target ~ .cadre {
+    left: -500px;
+}
+
+#slide-3:target ~ .cadre {
+    left: -1000px;
+}
+
+#slide-4:target ~ .cadre {
+    left: -1500px;
+}
+.lesboutons {
+    position: relative;
+    top: -20px;
+}
+.lesboutons a {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: white;
+}
