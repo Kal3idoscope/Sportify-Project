@@ -3,9 +3,12 @@ session_start();
 include_once "config.php";
 $prenom = mysqli_real_escape_string($conn, $_POST['prenom']);
 $nom = mysqli_real_escape_string($conn, $_POST['nom']);
+$telephone = mysqli_real_escape_string($conn, $_POST['telephone']);
+$bureau = mysqli_real_escape_string($conn, $_POST['bureau']);
 $email = mysqli_real_escape_string($conn, $_POST['email']);
 $password = mysqli_real_escape_string($conn, $_POST['password']);
 $sport = mysqli_real_escape_string($conn, $_POST['sport']);
+
 if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($password) && !empty($sport)) {
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         //$sql = mysqli_query($conn, "SELECT * FROM admin WHERE email = '{$email}' UNION SELECT * FROM client WHERE email = '{$email}' UNION SELECT * FROM coach WHERE email = '{$email}'");
@@ -31,9 +34,9 @@ if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($password) && !e
                             $ran_id = rand(time(), 100000000);
                             $status = "Offline now";
                             $encrypt_pass = md5($password);
-                            $insert_query = mysqli_query($conn, "INSERT INTO coach (ID_Coach , Nom, Prenom, Email, Pass, Photo, ID_Sport, Status)
-                            VALUES ('$ran_id', '$nom', '$prenom', '$email', '$encrypt_pass', '$new_img_name', '$sport' ,'$status')");
-                            echo $insert_query;
+                            $insert_query = mysqli_query($conn, "INSERT INTO coach (ID_Coach , Nom, Prenom, Email, Pass, Photo, ID_Sport, Status, Telephone, Bureau)
+                            VALUES ('$ran_id', '$nom', '$prenom', '$email', '$encrypt_pass', '$new_img_name', '$sport' ,'$status', '$telephone', '$bureau')");
+                            //echo $insert_query;
                             if ($insert_query) {
                                 $select_sql_client = mysqli_query($conn, "SELECT * FROM coach WHERE Email = '{$email}'");
                                 if (mysqli_num_rows($select_sql_client) > 0){

@@ -26,6 +26,14 @@ if(!isset($_SESSION['unique_id'])){
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="fieldInput", style="font-size:120%">
+                    <label>Telephone : </label>
+                    <input class="in"  type="number" name="telephone" placeholder="Saisir un nouveau tel">
+                </div>
+                <div class="fieldInput", style="font-size:120%">
+                    <label>Bureau : </label>
+                    <input class="in"  type="text" name="bureau" placeholder="Saisir un nouveau bureau">
+                </div>
+                <div class="fieldInput", style="font-size:120%">
                     <label>Adresse Email : </label>
                     <input class="in"  type="text" name="email" placeholder="Saisir un nouvel email">
                 </div>

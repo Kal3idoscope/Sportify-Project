@@ -69,7 +69,7 @@ $resultat = $conn->query($requete);
                     </div>
                 </div>
                 <div class="option7">
-                            <button><a href="./change_info_admin.php">MODIFIER MES INFOS</a></button>
+                            <button><a href="./change_info_client.php">MODIFIER MES INFOS</a></button>
                             <button><a href="users.php">PRENDRE UN RDV</a></button>
                             <button>HISTORIQUE DE MES RDV</button>
                 </div>

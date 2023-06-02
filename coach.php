@@ -68,7 +68,7 @@ if (mysqli_num_rows($sql) > 0) {
                     </div>
                 </div>
                 <div class="option7 ">
-                            <button><a href="./change_info_admin.php">MODIFIER MES INFOS</a></button>
+                            <button><a href="./change_info_coach.php">MODIFIER MES INFOS</a></button>
                             <button><a href="users.php">CHATROOM</a></button>
                             <button>HISTORIQUE DE MES RDV</button>
                 </div>
