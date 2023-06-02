@@ -4,7 +4,7 @@ if (isset($_SESSION['unique_id'])) {
     if ($_SESSION['user_type'] == 'admin') {
         header("location: admin.php");
     } elseif ($_SESSION['user_type'] == 'client') {
-        header("location: client.php");
+        header("location: client.php");v
     } elseif ($_SESSION['user_type'] == 'coach') {
         header("location: coach.php");
     }
