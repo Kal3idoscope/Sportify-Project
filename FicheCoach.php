@@ -134,7 +134,7 @@ if(!isset($_SESSION['unique_id'])){
             <div class="dropdown2">
                 <input class="rechercher" type="text" placeholder="Rechercher..." id="searchInput">
                 <div class="dropdown2-content" id="searchResults">
-                    <!-- Les résultats de la recherche seront ajoutés ici -->
+
                 </div>
             </div>
         </div>
@@ -144,8 +144,8 @@ if(!isset($_SESSION['unique_id'])){
                 <div onclick="myFunction()" class="dropbtn">TOUT PARCOURIR</div>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="./Activites_Sportives.php">ACTIVITÉS SPORTIVES</a>
-                    <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a>
-                    <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
+                    <a href="./Sport_Compet.php">SPORTS DE COMPÉTITION</a>
+                    <a href="./salleOmnes.php">SALLES DE SPORT OMNES</a>
                 </div>
             </div>
             <a href="./RDV.html">RDV</a><br>

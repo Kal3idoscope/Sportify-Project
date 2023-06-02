@@ -1,16 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+session_start();
+include_once "php/config.php";
+if(!isset($_SESSION['unique_id'])){
+    header("location: login.php");
+}
+?>
+<?php include_once "header.php";?>
 <head>
     <meta charset="UTF-8">
     <title>Activités sportives</title>
     <link rel="stylesheet" href="styles/home.css" type="text/css" />
-    <link rel="stylesheet" href="styles/general.css" type="text/css" />
-    <link rel="stylesheet" href="styles/pagecoach.css" type="text/css" />
-    <link rel="stylesheet" href="styles/scrollmenu.css" type="text/css" />
+
     <link rel="stylesheet" href="styles/activites_sportives.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script type="text/javascript">
         $("document").ready(function(){
@@ -49,6 +50,36 @@
             }
         }
     </script>
+    <?php
+
+        $requete = "SELECT * FROM coach";
+        $resultat = $conn->query($requete);
+
+        $Deporte = array();
+
+                  $Deporte["Basketball"] = " ";
+                  $Deporte["Football"]= " ";
+                  $Deporte["Rugby"]= " ";
+                  $Deporte["Tennis"] = " ";
+                  $Deporte["Natation"] = " ";
+                  $Deporte["Plongeon"] = " ";
+
+                  while ($row = $resultat->fetch_assoc()) {
+                      $sport = $row["Sport"];
+                      $Nom = $row["Nom"];
+                      $Prenom = $row["Prenom"];
+                      $ID= $row["ID_Coach"];
+                      if (isset($Deporte[$sport])) {
+
+                        $Deporte[$sport] .= ' <br> <a href="ficheCoach.php?ID='. $ID .'">'. $Prenom . " " . $Nom . '</a> ';
+                      } else {
+                         $Deporte[$sport] = ' <br> <a href="ficheCoach.php?ID='. $row['ID_Coach'] .'">'. $Prenom . " " . $Nom . '</a> ';
+
+                      }
+                  }
+
+
+        ?>
 </head>
 <body>
 <div class="option1">
@@ -94,37 +125,37 @@
 </div>
 <div class="contain">
     <img class="imageAS" src="Images/basket.png" alt="activite1 photo"/>
-    <p class="Coach">MARC BIANCHINI</p>
+    <p class="Coach"><?php echo $Deporte["Basketball"]; ?></p>
     <div class="muscu">BASKETBALL</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/foot.png" alt="activite1 photo"/>
-    <p class="Coach">ANIS CHAARI</p>
+    <p class="Coach"><?php echo $Deporte["Football"]; ?></p>
     <div class="muscu">FOOTBALL</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/rugby.png" alt="activite1 photo"/>
-    <p class="Coach">CHRISTINE CRAMBES</p>
+    <p class="Coach"><?php echo $Deporte["Rugby"]; ?></p>
     <div class="muscu">RUGBY</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/tennis.png" alt="activite1 photo"/>
-    <p class="Coach">JEAN-PIERRE SEGADO</p>
+    <p class="Coach"><?php echo $Deporte["Tennis"]; ?></p>
     <div class="muscu">TENNIS</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/natation.png" alt="activite1 photo"/>
-    <p class="Coach">WALEED MOUHALI</p>
+    <p class="Coach"><?php echo $Deporte["Natation"]; ?></p>
     <div class="muscu">NATATION</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/plongeon.png" alt="activite1 photo"/>
-    <p class="Coach">AMINE JAOUADI</p>
+    <p class="Coach"><?php echo $Deporte["Plongeon"]; ?></p>
     <div class="muscu">PLONGEON</div>
 </div>
 <p>&nbsp;</p>
