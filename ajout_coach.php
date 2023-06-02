@@ -58,23 +58,23 @@ if(!isset($_SESSION['unique_id'])){
                         <div class ="titre4">
                                                 <p style="margin-top:3%"> ACTIVITES SPORTIVES </p>
                                                 </div>
-                        <input type="radio" name="sport" value="Musculation">Musculation<br>
-                        <input type="radio" name="sport" value="Fitness">Fitness<br>
-                        <input type="radio" name="sport" value="Biking">Biking<br>
-                        <input type="radio" name="sport" value="Cardio-Training">Cardio-Training<br>
-                        <input type="radio" name="sport" value="Cours Collectifs">Cours Collectifs<br>
+                        <input type="radio" name="sport" value="MUSCULATION">Musculation<br>
+                        <input type="radio" name="sport" value="FITNESS">Fitness<br>
+                        <input type="radio" name="sport" value="BIKING">Biking<br>
+                        <input type="radio" name="sport" value="CARDIO-TRAINING">Cardio-Training<br>
+                        <input type="radio" name="sport" value="COURS COLLECTIFS">Cours Collectifs<br>
                         </div>
 
                         <div class ="fieldInput1">
                          <div class ="titre4">
                                                 <p> SPORTS DE COMPETITION </p>
                                                 </div>
-                        <input type="radio" name="sport" value="Basketball">Basketball<br>
-                        <input type="radio" name="sport" value="Football">Football<br>
-                        <input type="radio" name="sport" value="Rugby">Rugby<br>
-                        <input type="radio" name="sport" value="Tennis">Tennis<br>
-                        <input type="radio" name="sport" value="Natation">Natation<br>
-                        <input type="radio" name="sport" value="Plongeon">Plongeon<br>
+                        <input type="radio" name="sport" value="BASKETBALL">Basketball<br>
+                        <input type="radio" name="sport" value="FOOTBALL">Football<br>
+                        <input type="radio" name="sport" value="RUGBY">Rugby<br>
+                        <input type="radio" name="sport" value="TENNIS">Tennis<br>
+                        <input type="radio" name="sport" value="NATATION">Natation<br>
+                        <input type="radio" name="sport" value="PLONGEON">Plongeon<br>
                         </div>
                     </td>
 
