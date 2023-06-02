@@ -19,16 +19,16 @@ $sql2 = mysqli_query($conn, "SELECT * FROM coach");
 <div class="blocHeader">
     <div class="bloc1">
         <h1 class="titre">LISTE DE COACH<h1>
-            <div class = "fieldInput" style="margin-left:22% ; font-weight:lighter; margin-bottom:2%">
+            <div class = "fieldInput" style="margin-left:2% ; font-weight:lighter; margin-bottom:2%">
                 <table>
 
                     <thead>
                     <tr>
-                        <th>ID Coach </th>
-                        <th>Nom </th>
-                        <th>Prénom </th>
-                        <th>Email </th>
-                        <th>Photo</th>
+                        <th style="font-weight:lighter">ID Coach</th>
+                        <th style="font-weight:lighter">Nom </th>
+                        <th style="font-weight:lighter">Prénom </th>
+                        <th style="font-weight:lighter">Email </th>
+                        <th style="font-weight:lighter">Photo</th>
                     </tr>
                     </thead>
 
@@ -46,7 +46,7 @@ $sql2 = mysqli_query($conn, "SELECT * FROM coach");
                     ?>
                     </tbody>
                 </table>
-            </div>
+            </div><br>
     </div>
 
 

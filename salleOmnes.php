@@ -101,11 +101,11 @@
       <p class ="quand"> QUAND? <br> <br> Du lundi au samedi <br> 9h00-22h00</p>
       <p class ="ou"> OÙ? <br> <br> 6 rue Sextius Michel <br> 75015, Paris</p>
       <p class ="qui"> <a href="affichage_coach.php">QUI? <br> <br> Liste du personnel</a></p>
-      <p class ="quoi"> <a href="#">QUOI? <br> <br> Le matériel</a> </p>
+      <p class ="quoi"> <a href="#">QUOI? <br> <br> Voir le matériel</a> </p>
     </div>
   </div>
   <div class="options">
-  <div class="blocblur3">
+  <div class="blocblur3", style="margin-top:-3%">
     <div class="centré">
     <p style="text-align:center">REGLES SUR L'UTILISATION DES MACHINES CHEZ SPORTIFY</p>
     </div>
@@ -118,7 +118,9 @@
   </div>
   <div class="bloc6-2">
   </div>
+  <button style="margin-left:41%; height:100%; width:20%; font-size:200%; margin-top:-5%"> JE SOUHAITE VISITER LA SALLE </button>
 </div>
+
 <div class="citation">
   <p>
     "Retrouvez notre programme de nutrition <a href="Images/NutritionSportive.pdf" download><span class="souligne">ici</span></a> !"
