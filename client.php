@@ -57,7 +57,7 @@ $resultat = $conn->query($requete);
 
                 <div class="blocProfil">
                      <img class="photodeprofil" src="php/pic/<?php echo $photo ?>" alt="">
-                    <div class="profildata">
+                    <div class="profildata", style="line-height:150%; margin-top:4%">
                         <p>NOM : <?php echo $nom; ?></p>
                         <p>PRENOM : <?php echo $prenom; ?></p>
 
@@ -68,9 +68,9 @@ $resultat = $conn->query($requete);
 
                     </div>
                 </div>
-                <div class="option7">
+                <div class="option7", style="margin-bottom:3%; margin-top:0.5%">
                             <button><a href="./change_info_client.php">MODIFIER MES INFOS</a></button>
-                            <button><a href="users.php">PRENDRE UN RDV</a></button>
+                            <button><a href="users.php">CHATROOM</a></button>
                             <button>HISTORIQUE DE MES RDV</button>
                 </div>
             </div>
@@ -97,7 +97,7 @@ $resultat = $conn->query($requete);
             <a href="./login.php">COMPTE</a><br>
         </div>
         <div class="boutonLOGOUT">
-                     <button ><a href="php/logout.php?logout_id=<?php echo $id ?>" class="logout">LOG OUT</a></button>
+                     <button style="width:120% ; height:50%; font-size: 150%; margin-top:5%"><a href="php/logout.php?logout_id=<?php echo $id ?>" class="logout">LOG OUT</a></button>
                 </div>
     </div>
 </div>

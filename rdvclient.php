@@ -8,30 +8,44 @@ if(!isset($_SESSION['unique_id'])){
 <?php include_once "header.php"; ?>
 
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                border-radius:50%;
+            }
 
-        th, td {
-            text-align: center;
-            padding: 10px;
-            border: 1px solid #ccc;
-        }
+            th, td {
+                text-align: center;
+                padding: 10px;
+                border: 1px solid #BBAE90;
+                color: #BBAE90;
+                font-family: "dosis", sans-serif;
 
-        th {
-            background-color: #f2f2f2;
-        }
+            }
 
-        .current-date {
-            font-weight: bold;
-        }
+            th {
+                background-color: #2B2525;
+            }
 
-        .appointment {
+            .current-date {
+                font-weight: bold;
+            }
 
-            font-weight: bold;
-        }
-    </style>
+            .appointment {
+
+                font-weight: bold;
+            }
+
+            .titre
+            {
+                font-family: "shrikhand", cursive;
+                margin-top: 2%;
+                font-size: 300%;
+                text-align: center;
+                color: #BBAE90;
+                margin-bottom:1%;
+            }
+        </style>
 </head>
 
 
@@ -80,6 +94,7 @@ if(mysqli_num_rows($sql) > 0){
   ?>
   <div class="blocHeader">
       <div class="bloc1">
+      <h1 class="titre">MES FUTURS RENDEZ-VOUS</h1>
     <?php
  echo "<table>";
 

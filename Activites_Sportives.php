@@ -64,11 +64,13 @@ if(!isset($_SESSION['unique_id'])){
                   $sport = $row["ID_sport"];
                   $Nom = $row["Nom"];
                   $Prenom = $row["Prenom"];
-
+                  $ID= $row["ID_Coach"];
                   if (isset($Deporte[$sport])) {
-                      $Deporte[$sport] .= " <br> " .' <a href="./FicheCoach"> '. $Prenom . " " . $Nom .  ' </a> ';
+
+                    $Deporte[$sport] .= ' <br> <a href="ficheCoach.php?ID='. $ID .'">'. $Prenom . " " . $Nom . '</a> ';
                   } else {
-                    $Deporte[$sport] = ' <a href="./FicheCoach"> ' . $Prenom . ' ' . $Nom . ' </a> ';
+                     $Deporte[$sport] = ' <br> <a href="ficheCoach.php?ID='. $row['ID_Coach'] .'">'. $Prenom . " " . $Nom . '</a> ';
+
                   }
               }
         }
@@ -159,7 +161,7 @@ if(!isset($_SESSION['unique_id'])){
     <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/image 11.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["5"]; ?>E</p>
+    <p class="Coach"><?php echo $Deporte["5"]; ?></p>
     <div class="muscu">COURS COLLECTIFS</div>
 </div>
 <p>&nbsp;</p>
