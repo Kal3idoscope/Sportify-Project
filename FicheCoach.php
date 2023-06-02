@@ -8,6 +8,45 @@ if(!isset($_SESSION['unique_id'])){
 <?php include_once "header.php"; ?>
 <link rel="stylesheet" href="styles/Fichecoach.css" type="text/css" />
 <link rel="stylesheet" href="styles/scrollmenu.css" type="text/css" />
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius:50%;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #BBAE90;
+            color: #BBAE90;
+            font-family: "dosis", sans-serif;
+
+        }
+
+        th {
+            background-color: #2B2525;
+        }
+
+        .current-date {
+            font-weight: bold;
+        }
+
+        .appointment {
+
+            font-weight: bold;
+        }
+
+        .titre
+        {
+            font-family: "shrikhand", cursive;
+            margin-top: 2%;
+            font-size: 300%;
+            text-align: center;
+            color: #BBAE90;
+            margin-bottom:1%;
+        }
+    </style>
 <script>
     /* When the user clicks on the button,
     toggle between hiding and showing the dropdown content */
