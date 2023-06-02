@@ -1,6 +1,6 @@
 .slider {
-    width: 500px;
-    height: 750px;
+    width: 300px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
@@ -8,8 +8,8 @@
     overflow: hidden;
 }
 .cadre {
-    width: 1500px;
-    height: 750px;
+    width: 1300px;
+    height: 400px;
     clear: both;
     border-radius: 100px;
     position: relative;
@@ -28,16 +28,17 @@
     left: 0;
 }
 #slide-2:target ~ .cadre {
-    left: -500px;
+    left: -300px;
 }
 
 #slide-3:target ~ .cadre {
-    left: -1000px;
+    left: -600px;
 }
 
 #slide-4:target ~ .cadre {
-    left: -1500px;
+    left: -900px;
 }
+
 .lesboutons {
     position: relative;
     top: -20px;
