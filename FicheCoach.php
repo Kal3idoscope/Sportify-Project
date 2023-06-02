@@ -6,6 +6,7 @@ if(!isset($_SESSION['unique_id'])){
 }
 ?>
 <?php include_once "header.php"; ?>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="styles/Fichecoach.css" type="text/css" />
 <link rel="stylesheet" href="styles/scrollmenu.css" type="text/css" />
     <style>
@@ -46,6 +47,7 @@ if(!isset($_SESSION['unique_id'])){
             color: #BBAE90;
             margin-bottom:1%;
         }
+
     </style>
 <script>
     /* When the user clicks on the button,
@@ -66,6 +68,7 @@ if(!isset($_SESSION['unique_id'])){
             }
         }
     }
+
 </script>
 <body>
 <?php
@@ -77,10 +80,11 @@ if(!isset($_SESSION['unique_id'])){
 
     while ($row = $resultat->fetch_assoc()) {
         $sport = $row["Sport"];
-        $Nom = $row["Nom"];
-        $Prenom = $row["Prenom"];
+        $NomC = $row["Nom"];
+        $PrenomC = $row["Prenom"];
         $Mail= $row["Email"];
         $photo=$row["Photo"];
+        $CV=$row["CV"];
         }
            $dateActuelle = date("Y-m-d");
             $heureActuelle = date("H:i");
@@ -113,23 +117,24 @@ if(!isset($_SESSION['unique_id'])){
 ?>
 <div class="blocHeader">
     <div class="bloc1">
-        <h1 class="titre"><?php echo $sport ?> <h1>
+        <h1 class="titre"><?php echo $sport ?> </h1>
         <br>
                 <div class="blocProfil">
-                    <img class="photodeprofil" src="php/pic/<?php echo $photo ?>" alt="">
-                    <div class="profildata">
-                        <p>NOM : <?php echo $Nom ?> </p>
-                        <p>PRENOM : <?php echo $Prenom ?> </p>
+                    <img class="photodeprofil", style="height:40%; width:40%" src="php/pic/<?php echo $photo ?>" alt="">
+                    <div class="profildata", style="margin-top:-12%">
+                        <p>NOM : <?php echo $NomC ?> </p>
+                        <p>PRENOM : <?php echo $PrenomC ?> </p>
                         <p>MAIL : <?php echo $Mail ?> </p>
                     </div>
                 </div>
+        <button style="margin-left:40%"><a href="CVxml/<?php echo $CV; ?>">VOIR LE CV DU COACH</a></button>
             </div>
     <div class="bloc2">
         <div class="barrerecherche">
             <div class="dropdown2">
                 <input class="rechercher" type="text" placeholder="Rechercher..." id="searchInput">
                 <div class="dropdown2-content" id="searchResults">
-                    <!-- Les résultats de la recherche seront ajoutés ici -->
+
                 </div>
             </div>
         </div>
@@ -139,8 +144,8 @@ if(!isset($_SESSION['unique_id'])){
                 <div onclick="myFunction()" class="dropbtn">TOUT PARCOURIR</div>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="./Activites_Sportives.php">ACTIVITÉS SPORTIVES</a>
-                    <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a>
-                    <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
+                    <a href="./Sport_Compet.php">SPORTS DE COMPÉTITION</a>
+                    <a href="./salleOmnes.php">SALLES DE SPORT OMNES</a>
                 </div>
             </div>
             <a href="./RDV.html">RDV</a><br>
@@ -149,8 +154,8 @@ if(!isset($_SESSION['unique_id'])){
 
     </div>
 </div>
-      <div class="bloc1">
-      <h1 class="titre">MES FUTURS RENDEZ-VOUS</h1>
+      <div class="bloc1", style="margin-top:-1.5%">
+      <h1 class="titre"> <br> MES DISPONIBILITES</h1>
     <?php
  echo "<table>";
 
@@ -179,15 +184,16 @@ if(!isset($_SESSION['unique_id'])){
                echo "<div class='appointment'> <p>" . $rendezVous[$jour][$heureCourante . " - " . $heureSuivante] . "</p></div>";
             }
             else {
-                           echo "<button> RESERVER </button>";
-            }
+                    echo "<a href='php/process_reservation.php?coach_id=" . $ID . "&date=" . $jour . "&heure=" . $heureCourante . " - " . $heureSuivante . "'><button> RESERVER </button></a>";
+                             }
             echo "</td>";
         }
         echo "</tr>";
     }
 
     echo "</table>";
-      ?> <br>
+      ?>
+       <br>
   </div>
 
 

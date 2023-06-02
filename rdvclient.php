@@ -43,8 +43,8 @@ if(!isset($_SESSION['unique_id'])){
                 font-size: 300%;
                 text-align: center;
                 color: #BBAE90;
-                margin-bottom:1%;
-            }
+                margin-bottom:1%; }
+
         </style>
 
 </head>
@@ -95,7 +95,7 @@ if(mysqli_num_rows($sql) > 0){
   ?>
   <div class="blocHeader">
       <div class="bloc1">
-      <h1 class="titre">MES FUTURS RENDEZ-VOUS</h1>
+      <h1 class="titre"> MES FUTURS RENDEZ-VOUS</h1>
     <?php
  echo "<table>";
 
@@ -129,7 +129,7 @@ if(mysqli_num_rows($sql) > 0){
     }
 
     echo "</table>";
-      ?>
+      ?> <br>
   </div>
 
     <div class="bloc2">
@@ -148,16 +148,14 @@ if(mysqli_num_rows($sql) > 0){
                 <div onclick="myFunction()" class="dropbtn">TOUT PARCOURIR</div>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="./Activites_Sportives.php">ACTIVITÉS SPORTIVES</a>
-                    <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a>
-                    <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
+                    <a href="./Sport_Compet.php">SPORTS DE COMPÉTITION</a>
+                    <a href="./salleOmnes.php">SALLES DE SPORT OMNES</a>
                 </div>
             </div>
             <a href="./rdv.php">RDV</a><br>
             <a href="./login.php">COMPTE</a><br>
         </div>
-        <div class="boutonLOGOUT">
-            <button ><a href="php/logout.php?logout_id=<?php echo $_SESSION['unique_id'] ?>" class="logout">LOG OUT</a></button>
-        </div>
+            <button style="height:16%; margin-top: 6%; width:120%; font-size:150%"><a href="php/logout.php?logout_id=<?php echo $_SESSION['unique_id'] ?>" class="logout">LOG OUT</a></button>
     </div>
 </div>
 </body>

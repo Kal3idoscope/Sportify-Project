@@ -40,6 +40,10 @@ if(!isset($_SESSION['unique_id'])){
                     <input class="in" type="password" name="password" placeholder="Saisir un nouveau mot de passe">
                     <i class="fas fa-eye"></i>
                 </div>
+                <div class="fieldInput", style="font-size:120%">
+                    <label>CV : </label>
+                    <input type="file" name="xmlFile" accept=".xml" required>
+                </div>
                 <div class="field button">
                     <button>CHANGER LES INFORMATIONS</button>
                 </div>
@@ -54,8 +58,8 @@ if(!isset($_SESSION['unique_id'])){
                <div onclick="myFunction()" class="dropbtn">TOUT PARCOURIR</div>
                <div id="myDropdown" class="dropdown-content">
                  <a href="./Activites_Sportives.php">ACTIVITÉS SPORTIVES</a>
-                 <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a>
-                 <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
+                 <a href="./Sport_Compet.php">SPORTS DE COMPÉTITION</a>
+                 <a href="./salleOmnes.php">SALLES DE SPORT OMNES</a>
                </div>
              </div>
              <a href="./RDV.php">RDV</a> <br>

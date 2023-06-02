@@ -58,11 +58,6 @@ if(mysqli_num_rows($sql) > 0){
 ?>
 
     <?php
-    // Configuration de la connexion à la base de données
-    $serveur = "localhost";
-    $utilisateur = "root";
-    $motDePasse = "";
-    $baseDeDonnees = "sportify";
 
     // Récupérer la date et l'heure actuelles
     $dateActuelle = date("Y-m-d");
@@ -71,17 +66,9 @@ if(mysqli_num_rows($sql) > 0){
     // Calculer la date du premier jour de la semaine (lundi)
     $premierJourSemaine = date("Y-m-d", strtotime('monday this week', strtotime($dateActuelle)));
 
-    // Connecter à la base de données
-    $connexion = new mysqli($serveur, $utilisateur, $motDePasse, $baseDeDonnees);
-
-    // Vérifier la connexion
-    if ($connexion->connect_error) {
-        die("Erreur de connexion à la base de données : " . $connexion->connect_error);
-    }
-
     // Récupérer les rendez-vous de la semaine
     $requete = "SELECT * FROM prendre_rdv  NATURAL JOIN client WHERE ID_Coach = {$_SESSION['unique_id']} AND Date_rdv >= '" . $premierJourSemaine . "' AND Date_rdv < DATE_ADD('" . $premierJourSemaine . "', INTERVAL 7 DAY)" ;
-    $resultat = $connexion->query($requete);
+    $resultat = $conn->query($requete);
 
 
 
@@ -103,9 +90,6 @@ if(mysqli_num_rows($sql) > 0){
     }
 
 
-
-    // Fermer la connexion à la base de données
-    $connexion->close();
   ?>
   <div class="blocHeader">
       <div class="bloc1">
@@ -162,15 +146,15 @@ if(mysqli_num_rows($sql) > 0){
                 <div onclick="myFunction()" class="dropbtn">TOUT PARCOURIR</div>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="./Activites_Sportives.php">ACTIVITÉS SPORTIVES</a>
-                    <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a>
-                    <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
+                    <a href="./Sport_Compet.php">SPORTS DE COMPÉTITION</a>
+                    <a href="./salleOmnes.php">SALLES DE SPORT OMNES</a>
                 </div>
             </div>
             <a href="./rdv.php">RDV</a><br>
             <a href="./login.php">COMPTE</a><br>
         </div>
         <div class="boutonLOGOUT">
-             <button style="width:100% ; height:95%; font-size: 200%"><a href="php/logout.php?logout_id=<?php echo $Coach ; ?>" class="logout">LOG OUT</a></button>
+             <button style="width:100% ; height:95%; font-size: 200%"><a href="php/logout.php?logout_id=<?php echo $_SESSION['unique_id']; ?>" class="logout">LOG OUT</a></button>
         </div>
     </div>
 </div>
