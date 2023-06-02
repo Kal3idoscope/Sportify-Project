@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/home.css" type="text/css" />
     <link rel="stylesheet" href="styles/general.css" type="text/css" />
     <link rel="stylesheet" href="styles/scrollmenu.css" type="text/css" />
+    <link rel="stylesheet" href="styles/dropdown2.css" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Shrikhand&display=swap" rel="stylesheet">
@@ -30,35 +31,7 @@
             }
         }
     </script>
-    <style>
-        /* Style CSS pour le menu déroulant */
-        .dropdown2{
-            position: relative;
-            display: inline-block;
-        }
 
-        .dropdown2-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-            font-family: "dosis", sans-serif;
-        }
-
-        .dropdown2-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-family: "dosis", sans-serif;
-        }
-
-        .dropdown2:hover .dropdown2-content {
-            display: block;
-        }
-    </style>
 </head>
 <body>
 
@@ -74,7 +47,7 @@
     </div>
     <div class="bloc2">
 
-        <div class="search">
+        <div class="barrerecherche">
             <div class="dropdown2">
                 <input class="rechercher" type="text" placeholder="Rechercher..." id="searchInput">
                 <div class="dropdown2-content" id="searchResults">
