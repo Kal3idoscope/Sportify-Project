@@ -18,12 +18,10 @@ if(!isset($_SESSION['unique_id'])){
                 <div class="fieldInput", style="font-size:120%">
                     <label>Prénom : </label>
                     <input class="in" type="text" name="prenom" placeholder="Saisir un nouveau prénom">
-                    <i class="fas fa-eye"></i>
                 </div>
                 <div class="fieldInput", style="font-size:120%">
                     <label>Nom : </label>
                     <input class="in" type="text" name="nom" placeholder="Saisir un nouveau nom">
-                    <i class="fas fa-eye"></i>
                 </div>
                 <div class="fieldInput", style="font-size:120%">
                     <label>Telephone : </label>
