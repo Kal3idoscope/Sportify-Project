@@ -184,7 +184,9 @@ if(!isset($_SESSION['unique_id'])){
                echo "<div class='appointment'> <p>" . $rendezVous[$jour][$heureCourante . " - " . $heureSuivante] . "</p></div>";
             }
             else {
-                    echo "<a href='php/process_reservation.php?coach_id=" . $ID . "&date=" . $jour . "&heure=" . $heureCourante . " - " . $heureSuivante . "'><button> RESERVER </button></a>";
+
+
+                echo "<a href='paiement.php?coach_id=" . $ID . "&date=" . $jour . "&heure=" . $heureCourante . " - " . $heureSuivante . "'><button> RESERVER </button></a>";
                              }
             echo "</td>";
         }
