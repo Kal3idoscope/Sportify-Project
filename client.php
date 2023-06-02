@@ -93,7 +93,7 @@ $resultat = $conn->query($requete);
                     <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
                 </div>
             </div>
-            <a href="./RDV.html">RDV</a><br>
+            <a href="./rdv.php">RDV</a><br>
             <a href="./login.php">COMPTE</a><br>
         </div>
         <div class="boutonLOGOUT">

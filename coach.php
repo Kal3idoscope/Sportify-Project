@@ -91,21 +91,13 @@ if (mysqli_num_rows($sql) > 0) {
                     <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
                 </div>
             </div>
-            <a href="./RDV.html">RDV</a><br>
+            <a href="./rdv.php">RDV</a><br>
             <a href="./login.php">COMPTE</a><br>
         </div>
         <div class="boutonLOGOUT">
             <button style="width:100% ; height:95%; font-size: 200%" ><a href="php/logout.php?logout_id=<?php echo $id ?>" class="logout">LOG <br> OUT</a></button>
         </div>
     </div>
-</div>
-
-<div class="option9">
-
-<div class="dispo", style ="height : 150%">
-<p> Mes futurs rendez-vous <br> <br> <p>
-</div>
-
 </div>
 
 </body>
