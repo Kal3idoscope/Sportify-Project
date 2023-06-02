@@ -57,12 +57,12 @@ if(!isset($_SESSION['unique_id'])){
 
         $Deporte = array();
 
-                  $Deporte["Basketball"] = " ";
-                  $Deporte["Football"]= " ";
-                  $Deporte["Rugby"]= " ";
-                  $Deporte["Tennis"] = " ";
-                  $Deporte["Natation"] = " ";
-                  $Deporte["Plongeon"] = " ";
+                  $Deporte["BASKETBALL"] = " ";
+                  $Deporte["FOOTBALL"]= " ";
+                  $Deporte["RUGBY"]= " ";
+                  $Deporte["TENNIS"] = " ";
+                  $Deporte["NATATION"] = " ";
+                  $Deporte["PLONGEON"] = " ";
 
                   while ($row = $resultat->fetch_assoc()) {
                       $sport = $row["Sport"];
@@ -106,7 +106,7 @@ if(!isset($_SESSION['unique_id'])){
                 <div onclick="myFunction()" class="dropbtn">TOUT PARCOURIR</div>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="Activites_Sportives.php">ACTIVITÉS SPORTIVES</a>
-                    <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a>
+                    <a href="./Sport_Compet.php">SPORTS DE COMPÉTITION</a>
                     <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
                 </div>
             </div>
@@ -125,37 +125,37 @@ if(!isset($_SESSION['unique_id'])){
 </div>
 <div class="contain">
     <img class="imageAS" src="Images/basket.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["Basketball"]; ?></p>
+    <p class="Coach"><?php echo $Deporte["BASKETBALL"]; ?></p>
     <div class="muscu">BASKETBALL</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/foot.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["Football"]; ?></p>
+    <p class="Coach"><?php echo $Deporte["FOOTBALL"]; ?></p>
     <div class="muscu">FOOTBALL</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/rugby.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["Rugby"]; ?></p>
+    <p class="Coach"><?php echo $Deporte["RUGBY"]; ?></p>
     <div class="muscu">RUGBY</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/tennis.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["Tennis"]; ?></p>
+    <p class="Coach"><?php echo $Deporte["TENNIS"]; ?></p>
     <div class="muscu">TENNIS</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/natation.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["Natation"]; ?></p>
+    <p class="Coach"><?php echo $Deporte["NATATION"]; ?></p>
     <div class="muscu">NATATION</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/plongeon.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["Plongeon"]; ?></p>
+    <p class="Coach"><?php echo $Deporte["PLONGEON"]; ?></p>
     <div class="muscu">PLONGEON</div>
 </div>
 <p>&nbsp;</p>

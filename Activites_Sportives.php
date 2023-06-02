@@ -39,11 +39,11 @@ if(!isset($_SESSION['unique_id'])){
 
     $Deporte = array();
 
-              $Deporte["Musculation"] = " ";
-              $Deporte["Fitness"]= " ";
-              $Deporte["Biking"]= " ";
-              $Deporte["Cardio-training"] = " ";
-              $Deporte["Cours collectifs"] = " ";
+              $Deporte["MUSCULATION"] = " ";
+              $Deporte["FITNESS"]= " ";
+              $Deporte["BIKING"]= " ";
+              $Deporte["CARDIO-TRAINING"] = " ";
+              $Deporte["COURS COLLECTIFS"] = " ";
 
     while ($row = $resultat->fetch_assoc()) {
         $sport = $row["Sport"];
@@ -137,31 +137,31 @@ if(!isset($_SESSION['unique_id'])){
 
 <div class="contain">
     <img class="imageAS" src="Images/image 7.png" alt="activite1 photo"/>
-    <p class="Coach"> <?php echo $Deporte["Musculation"]; ?> </p>
+    <p class="Coach"> <?php echo $Deporte["MUSCULATION"]; ?> </p>
     <div class="muscu">MUSCULATION</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/image 8.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["Fitness"]; ?></p>
+    <p class="Coach"><?php echo $Deporte["FITNESS"]; ?></p>
     <div class="muscu">FITNESS</div>
 </div>
     <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/image 9.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["Biking"]; ?></p>
+    <p class="Coach"><?php echo $Deporte["BIKING"]; ?></p>
     <div class="muscu">BIKING</div>
 </div>
     <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/image 10.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["Cardio-training"]; ?></p>
+    <p class="Coach"><?php echo $Deporte["CARDIO-TRAINING"]; ?></p>
     <div class="muscu">CARDIO-TRAINING</div>
 </div>
     <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/image 11.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["Cours collectifs"]; ?></p>
+    <p class="Coach"><?php echo $Deporte["COURS COLLECTIFS"]; ?></p>
     <div class="muscu">COURS COLLECTIFS</div>
 </div>
 <p>&nbsp;</p>
