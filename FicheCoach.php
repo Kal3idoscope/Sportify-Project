@@ -30,30 +30,32 @@ if(!isset($_SESSION['unique_id'])){
 </script>
 <body>
 <?php
-$sql = mysqli_query($conn, "SELECT * FROM client WHERE ID_Client = {$_SESSION['unique_id']}");
-if (mysqli_num_rows($sql) > 0) {
-    $row = mysqli_fetch_assoc($sql);
-}
+    $ID = $_GET['ID'];
+     $requete = "SELECT * FROM coach WHERE ID_Coach = $ID";
+    $resultat = $conn->query($requete);
+
+    $Deporte = array();
+
+    while ($row = $resultat->fetch_assoc()) {
+        $sport = $row["ID_sport"];
+        $Nom = $row["Nom"];
+        $Prenom = $row["Prenom"];
+        $Mail= $row["Email"];
+        }
 ?>
 <div class="blocHeader">
     <div class="bloc1">
-        <h1 class="titre">FICHE COACH <h1>
+        <h1 class="titre"><?php echo $sport ?> <h1>
         <br>
                 <div class="blocProfil">
                     <img class="photodeprofil" src="Images/mouhali.jpeg" alt="mouhali"/>
                     <div class="profildata">
-                        <p>NOM : </p>
-                        <p>PRENOM : </p>
-                        <p>MAIL : </p>
-                        <p class="modifInfo"> INFORMATIONS DE PAIEMENT </p>
+                        <p>NOM : <?php echo $Nom ?> </p>
+                        <p>PRENOM : <?php echo $Prenom ?> </p>
+                        <p>MAIL : <?php echo $Mail ?> </p>
 
 
                     </div>
-                </div>
-                <div class="option7">
-                            <button><a href="./change_info_admin.php">MODIFIER MES INFOS</a></button>
-                            <button>PRENDRE UN RDV</button>
-                            <button>HISTORIQUE DE MES RDV</button>
                 </div>
             </div>
 
@@ -81,16 +83,7 @@ if (mysqli_num_rows($sql) > 0) {
     </div>
 </div>
 
-<div class="option9">
 
-<div class="chatroom">
-    <p style="height:95%">CHATROOM</p>
-</div>
-<div class="Consultation">
-    <p>CONSULTATIONS <br> à venir </p>
-</div>
-
-</div>
 
 </body>
 </html>
