@@ -119,13 +119,14 @@ if(!isset($_SESSION['unique_id'])){
         <h1 class="titre"><?php echo $sport ?> </h1>
         <br>
                 <div class="blocProfil">
-                    <img class="photodeprofil" src="php/pic/<?php echo $photo ?>" alt="">
-                    <div class="profildata">
+                    <img class="photodeprofil", style="height:40%; width:40%" src="php/pic/<?php echo $photo ?>" alt="">
+                    <div class="profildata", style="margin-top:-12%">
                         <p>NOM : <?php echo $NomC ?> </p>
                         <p>PRENOM : <?php echo $PrenomC ?> </p>
                         <p>MAIL : <?php echo $Mail ?> </p>
                     </div>
                 </div>
+                <button style="margin-left:40%">VOIR LE CV DU COACH</button>
             </div>
     <div class="bloc2">
         <div class="barrerecherche">
@@ -152,8 +153,8 @@ if(!isset($_SESSION['unique_id'])){
 
     </div>
 </div>
-      <div class="bloc1">
-      <h1 class="titre">MES FUTURS RENDEZ-VOUS</h1>
+      <div class="bloc1", style="margin-top:-1.5%">
+      <h1 class="titre"> <br> MES DISPONIBILITES</h1>
     <?php
  echo "<table>";
 
