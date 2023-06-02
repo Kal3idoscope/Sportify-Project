@@ -79,10 +79,13 @@ if(mysqli_num_rows($sql) > 0){
         $Coach = $row["ID_Coach"];
         $Client = $row["ID_Client"];
         $Statut= $row["Statut"];
+           $Nom= $row["Nom"];
+           $Prenom= $row["Prenom"];
         if (!isset($rendezVous[$jour])) {
             $rendezVous[$jour] = array();
         }
-        $Nom = $row["Nom"];;
+       $rendezVous[$jour][$Heure] = $Prenom . " " .$Nom;
+
     }
 
 
@@ -117,7 +120,7 @@ if(mysqli_num_rows($sql) > 0){
             echo "<td>";
             echo "<div>" . $heureCourante . " - " . $heureSuivante . "</div>";
             if (isset($rendezVous[$jour]) && array_key_exists($heureCourante . " - " . $heureSuivante, $rendezVous[$jour])) {
-                echo "<div class='appointment'> <p>adsfk<p>  </div>";
+               echo "<div class='appointment'> <p>" . $rendezVous[$jour][$heureCourante . " - " . $heureSuivante] . "</p></div>";
             }
             echo "</td>";
         }
@@ -138,7 +141,7 @@ if(mysqli_num_rows($sql) > 0){
             <div class="dropdown">
                 <div onclick="myFunction()" class="dropbtn">TOUT PARCOURIR</div>
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="./Activites_Sportives.html">ACTIVITÉS SPORTIVES</a>
+                    <a href="./Activites_Sportives.php">ACTIVITÉS SPORTIVES</a>
                     <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a>
                     <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
                 </div>

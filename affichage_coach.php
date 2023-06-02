@@ -61,7 +61,7 @@ $sql2 = mysqli_query($conn, "SELECT * FROM coach");
             <div class="dropdown">
                 <div onclick="myFunction()" class="dropbtn">TOUT PARCOURIR</div>
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="./Activites_Sportives.html">ACTIVITÉS SPORTIVES</a>
+                    <a href="./Activites_Sportives.php">ACTIVITÉS SPORTIVES</a>
                     <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a>
                     <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
                 </div>

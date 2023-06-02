@@ -88,12 +88,12 @@ $resultat = $conn->query($requete);
             <div class="dropdown">
                 <div onclick="myFunction()" class="dropbtn">TOUT PARCOURIR</div>
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="./Activites_Sportives.html">ACTIVITÉS SPORTIVES</a>
+                    <a href="./Activites_Sportives.php">ACTIVITÉS SPORTIVES</a>
                     <a href="./Sport_Compet.html">SPORTS DE COMPÉTITION</a>
                     <a href="./salleOmnes.html">SALLES DE SPORT OMNES</a>
                 </div>
             </div>
-            <a href="./RDV.html">RDV</a><br>
+            <a href="./rdv.php">RDV</a><br>
             <a href="./login.php">COMPTE</a><br>
         </div>
         <div class="boutonLOGOUT">
@@ -101,9 +101,7 @@ $resultat = $conn->query($requete);
                 </div>
     </div>
 </div>
-<div class="RDV">
-    <p>RENDEZ-VOUS <br> à venir </p>
-</div>
+
 
 </body>
 </html>
