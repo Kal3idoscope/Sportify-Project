@@ -40,6 +40,10 @@ if(!isset($_SESSION['unique_id'])){
                     <input class="in" type="password" name="password" placeholder="Saisir un nouveau mot de passe">
                     <i class="fas fa-eye"></i>
                 </div>
+                <div class="fieldInput", style="font-size:120%">
+                    <label>CV : </label>
+                    <input type="file" name="xmlFile" accept=".xml" required>
+                </div>
                 <div class="field button">
                     <button>CHANGER LES INFORMATIONS</button>
                 </div>
