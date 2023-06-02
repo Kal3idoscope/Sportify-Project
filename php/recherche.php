@@ -11,7 +11,7 @@ $output = "";
 $query = mysqli_query($conn, $sql);
 if (mysqli_num_rows($query) > 0) {
     while($row = mysqli_fetch_assoc($query)) {
-        $output .= '<a href="FicheCoach.php?user_id=' . $row['ID_Coach'] . '">
+        $output .= '<a href="FicheCoach.php?ID=' . $row['ID_Coach'] . '">
                     <div class="content">
                     <div class="details">
                         <span>' . $row['Prenom'] . " " . $row['Nom'] . '</span>

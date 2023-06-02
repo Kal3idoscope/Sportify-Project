@@ -173,6 +173,9 @@ if(!isset($_SESSION['unique_id'])){
             if (isset($rendezVous[$jour]) && array_key_exists($heureCourante . " - " . $heureSuivante, $rendezVous[$jour])) {
                echo "<div class='appointment'> <p>" . $rendezVous[$jour][$heureCourante . " - " . $heureSuivante] . "</p></div>";
             }
+            else {
+                           echo "<button> RESERVER </button>";
+            }
             echo "</td>";
         }
         echo "</tr>";
