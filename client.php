@@ -8,6 +8,7 @@ if(!isset($_SESSION['unique_id'])){
 <?php include_once "header.php"; ?>
 <link rel="stylesheet" href="styles/client.css" type="text/css" />
 <link rel="stylesheet" href="styles/scrollmenu.css" type="text/css" />
+
 <script>
     /* When the user clicks on the button,
     toggle between hiding and showing the dropdown content */
@@ -81,7 +82,12 @@ $resultat = $conn->query($requete);
     <div class="bloc2">
 
         <div class="barrerecherche">
-            <input class="rechercher" type="text" placeholder="Search..">
+            <div class="dropdown2">
+                <input class="rechercher" type="text" placeholder="Rechercher..." id="searchInput">
+                <div class="dropdown2-content" id="searchResults">
+                    <!-- Les résultats de la recherche seront ajoutés ici -->
+                </div>
+            </div>
         </div>
         <div class="header">
             <a href="./index.html">ACCUEIL</a>
@@ -101,7 +107,7 @@ $resultat = $conn->query($requete);
                 </div>
     </div>
 </div>
-
+<script src="javascript/recherche.js"></script>
 
 </body>
 </html>

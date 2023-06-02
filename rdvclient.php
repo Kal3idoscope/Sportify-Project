@@ -46,6 +46,7 @@ if(!isset($_SESSION['unique_id'])){
                 margin-bottom:1%;
             }
         </style>
+
 </head>
 
 
@@ -134,7 +135,12 @@ if(mysqli_num_rows($sql) > 0){
     <div class="bloc2">
 
         <div class="barrerecherche">
-            <input class="rechercher" type="text" placeholder="Search..">
+            <div class="dropdown2">
+                <input class="rechercher" type="text" placeholder="Rechercher..." id="searchInput">
+                <div class="dropdown2-content" id="searchResults">
+                    <!-- Les résultats de la recherche seront ajoutés ici -->
+                </div>
+            </div>
         </div>
         <div class="header">
             <a href="./index.html">ACCUEIL</a>
@@ -156,7 +162,7 @@ if(mysqli_num_rows($sql) > 0){
 </div>
 </body>
 </html>
-
+<script src="javascript/recherche.js"></script>
 </body>
 </html>
 

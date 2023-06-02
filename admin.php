@@ -78,7 +78,12 @@ $resultat = $conn->query($requete);
     <div class="bloc2">
 
         <div class="barrerecherche">
-            <input class="rechercher" type="text" placeholder="Search..">
+            <div class="dropdown2">
+                <input class="rechercher" type="text" placeholder="Rechercher..." id="searchInput">
+                <div class="dropdown2-content" id="searchResults">
+                    <!-- Les résultats de la recherche seront ajoutés ici -->
+                </div>
+            </div>
         </div>
         <div class="header">
             <a href="./index.html">ACCUEIL</a>
@@ -99,6 +104,6 @@ $resultat = $conn->query($requete);
     </div>
 </div>
 <img style="width:98%; height:85%; margin-left:1%" src="Images/admin1.png" alt="admin"/>
-
+<script src="javascript/recherche.js"></script>
 </body>
 </html>

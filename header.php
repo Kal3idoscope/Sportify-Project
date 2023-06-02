@@ -8,6 +8,7 @@
     <title>Sportify</title>
     <link rel="stylesheet" href="styles/scrollmenu.css" type="text/css" />
       <link rel="stylesheet" href="styles/general.css" type="text/css" />
+    <link rel="stylesheet" href="styles/dropdown2.css" type="text/css" />
 
 
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Shrikhand&display=swap" rel="stylesheet">
