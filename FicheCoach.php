@@ -6,6 +6,7 @@ if(!isset($_SESSION['unique_id'])){
 }
 ?>
 <?php include_once "header.php"; ?>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="styles/Fichecoach.css" type="text/css" />
 <link rel="stylesheet" href="styles/scrollmenu.css" type="text/css" />
     <style>
@@ -46,6 +47,7 @@ if(!isset($_SESSION['unique_id'])){
             color: #BBAE90;
             margin-bottom:1%;
         }
+
     </style>
 <script>
     /* When the user clicks on the button,
@@ -66,6 +68,7 @@ if(!isset($_SESSION['unique_id'])){
             }
         }
     }
+
 </script>
 <body>
 <?php
@@ -77,8 +80,8 @@ if(!isset($_SESSION['unique_id'])){
 
     while ($row = $resultat->fetch_assoc()) {
         $sport = $row["Sport"];
-        $Nom = $row["Nom"];
-        $Prenom = $row["Prenom"];
+        $NomC = $row["Nom"];
+        $PrenomC = $row["Prenom"];
         $Mail= $row["Email"];
         $photo=$row["Photo"];
         }
@@ -113,13 +116,13 @@ if(!isset($_SESSION['unique_id'])){
 ?>
 <div class="blocHeader">
     <div class="bloc1">
-        <h1 class="titre"><?php echo $sport ?> <h1>
+        <h1 class="titre"><?php echo $sport ?> </h1>
         <br>
                 <div class="blocProfil">
                     <img class="photodeprofil" src="php/pic/<?php echo $photo ?>" alt="">
                     <div class="profildata">
-                        <p>NOM : <?php echo $Nom ?> </p>
-                        <p>PRENOM : <?php echo $Prenom ?> </p>
+                        <p>NOM : <?php echo $NomC ?> </p>
+                        <p>PRENOM : <?php echo $PrenomC ?> </p>
                         <p>MAIL : <?php echo $Mail ?> </p>
                     </div>
                 </div>
@@ -179,15 +182,16 @@ if(!isset($_SESSION['unique_id'])){
                echo "<div class='appointment'> <p>" . $rendezVous[$jour][$heureCourante . " - " . $heureSuivante] . "</p></div>";
             }
             else {
-                           echo "<button> RESERVER </button>";
-            }
+                    echo "<a href='php/process_reservation.php?coach_id=" . $ID . "&date=" . $jour . "&heure=" . $heureCourante . " - " . $heureSuivante . "'><button> RESERVER </button></a>";
+                             }
             echo "</td>";
         }
         echo "</tr>";
     }
 
     echo "</table>";
-      ?> <br>
+      ?>
+       <br>
   </div>
 
 
