@@ -29,11 +29,11 @@ if(!isset($_SESSION['unique_id'])){
                         </div>
                     <div class="fieldInput">
                         <label>Telephone : </label>
-                        <input class="in" type="number" name="Telephone" placeholder="Telephone" required>
+                        <input class="in" type="number" name="telephone" placeholder="Telephone" required>
                     </div>
                     <div class="fieldInput">
                         <label>Bureau : </label>
-                        <input class="in" type="text" name="Bureau" placeholder="Bureau" required>
+                        <input class="in" type="text" name="bureau" placeholder="Bureau" required>
                     </div>
                         <div class="fieldInput">
                         <label>Adresse Email : </label>

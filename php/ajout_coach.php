@@ -34,7 +34,7 @@ if (!empty($prenom) && !empty($nom) && !empty($email) && !empty($password) && !e
                             $ran_id = rand(time(), 100000000);
                             $status = "Offline now";
                             $encrypt_pass = md5($password);
-                            $insert_query = mysqli_query($conn, "INSERT INTO coach (ID_Coach , Nom, Prenom, Email, Pass, Photo, ID_Sport, Status, Telephone, Bureau)
+                            $insert_query = mysqli_query($conn, "INSERT INTO coach (ID_Coach , Nom, Prenom, Email, Pass, Photo, Sport, Status, Telephone, Bureau)
                             VALUES ('$ran_id', '$nom', '$prenom', '$email', '$encrypt_pass', '$new_img_name', '$sport' ,'$status', '$telephone', '$bureau')");
                             //echo $insert_query;
                             if ($insert_query) {
