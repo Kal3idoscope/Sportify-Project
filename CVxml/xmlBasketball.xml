@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="Geeks.css"?>
+<?xml-stylesheet type="text/css" href="../styles/Geeks.css"?>
 <CURRICULUM>
 <title>CURRICULUM VITAE</title>
 <geeks_section>
@@ -8,8 +8,7 @@
   </geeks_section>
   <geeks_section>
     <name>Coordonnées</name>
-    <geeks_section>
-    81 Rue du Cèdre, 92600 Asnières-sur-Seine</geeks_section>
+    <geeks_section>81 Rue du Cèdre, 92600 Asnières-sur-Seine</geeks_section>
     <geeks_section>06 11 34 49 08</geeks_section>
     <geeks_section>marc.bianchini@sportify.fr</geeks_section>
   </geeks_section>
@@ -27,8 +26,8 @@
    <geeks_section>
    <name>Expérience professionnelle</name>
     <u>Entraîneur principal d'une équipe de basketball de niveau élite pendant cinq ans. J'ai dirigé les entraînements, développé des stratégies de jeu, et assuré le suivi individuel des joueurs pour améliorer leurs performances.</u>
-      <dd>Recruteur pour une équipe professionnelle de basketball. J'ai évalué et identifié des talents prometteurs lors de compétitions, de tournois et de camps d'entraînement.</dd>
-      <tt>Analyste de jeu pour une équipe universitaire de basketball. J'ai étudié les adversaires, analysé les statistiques et fourni des rapports détaillés sur les forces et les faiblesses de l'équipe et de ses adversaires.</tt>
+      <d>Recruteur pour une équipe professionnelle de basketball. J'ai évalué et identifié des talents prometteurs lors de compétitions, de tournois et de camps d'entraînement.</d>
+      <t>Analyste de jeu pour une équipe universitaire de basketball. J'ai étudié les adversaires, analysé les statistiques et fourni des rapports détaillés sur les forces et les faiblesses de l'équipe et de ses adversaires.</t>
    </geeks_section>
    <geeks_section>
     <name>Formation</name>
