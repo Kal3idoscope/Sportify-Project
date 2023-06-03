@@ -15,7 +15,7 @@ $heure = $_GET['heure'];
 $clientId = $_SESSION['unique_id'];
 
 
-$insert_query = mysqli_query($conn, "INSERT INTO prendre_rdv (ID_Client, ID_Coach, Date_rdv, Plage_horaire,ID_Paiement, Statut)
+$insert_query = mysqli_query($conn, "INSERT INTO prendre_rdv (ID_Client, ID_Coach, Date_rdv, Plage_horaire, ID_Paiement, Statut)
                 VALUES ($clientId, $coachId, '$date', '$heure',{$_SESSION['ID_Paiement']}, 1)");
 if ($insert_query) {
 

@@ -126,8 +126,8 @@ CREATE TABLE IF NOT EXISTS `coach` (
 --
 
 INSERT INTO `coach` (`ID_Coach`, `Nom`, `Prenom`, `Sport`, `Email`, `Pass`, `CV`, `Video`, `Photo`, `Telephone`, `Status`, `Bureau`) VALUES
-(441535586, 'Hervault', 'Estelle', 'Natation', 'estellehervault@gmail.com', '01191b803289eca4ebfeee5fdaf7dd56', NULL, NULL, '1685627658ui.jpg', 650472456, 'Offline now', 'SC205'),
-(1250097031, 'Poisson', 'Augustin', 'Musculation', 'augustinpoisson@gmail.com', '01191b803289eca4ebfeee5fdaf7dd56', NULL, NULL, '1685565220cpgreFDv_400x400.jpg', 102030405, 'Offline now', 'SC205');
+(441535586, 'Hervault', 'Estelle', 'NATATION', 'estellehervault@gmail.com', '01191b803289eca4ebfeee5fdaf7dd56', NULL, NULL, '1685627658ui.jpg', 650472456, 'Offline now', 'SC205'),
+(1250097031, 'Poisson', 'Augustin', 'MUSCULATION', 'augustinpoisson@gmail.com', '01191b803289eca4ebfeee5fdaf7dd56', NULL, NULL, '1685565220cpgreFDv_400x400.jpg', 102030405, 'Offline now', 'SC205');
 
 -- --------------------------------------------------------
 

@@ -9,6 +9,8 @@ if (!isset($_SESSION['unique_id'])) {
 <link rel="stylesheet" href="styles/co.css" type="text/css" />
 <body>
 <?php
+
+
 $sql = mysqli_query($conn, "SELECT * FROM admin WHERE ID_Admin = {$_SESSION['unique_id']}");
 if(mysqli_num_rows($sql) > 0){
     $row = mysqli_fetch_assoc($sql);
@@ -74,11 +76,8 @@ $sql2 = mysqli_query($conn, "SELECT * FROM coach");
             <a href="./rdv.php">RDV</a><br>
             <a href="./login.php">COMPTE</a><br>
         </div>
-        <div class="boutonLOGOUT">
-            <button style="width:119% ; height:99%; font-size: 200%; margin-left:-0.3%; margin-top : 6%"><a
-                        href="php/logout.php?logout_id=<?php echo $row['ID_Admin']; ?>" class="logout">LOG OUT</a>
-            </button>
-        </div>
+
+
     </div>
 </div>
 <script src="javascript/recherche.js"></script>

@@ -121,7 +121,8 @@ if(mysqli_num_rows($sql) > 0){
             echo "<td>";
             echo "<div>" . $heureCourante . " - " . $heureSuivante . "</div>";
             if (isset($rendezVous[$jour]) && array_key_exists($heureCourante . " - " . $heureSuivante, $rendezVous[$jour])) {
-               echo "<div class='appointment'> <p>" . $rendezVous[$jour][$heureCourante . " - " . $heureSuivante] . "</p></div>";
+               echo "<div class='appointment'> <p>" . $rendezVous[$jour][$heureCourante . " - " . $heureSuivante] . "  </a> <br>";
+            echo "<a href='paiement.php?coach_id'><button> ANNULER RESERVATION </button></a>";
             }
             echo "</td>";
         }

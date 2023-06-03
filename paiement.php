@@ -6,22 +6,13 @@ if (!isset($_SESSION['unique_id'])) {
 }?>
 
 <?php include_once "header.php";
+
 $ID = $_GET['coach_id'];
 $jour = $_GET['date'];
 $heure = $_GET['heure'];
-
-
 $_SESSION['coach_id'] = $ID;
 $_SESSION['date'] = $jour;
 $_SESSION['heure'] = $heure;
-echo  $_SESSION['coach_id'];
-echo "<br>";
-echo  $_SESSION['date'];
-echo "<br>";
-echo  $_SESSION['heure'];
-echo "<br>";
-echo $_SESSION['ID_Paiement'];
-sleep(2);
 ?>
 <head>
 
