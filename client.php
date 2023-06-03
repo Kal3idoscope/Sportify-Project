@@ -72,7 +72,7 @@ $resultat = $conn->query($requete);
                 <div class="option7", style="margin-bottom:3%; margin-top:0.5%">
                             <button><a href="./change_info_client.php">MODIFIER MES INFOS</a></button>
                             <button><a href="users.php">CHATROOM</a></button>
-                            <button>HISTORIQUE DE MES RDV</button>
+                            <button><a href="historique_reservation.php">HISTORIQUE DE MES RDV</a></button>
                 </div>
             </div>
 

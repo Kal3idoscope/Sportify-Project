@@ -50,7 +50,7 @@ if (mysqli_num_rows($sql) > 0) {
         $id=$row["ID_Coach"];
         $photo=$row["Photo"];
     }
-
+ 
 ?>
 <div class="blocHeader">
     <div class="bloc1">
