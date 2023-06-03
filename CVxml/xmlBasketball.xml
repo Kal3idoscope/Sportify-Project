@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="Geeks.css"?>
+<CURRICULUM>
+<title>CURRICULUM VITAE</title>
+<geeks_section>
+  <Prénom>Marc</Prénom>
+  <Prénom>Bianchini</Prénom>
+  </geeks_section>
+  <geeks_section>
+    <name>Coordonnées</name>
+    <geeks_section>
+    81 Rue du Cèdre, 92600 Asnières-sur-Seine</geeks_section>
+    <geeks_section>06 11 34 49 08</geeks_section>
+    <geeks_section>marc.bianchini@sportify.fr</geeks_section>
+  </geeks_section>
+  <geeks_section>
+    <name>Profil</name>
+   <u>Je suis un spécialiste passionné du basketball, doté d'une vaste expérience dans le domaine. Je possède une solide connaissance du jeu, des règles et des stratégies, ainsi que des compétences techniques et tactiques avancées. Mon objectif est d'utiliser mes connaissances et mon expertise pour contribuer au succès d'une équipe de basketball, que ce soit en tant qu'entraîneur, recruteur ou analyste.</u>
+   </geeks_section>
+   <geeks_section>
+    <name>Compétences</name>
+     <u>Excellente connaissance des règles, des techniques et des stratégies du basketball.</u>
+<d>Capacité à enseigner et à communiquer efficacement avec les joueurs de tous les niveaux.</d>
+<t>Compétences analytiques pour évaluer les performances des joueurs et des équipes, et apporter des ajustements tactiques appropriés.</t>
+<q>Maîtrise des outils d'analyse vidéo pour étudier les matchs et les performances individuelles.</q>
+   </geeks_section>
+   <geeks_section>
+   <name>Expérience professionnelle</name>
+    <u>Entraîneur principal d'une équipe de basketball de niveau élite pendant cinq ans. J'ai dirigé les entraînements, développé des stratégies de jeu, et assuré le suivi individuel des joueurs pour améliorer leurs performances.</u>
+      <dd>Recruteur pour une équipe professionnelle de basketball. J'ai évalué et identifié des talents prometteurs lors de compétitions, de tournois et de camps d'entraînement.</dd>
+      <tt>Analyste de jeu pour une équipe universitaire de basketball. J'ai étudié les adversaires, analysé les statistiques et fourni des rapports détaillés sur les forces et les faiblesses de l'équipe et de ses adversaires.</tt>
+   </geeks_section>
+   <geeks_section>
+    <name>Formation</name>
+     <u>Licence en éducation physique, spécialisation en basketball.</u>
+     <d>Certification d'entraîneur de basketball reconnue.</d>
+   </geeks_section> 
+</CURRICULUM>
