@@ -21,23 +21,23 @@ $sql2 = mysqli_query($conn, "SELECT * FROM coach");
 <div class="blocHeader">
     <div class="bloc1">
         <h1 class="titre">LISTE DE COACH<h1>
-            <div class = "fieldInput" style="margin-left:2% ; font-weight:lighter; margin-bottom:2%">
+            <div class = "fieldInput" style="margin-left:17% ; font-weight:lighter; margin-bottom:2%">
                 <table>
 
                     <thead>
                     <tr>
-                        <th style="font-weight:lighter">ID Coach</th>
-                        <th style="font-weight:lighter">Nom </th>
-                        <th style="font-weight:lighter">Prénom </th>
-                        <th style="font-weight:lighter">Email </th>
-                        <th style="font-weight:lighter">Photo</th>
+                        <th style="font-size:70%">ID Coach</th>
+                        <th style="font-size:70%">Nom </th>
+                        <th style="font-size:70%">Prénom </th>
+                        <th style="font-size:70%">Email </th>
+                        <th style="font-size:70%">Photo</th>
                     </tr>
                     </thead>
 
                     <tbody>
                     <?php
                     while ($row2 = mysqli_fetch_assoc($sql2)) {
-                        echo "<tr>";
+                        echo "<tr style='font-weight:lighter; font-size:60%'>";
                         echo "<td>" . $row2['ID_Coach'] . "</td>";
                         echo "<td>" . $row2['Nom'] . "</td>";
                         echo "<td>" . $row2['Prenom'] . "</td>";
