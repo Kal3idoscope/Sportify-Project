@@ -117,18 +117,36 @@ if(!isset($_SESSION['unique_id'])){
 ?>
 <div class="blocHeader">
     <div class="bloc1">
-        <h1 class="titre"><?php echo $sport ?> </h1>
-        <br>
-                <div class="blocProfil">
-                    <img class="photodeprofil", style="height:40%; width:40%" src="php/pic/<?php echo $photo ?>" alt="">
-                    <div class="profildata", style="margin-top:-12%">
-                        <p>NOM : <?php echo $NomC ?> </p>
-                        <p>PRENOM : <?php echo $PrenomC ?> </p>
-                        <p>MAIL : <?php echo $Mail ?> </p>
-                    </div>
+    <?php
+  if ($ID == 99) {
+      echo "<h1 class='titre'>SALLE</h1>
+          <br>
+          <div class='blocProfil'>
+              <div class='profildata' style='margin-top:-12%'>
+                  <p>NOM : SALLES OMNES </p>
+                  <p>PRENOM : SC402 </p>
+                  <p>MAIL : " . $Mail . " </p>
+              </div>
+          </div>
+      </div>";
+  }
+    else {
+        echo "<h1 class='titre'>" . $sport . "</h1>
+            <h1 class='titre'>" . $sport . "</h1>
+            <br>
+            <div class='blocProfil'>
+                <img class='photodeprofil' style='height:40%; width:40%' src='php/pic/" . $photo . "' alt=''>
+                <div class='profildata' style='margin-top:-12%'>
+                    <p>NOM : " . $NomC . "</p>
+                    <p>PRENOM : " . $PrenomC . "</p>
+                    <p>MAIL : " . $Mail . "</p>
                 </div>
-        <button style="margin-left:40%"><a href="CVxml/<?php echo $CV; ?>">VOIR LE CV DU COACH</a></button>
             </div>
+            <button style='margin-left:40%'><a href='CVxml/" . $CV . "'>VOIR LE CV DU COACH</a></button>
+        </div>";
+    }
+     ?>
+
     <div class="bloc2">
         <div class="barrerecherche">
             <div class="dropdown2">

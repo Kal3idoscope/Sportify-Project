@@ -9,8 +9,8 @@ if (!isset($_SESSION['unique_id'])) {
 <link rel="stylesheet" href="styles/co.css" type="text/css" />
 <body>
 <?php
-
-$sql = mysqli_query($conn, "SELECT * FROM prendre_rdv LEFT JOIN client ON client.ID_Client = prendre_rdv.ID_Client ORDER BY Date_rdv");
+$dateActuelle = date("Y-m-d");
+$sql = mysqli_query($conn, "SELECT * FROM prendre_rdv NATURAL JOIN client where Date_rdv<'$dateActuelle'");
 
 if(mysqli_num_rows($sql) > 0){
     $row = mysqli_fetch_assoc($sql);
@@ -20,34 +20,34 @@ if(mysqli_num_rows($sql) > 0){
 <div class="blocHeader">
     <div class="bloc1">
         <h1 class="titre">LISTE DE RENDEZ VOUS<h1>
-            <div class = "fieldInput" style="margin-left:2% ; font-weight:lighter; margin-bottom:2%">
-                <table>
+                <div class = "fieldInput" style="margin-left:2% ; font-weight:lighter; margin-bottom:2%">
+                    <table>
 
-                    <thead>
-                    <tr>
-                        <th style="font-weight:lighter">Prenom</th>
-                        <th style="font-weight:lighter">Nom</th>
-                        <th style="font-weight:lighter">Date</th>
-                        <th style="font-weight:lighter">Plage Horaire</th>
-                    </tr>
-                    </thead>
+                        <thead>
+                        <tr>
+                            <th style="font-weight:lighter">Prenom</th>
+                            <th style="font-weight:lighter">Nom</th>
+                            <th style="font-weight:lighter">Date</th>
+                            <th style="font-weight:lighter">Plage Horaire</th>
+                        </tr>
+                        </thead>
 
-                    <tbody>
-                    <?php
-                    while ($row = mysqli_fetch_assoc($sql)) {
-                        $sql2 = mysqli_query($conn, "SELECT * FROM coach where ID_Coach = {$row['ID_Coach']}");
-                        $row2 = mysqli_fetch_assoc($sql2);
-                        echo "<tr>";
-                        echo "<td>" . $row2['Prenom'] . "</td>";
-                        echo "<td>" . $row2['Nom'] . "</td>";
-                        echo "<td>" . $row['Date_rdv'] . "</td>";
-                        echo "<td>" . $row['Plage_horaire'] . "</td>";
-                        echo "</tr>";
-                    }
-                    ?>
-                    </tbody>
-                </table>
-            </div><br>
+                        <tbody>
+                        <?php
+                        while ($row = mysqli_fetch_assoc($sql)) {
+                            $sql2 = mysqli_query($conn, "SELECT * FROM coach where ID_Coach = {$row['ID_Coach']}");
+                            $row2 = mysqli_fetch_assoc($sql2);
+                            echo "<tr>";
+                            echo "<td>" . $row2['Prenom'] . "</td>";
+                            echo "<td>" . $row2['Nom'] . "</td>";
+                            echo "<td>" . $row['Date_rdv'] . "</td>";
+                            echo "<td>" . $row['Plage_horaire'] . "</td>";
+                            echo "</tr>";
+                        }
+                        ?>
+                        </tbody>
+                    </table>
+                </div><br>
     </div>
 
 

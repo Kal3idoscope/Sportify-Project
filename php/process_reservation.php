@@ -19,6 +19,15 @@ $insert_query = mysqli_query($conn, "INSERT INTO prendre_rdv (ID_Client, ID_Coac
                 VALUES ($clientId, $coachId, '$date', '$heure',{$_SESSION['ID_Paiement']}, 1)");
 if ($insert_query) {
 
+
+
+
+
+    $message .= "Vous avez un rendez-vous avec moi.Date : $date Heure : $heure";
+
+    $querymessage = "INSERT INTO communiquer (Type_communication, Destinataire, Envoyeur, Date, Message) 
+                    VALUES ('NULL', $coachId, $clientId, NOW(), '$message')";
+    mysqli_query($conn, $querymessage);
     header("location: ../rdv.php");
 } else {
     echo mysqli_error($conn);

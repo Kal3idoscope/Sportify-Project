@@ -118,7 +118,7 @@
   </div>
   <div class="bloc6-2">
   </div>
-  <button style="margin-left:41%; height:100%; width:20%; font-size:200%; margin-top:-5%"> JE SOUHAITE VISITER LA SALLE </button>
+  <button style="margin-left:41%; height:100%; width:20%; font-size:200%; margin-top:-5%">  <a href="ficheCoach.php?ID=99" >JE SOUHAITE VISITER LA SALLE </button>
 </div>
 
 <div class="citation">
