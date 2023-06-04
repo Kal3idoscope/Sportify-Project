@@ -99,7 +99,7 @@
   <div class="options">
     <div class="blocblur3">
       <p class ="quand"> QUAND? <br> <br> Du lundi au samedi <br> 9h00-22h00</p>
-      <p class ="ou"> OÙ? <br> <br> 6 rue Sextius Michel <br> 75015, Paris</p>
+      <p class ="ou"> OÙ? <br> <br> 6 rue Sextius Michel <br> 75015, Paris en SC402</p>
       <p class ="qui"> <a href="affichage_coach.php">QUI? <br> <br> Liste du personnel</a></p>
       <p class ="quoi"> <a href="#">QUOI? <br> <br> Voir le matériel</a> </p>
     </div>
@@ -143,7 +143,7 @@
       <p><img src="Images/facebook.png"/>   FACEBOOK : ECE Paris</p>
     </div>
     <div class="Contact">
-      <p><img src="Images/envelope.png"/>   MAIL : sportify.assistance@gmail.com</p>
+      <p><img src="Images/envelope.png"/>   MAIL : salle.omnes@gmail.com</p>
       <p><img src="Images/phone.png"/>  TELEPHONE : 01 67 28 45 29</p>
       <p><img src="Images/marker.png"/>   ADRESSE : 6 rue Sextius Michel 75015</p>
       <p>PAYS : FRANCE</p>
