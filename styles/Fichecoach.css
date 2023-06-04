@@ -47,14 +47,19 @@
 }
 
 .photodeprofil{
-    border-radius: 70%;
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+
     margin-top : -15%;
     margin-right:5% ;
 }
 
 
 .photoMouhali {
-
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
     margin : 5%;
 }
 
@@ -70,6 +75,7 @@
     padding: 0 1% 0 1%;
     width: 55%;
     border-radius: 21px;
+    font-size: 200%;
 
 }
 

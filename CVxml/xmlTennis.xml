@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="../styles/Geeks.css"?>
 <CURRICULUM>
-  <title>CURRICULUM VITAE</title> 
-    <geeks_section>
+  <title>CURRICULUM VITAE</title>
+  <geeks_section>
     <Prénom>Jean-Pierre</Prénom>
     <Prénom>Segado</Prénom></geeks_section>
-      <geeks_section>
+  <geeks_section>
     <name>Coordonnées</name>
-      <geeks_section>63 Rue de l'Émeraude, 94500 Champigny-sur-Marne</geeks_section>
-        <geeks_section>06 19 64 79 84</geeks_section>
-        <geeks_section>jp.segado@sportify.fr</geeks_section>
+    <geeks_section>63 Rue de l'Émeraude, 94500 Champigny-sur-Marne</geeks_section>
+    <geeks_section>06 19 64 79 84</geeks_section>
+    <geeks_section>jp.segado@sportify.fr</geeks_section>
     </geeks_section>
       <geeks_section>
         <name>Profil</name>
-    <u>Spécialiste en tennis passionné doté d'une solide expérience dans le domaine. Je suis un joueur de tennis compétitif depuis mon plus jeune âge et j'ai développé une expertise approfondie dans tous les aspects du jeu. J'ai une connaissance approfondie des règles, des techniques et des stratégies du tennis, ainsi qu'une grande capacité à enseigner et à coacher les joueurs de tous les niveaux. Mon objectif est d'aider les joueurs à maximiser leur potentiel et à atteindre leurs objectifs dans le monde du tennis.
-</u></geeks_section>
+    <u>Spécialiste en tennis passionné doté d'une solide expérience dans le domaine. Je suis un joueur de tennis compétitif depuis mon plus jeune âge et j'ai développé une expertise approfondie dans tous les aspects du jeu. J'ai une connaissance approfondie des règles, des techniques et des stratégies du tennis, ainsi qu'une grande capacité à enseigner et à coacher les joueurs de tous les niveaux. Mon objectif est d'aider les joueurs à maximiser leur potentiel et à atteindre leurs objectifs dans le monde du tennis.</u></geeks_section>
   <geeks_section>
     <name>Compétences</name>
       <u>Maîtrise des techniques et des stratégies du tennis : Je possède une connaissance approfondie des différentes techniques de coup, des stratégies de jeu et des tactiques spécifiques à chaque surface de terrain. Je suis capable de les enseigner et de les appliquer efficacement.</u>

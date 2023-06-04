@@ -19,7 +19,7 @@ if (!empty($email) && !empty($password)) {
             //echo "success";
         } else if (mysqli_num_rows($sql_coach) > 0) {
             $result = mysqli_fetch_assoc($sql_coach);
-            $user_pass = md5($password);
+            $user_pass = $password;
             //echo "success";
         }
 

@@ -143,7 +143,7 @@ if(!isset($_SESSION['unique_id'])){
                     <p>PRENOM : " . $PrenomC . "</p>
                     <p>MAIL : " . $Mail . "</p>
                <p>BUREAU : " . $bur . "</p>
-                    <p>TELEPHONE : " . $tel . "</p>
+                    <p>TELEPHONE : 0" . $tel . "</p>
                 </div>
             </div>
             <button style='margin-left:40%; margin-top:-6%'><a href='CVxml/" . $CV . "'>VOIR LE CV DU COACH</a></button>
@@ -170,7 +170,7 @@ if(!isset($_SESSION['unique_id'])){
                     <a href="./salleOmnes.php">SALLES DE SPORT OMNES</a>
                 </div>
             </div>
-            <a href="./RDV.html">RDV</a><br>
+            <a href="./rdv.php">RDV</a><br>
             <a href="./login.php">COMPTE</a><br>
         </div>
 
