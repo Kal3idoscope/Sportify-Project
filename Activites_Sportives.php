@@ -137,31 +137,31 @@ if(!isset($_SESSION['unique_id'])){
 
 <div class="contain">
     <img class="imageAS" src="Images/image 7.png" alt="activite1 photo"/>
-    <p class="Coach"> <?php echo $Deporte["MUSCULATION"]; ?> </p>
+    <p class="Coach"style="margin-top:-2%"> <?php echo $Deporte["MUSCULATION"]; ?> </p>
     <div class="muscu">MUSCULATION</div>
 </div>
 <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/image 8.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["FITNESS"]; ?></p>
+    <p class="Coach"style="margin-top:-2%"><?php echo $Deporte["FITNESS"]; ?></p>
     <div class="muscu">FITNESS</div>
 </div>
     <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/image 9.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["BIKING"]; ?></p>
+    <p class="Coach"style="margin-top:-2%"><?php echo $Deporte["BIKING"]; ?></p>
     <div class="muscu">BIKING</div>
 </div>
     <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/image 10.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["CARDIO-TRAINING"]; ?></p>
+    <p class="Coach"style="margin-top:-2%"><?php echo $Deporte["CARDIO-TRAINING"]; ?></p>
     <div class="muscu">CARDIO-TRAINING</div>
 </div>
     <p>&nbsp;</p>
 <div class="contain">
     <img class="imageAS" src="Images/image 11.png" alt="activite1 photo"/>
-    <p class="Coach"><?php echo $Deporte["COURS COLLECTIFS"]; ?></p>
+    <p class="Coach"style="margin-top:-2%"><?php echo $Deporte["COURS COLLECTIFS"]; ?></p>
     <div class="muscu">COURS COLLECTIFS</div>
 </div>
 <p>&nbsp;</p>

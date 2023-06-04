@@ -136,13 +136,13 @@ if(!isset($_SESSION['unique_id'])){
             <br>
             <div class='blocProfil'>
                 <img class='photodeprofil' style='height:40%; width:40%' src='php/pic/" . $photo . "' alt=''>
-                <div class='profildata' style='margin-top:-12%'>
+                <div class='profildata' style='margin-top:-6%'>
                     <p>NOM : " . $NomC . "</p>
                     <p>PRENOM : " . $PrenomC . "</p>
                     <p>MAIL : " . $Mail . "</p>
                 </div>
             </div>
-            <button style='margin-left:40%'><a href='CVxml/" . $CV . "'>VOIR LE CV DU COACH</a></button>
+            <button style='margin-left:40%; margin-top:-6%'><a href='CVxml/" . $CV . "'>VOIR LE CV DU COACH</a></button>
         </div>";
     }
      ?>
