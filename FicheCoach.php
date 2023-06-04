@@ -84,6 +84,8 @@ if(!isset($_SESSION['unique_id'])){
         $PrenomC = $row["Prenom"];
         $Mail= $row["Email"];
         $photo=$row["Photo"];
+        $bur= $row["Bureau"];
+        $tel = $row["Telephone"];
         $CV=$row["CV"];
         }
            $dateActuelle = date("Y-m-d");
@@ -140,6 +142,8 @@ if(!isset($_SESSION['unique_id'])){
                     <p>NOM : " . $NomC . "</p>
                     <p>PRENOM : " . $PrenomC . "</p>
                     <p>MAIL : " . $Mail . "</p>
+               <p>BUREAU : " . $bur . "</p>
+                    <p>TELEPHONE : " . $tel . "</p>
                 </div>
             </div>
             <button style='margin-left:40%; margin-top:-6%'><a href='CVxml/" . $CV . "'>VOIR LE CV DU COACH</a></button>

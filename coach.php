@@ -43,6 +43,8 @@ if (mysqli_num_rows($sql) > 0) {
     // Tableau de rendez-vous pour chaque jour
     $admin = array();
     while ($row = $resultat->fetch_assoc()) {
+        $bur= $row["Bureau"];
+        $tel = $row["Telephone"];
 
         $nom = $row["Nom"];
         $prenom = $row["Prenom"];
@@ -63,6 +65,7 @@ if (mysqli_num_rows($sql) > 0) {
                                             <p>PRENOM : <?php echo $prenom; ?></p>
 
                                             <p>MAIL : <?php echo $mail; ?></p>
+
 
 
                     </div>
