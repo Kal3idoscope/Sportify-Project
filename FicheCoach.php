@@ -132,7 +132,7 @@ if(!isset($_SESSION['unique_id'])){
   }
     else {
         echo "<h1 class='titre'>" . $sport . "</h1>
-            <h1 class='titre'>" . $sport . "</h1>
+            
             <br>
             <div class='blocProfil'>
                 <img class='photodeprofil' style='height:40%; width:40%' src='php/pic/" . $photo . "' alt=''>
